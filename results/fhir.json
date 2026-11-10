@@ -1,0 +1,36 @@
+{
+ "generatedAt": "2026-11-10T06:24:52.233Z",
+ "schema": "HL7 FHIR R4 JSON Schema (fhir.schema.json)",
+ "scope": "structure and datatypes; terminology and invariants not checked",
+ "bundles": 81,
+ "resources": 425,
+ "valid": 425,
+ "invalid": 0,
+ "byType": {
+  "Patient": {
+   "n": 81,
+   "valid": 81
+  },
+  "Encounter": {
+   "n": 81,
+   "valid": 81
+  },
+  "Observation": {
+   "n": 73,
+   "valid": 73
+  },
+  "QuestionnaireResponse": {
+   "n": 80,
+   "valid": 80
+  },
+  "Provenance": {
+   "n": 81,
+   "valid": 81
+  },
+  "Task": {
+   "n": 29,
+   "valid": 29
+  }
+ },
+ "errors": []
+}

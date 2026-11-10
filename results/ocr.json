@@ -1,0 +1,120 @@
+{
+ "generatedAt": "2026-11-10T06:19:04.636Z",
+ "engine": "tesseract.js 7.0.0 eng best_int",
+ "ocrParams": {
+  "tessedit_pageseg_mode": "6",
+  "tessedit_char_whitelist": null,
+  "oem": "LSTM (1)"
+ },
+ "preprocessing": "sharp/canvas: greyscale → resize to width 1200 → [preprocess.js] contrast stretch (1st–99th percentile) → Otsu threshold → display panel = largest light 4-connected region not touching the photo border and ≥4% of the area (fallback: whole photo) → crop to its bounding box → re-stretch + Otsu inside the crop → paint dark regions connected to the crop border white → two variants: A = stretched greyscale, B = Otsu black/white → resize to width 500 → pad 40px white",
+ "rule": "Each variant is parsed by core/ocr.js parseHbDisplay. Accept only if (a) both variants return status \"candidate\" with the same value (unit kept only if both read the same unit; one unit missing → unit null, worker selects; two different units → reject), or (b) exactly one variant returns \"candidate\" and the other returns \"no_reading\" (no plausible number, no decimal-less number) or \"low_confidence\" whose plausible numbers all equal the candidate value; unit then kept only if the other variant read no unit or the same unit. Anything else — different values, ambiguous/decimal_suspect/unit_conflict in either variant beside a candidate, or no candidate at all — is rejected and the worker types the reading.",
+ "images": 154,
+ "correct": 30,
+ "rejected": 124,
+ "unsafe": 0,
+ "correctRate": 0.195,
+ "unsafeRate": 0,
+ "byCondition": {
+  "clean": {
+   "n": 11,
+   "correct": 5,
+   "rejected": 6,
+   "unsafe": 0
+  },
+  "seven_segment": {
+   "n": 11,
+   "correct": 1,
+   "rejected": 10,
+   "unsafe": 0
+  },
+  "distractors": {
+   "n": 11,
+   "correct": 2,
+   "rejected": 9,
+   "unsafe": 0
+  },
+  "low_contrast": {
+   "n": 11,
+   "correct": 3,
+   "rejected": 8,
+   "unsafe": 0
+  },
+  "blur": {
+   "n": 11,
+   "correct": 6,
+   "rejected": 5,
+   "unsafe": 0
+  },
+  "glare": {
+   "n": 11,
+   "correct": 3,
+   "rejected": 8,
+   "unsafe": 0
+  },
+  "rotation": {
+   "n": 11,
+   "correct": 3,
+   "rejected": 8,
+   "unsafe": 0
+  },
+  "skew": {
+   "n": 11,
+   "correct": 2,
+   "rejected": 9,
+   "unsafe": 0
+  },
+  "small": {
+   "n": 11,
+   "correct": 3,
+   "rejected": 8,
+   "unsafe": 0
+  },
+  "noise": {
+   "n": 11,
+   "correct": 1,
+   "rejected": 10,
+   "unsafe": 0
+  },
+  "g_per_L": {
+   "n": 11,
+   "correct": 0,
+   "rejected": 11,
+   "unsafe": 0
+  },
+  "hard_decimal": {
+   "n": 11,
+   "correct": 0,
+   "rejected": 11,
+   "unsafe": 0
+  },
+  "two_values": {
+   "n": 11,
+   "correct": 1,
+   "rejected": 10,
+   "unsafe": 0
+  },
+  "no_reading": {
+   "n": 11,
+   "correct": 0,
+   "rejected": 11,
+   "unsafe": 0
+  }
+ },
+ "singleVariant": {
+  "grey": {
+   "correct": 21,
+   "rejected": 133,
+   "unsafe": 0
+  },
+  "binary": {
+   "correct": 47,
+   "rejected": 105,
+   "unsafe": 2
+  }
+ },
+ "unsafeExamples": [],
+ "medianMs": 81.5,
+ "totalSeconds": 17.6,
+ "dataset": "benchmarks/ocr/holdout/labels.json (synthetic, fresh seed 20261110, generated after parser v2 changes, never used for tuning)",
+ "parser": "core/ocr.js v2"
+}

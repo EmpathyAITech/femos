@@ -1,0 +1,1355 @@
+[
+ {
+  "file": "images/clean_01.png",
+  "truth": {
+   "value": 13.6,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Verdana)"
+ },
+ {
+  "file": "images/clean_02.png",
+  "truth": {
+   "value": 8.8,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Helvetica)"
+ },
+ {
+  "file": "images/clean_03.png",
+  "truth": {
+   "value": 11,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Tahoma)"
+ },
+ {
+  "file": "images/clean_04.png",
+  "truth": {
+   "value": 6.6,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Arial)"
+ },
+ {
+  "file": "images/clean_05.png",
+  "truth": {
+   "value": 8.4,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Trebuchet MS)"
+ },
+ {
+  "file": "images/clean_06.png",
+  "truth": {
+   "value": 6.5,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Arial)"
+ },
+ {
+  "file": "images/clean_07.png",
+  "truth": {
+   "value": 10.8,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Helvetica)"
+ },
+ {
+  "file": "images/clean_08.png",
+  "truth": {
+   "value": 10,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Verdana)"
+ },
+ {
+  "file": "images/clean_09.png",
+  "truth": {
+   "value": 5.1,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Tahoma)"
+ },
+ {
+  "file": "images/clean_10.png",
+  "truth": {
+   "value": 6,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Trebuchet MS)"
+ },
+ {
+  "file": "images/clean_11.png",
+  "truth": {
+   "value": 15.3,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Tahoma)"
+ },
+ {
+  "file": "images/seven_segment_01.png",
+  "truth": {
+   "value": 15.8,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_02.png",
+  "truth": {
+   "value": 12.8,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_03.png",
+  "truth": {
+   "value": 13.7,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_04.png",
+  "truth": {
+   "value": 9.8,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_05.png",
+  "truth": {
+   "value": 15.4,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_06.png",
+  "truth": {
+   "value": 10,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_07.png",
+  "truth": {
+   "value": 14.5,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_08.png",
+  "truth": {
+   "value": 13.5,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_09.png",
+  "truth": {
+   "value": 11.1,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_10.png",
+  "truth": {
+   "value": 14,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_11.png",
+  "truth": {
+   "value": 12.6,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/distractors_01.png",
+  "truth": {
+   "value": 10.2,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Tahoma); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_02.png",
+  "truth": {
+   "value": 10.5,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Trebuchet MS); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_03.png",
+  "truth": {
+   "value": 5.3,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Tahoma); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_04.png",
+  "truth": {
+   "value": 13.2,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Trebuchet MS); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_05.png",
+  "truth": {
+   "value": 7.2,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Arial); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_06.png",
+  "truth": {
+   "value": 6.2,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Tahoma); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_07.png",
+  "truth": {
+   "value": 9.6,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Tahoma); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_08.png",
+  "truth": {
+   "value": 12.1,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Verdana); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_09.png",
+  "truth": {
+   "value": 13.3,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Arial); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_10.png",
+  "truth": {
+   "value": 11,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Helvetica); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_11.png",
+  "truth": {
+   "value": 7.1,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Arial); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/low_contrast_01.png",
+  "truth": {
+   "value": 16.2,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Arial); ink 73% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_02.png",
+  "truth": {
+   "value": 5.1,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Trebuchet MS); ink 68% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_03.png",
+  "truth": {
+   "value": 10.2,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "seven-segment; ink 64% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_04.png",
+  "truth": {
+   "value": 9.5,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "seven-segment; ink 70% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_05.png",
+  "truth": {
+   "value": 5.7,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Verdana); ink 70% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_06.png",
+  "truth": {
+   "value": 12.8,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "seven-segment; ink 67% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_07.png",
+  "truth": {
+   "value": 7,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Arial); ink 63% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_08.png",
+  "truth": {
+   "value": 12.9,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Tahoma); ink 73% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_09.png",
+  "truth": {
+   "value": 5.1,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Trebuchet MS); ink 67% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_10.png",
+  "truth": {
+   "value": 13.1,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Helvetica); ink 73% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_11.png",
+  "truth": {
+   "value": 8.3,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "seven-segment; ink 69% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/blur_01.png",
+  "truth": {
+   "value": 10.1,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Arial); gaussian blur sigma 1.4"
+ },
+ {
+  "file": "images/blur_02.png",
+  "truth": {
+   "value": 8.5,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Verdana); gaussian blur sigma 2.1"
+ },
+ {
+  "file": "images/blur_03.png",
+  "truth": {
+   "value": 6.6,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "seven-segment; gaussian blur sigma 1.6"
+ },
+ {
+  "file": "images/blur_04.png",
+  "truth": {
+   "value": 6.7,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Verdana); gaussian blur sigma 1.2"
+ },
+ {
+  "file": "images/blur_05.png",
+  "truth": {
+   "value": 8.3,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Tahoma); gaussian blur sigma 1.1"
+ },
+ {
+  "file": "images/blur_06.png",
+  "truth": {
+   "value": 5.8,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "seven-segment; gaussian blur sigma 2"
+ },
+ {
+  "file": "images/blur_07.png",
+  "truth": {
+   "value": 11.7,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "seven-segment; gaussian blur sigma 2.4"
+ },
+ {
+  "file": "images/blur_08.png",
+  "truth": {
+   "value": 7,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "seven-segment; gaussian blur sigma 1.5"
+ },
+ {
+  "file": "images/blur_09.png",
+  "truth": {
+   "value": 10,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Helvetica); gaussian blur sigma 1.4"
+ },
+ {
+  "file": "images/blur_10.png",
+  "truth": {
+   "value": 9,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Verdana); gaussian blur sigma 1.9"
+ },
+ {
+  "file": "images/blur_11.png",
+  "truth": {
+   "value": 14.5,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Tahoma); gaussian blur sigma 2.3"
+ },
+ {
+  "file": "images/glare_01.png",
+  "truth": {
+   "value": 13.1,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "seven-segment; white radial glare r=112 opacity 0.86"
+ },
+ {
+  "file": "images/glare_02.png",
+  "truth": {
+   "value": 7.5,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Tahoma); white radial glare r=127 opacity 0.81"
+ },
+ {
+  "file": "images/glare_03.png",
+  "truth": {
+   "value": 15.9,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "seven-segment; white radial glare r=181 opacity 0.81"
+ },
+ {
+  "file": "images/glare_04.png",
+  "truth": {
+   "value": 11.8,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Helvetica); white radial glare r=159 opacity 0.74"
+ },
+ {
+  "file": "images/glare_05.png",
+  "truth": {
+   "value": 12.9,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Trebuchet MS); white radial glare r=187 opacity 0.88"
+ },
+ {
+  "file": "images/glare_06.png",
+  "truth": {
+   "value": 6.8,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Arial); white radial glare r=118 opacity 0.84"
+ },
+ {
+  "file": "images/glare_07.png",
+  "truth": {
+   "value": 5.6,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Arial); white radial glare r=112 opacity 0.84"
+ },
+ {
+  "file": "images/glare_08.png",
+  "truth": {
+   "value": 12.3,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "seven-segment; white radial glare r=184 opacity 0.84"
+ },
+ {
+  "file": "images/glare_09.png",
+  "truth": {
+   "value": 5.1,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "seven-segment; white radial glare r=166 opacity 0.92"
+ },
+ {
+  "file": "images/glare_10.png",
+  "truth": {
+   "value": 10.3,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Tahoma); white radial glare r=131 opacity 0.82"
+ },
+ {
+  "file": "images/glare_11.png",
+  "truth": {
+   "value": 11.8,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Tahoma); white radial glare r=171 opacity 0.81"
+ },
+ {
+  "file": "images/rotation_01.png",
+  "truth": {
+   "value": 7.9,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Trebuchet MS); rotated -7.1°"
+ },
+ {
+  "file": "images/rotation_02.png",
+  "truth": {
+   "value": 11.4,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Verdana); rotated -5.1°"
+ },
+ {
+  "file": "images/rotation_03.png",
+  "truth": {
+   "value": 12,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Helvetica); rotated -5.1°"
+ },
+ {
+  "file": "images/rotation_04.png",
+  "truth": {
+   "value": 7.8,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Tahoma); rotated 7.8°"
+ },
+ {
+  "file": "images/rotation_05.png",
+  "truth": {
+   "value": 7.8,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "seven-segment; rotated -6.7°"
+ },
+ {
+  "file": "images/rotation_06.png",
+  "truth": {
+   "value": 13.4,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "seven-segment; rotated 6.3°"
+ },
+ {
+  "file": "images/rotation_07.png",
+  "truth": {
+   "value": 16.2,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Tahoma); rotated 4.9°"
+ },
+ {
+  "file": "images/rotation_08.png",
+  "truth": {
+   "value": 8.3,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Trebuchet MS); rotated -5.7°"
+ },
+ {
+  "file": "images/rotation_09.png",
+  "truth": {
+   "value": 15,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Trebuchet MS); rotated -9.5°"
+ },
+ {
+  "file": "images/rotation_10.png",
+  "truth": {
+   "value": 9.1,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "seven-segment; rotated 5.6°"
+ },
+ {
+  "file": "images/rotation_11.png",
+  "truth": {
+   "value": 5,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "seven-segment; rotated -9.2°"
+ },
+ {
+  "file": "images/skew_01.png",
+  "truth": {
+   "value": 10.1,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "seven-segment; affine shear kx=0.14 ky=-0.07 sy=0.87 (perspective-like)"
+ },
+ {
+  "file": "images/skew_02.png",
+  "truth": {
+   "value": 12.9,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Arial); affine shear kx=0.26 ky=-0.03 sy=0.89 (perspective-like)"
+ },
+ {
+  "file": "images/skew_03.png",
+  "truth": {
+   "value": 10,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "seven-segment; affine shear kx=0.24 ky=-0.05 sy=0.93 (perspective-like)"
+ },
+ {
+  "file": "images/skew_04.png",
+  "truth": {
+   "value": 8.5,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Trebuchet MS); affine shear kx=-0.19 ky=0.06 sy=0.8 (perspective-like)"
+ },
+ {
+  "file": "images/skew_05.png",
+  "truth": {
+   "value": 5.8,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Helvetica); affine shear kx=-0.17 ky=0.03 sy=0.82 (perspective-like)"
+ },
+ {
+  "file": "images/skew_06.png",
+  "truth": {
+   "value": 9.6,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Helvetica); affine shear kx=-0.18 ky=0.04 sy=0.95 (perspective-like)"
+ },
+ {
+  "file": "images/skew_07.png",
+  "truth": {
+   "value": 5.9,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "seven-segment; affine shear kx=-0.12 ky=-0.05 sy=0.95 (perspective-like)"
+ },
+ {
+  "file": "images/skew_08.png",
+  "truth": {
+   "value": 9.8,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Verdana); affine shear kx=-0.21 ky=0.04 sy=0.83 (perspective-like)"
+ },
+ {
+  "file": "images/skew_09.png",
+  "truth": {
+   "value": 12.8,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "seven-segment; affine shear kx=0.23 ky=-0.04 sy=0.8 (perspective-like)"
+ },
+ {
+  "file": "images/skew_10.png",
+  "truth": {
+   "value": 10.1,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Helvetica); affine shear kx=0.27 ky=-0.03 sy=0.82 (perspective-like)"
+ },
+ {
+  "file": "images/skew_11.png",
+  "truth": {
+   "value": 11.6,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "seven-segment; affine shear kx=-0.14 ky=0.06 sy=0.86 (perspective-like)"
+ },
+ {
+  "file": "images/small_01.png",
+  "truth": {
+   "value": 10,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "seven-segment; downscaled to 206px wide"
+ },
+ {
+  "file": "images/small_02.png",
+  "truth": {
+   "value": 12.3,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "seven-segment; downscaled to 188px wide"
+ },
+ {
+  "file": "images/small_03.png",
+  "truth": {
+   "value": 15.6,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "seven-segment; downscaled to 228px wide"
+ },
+ {
+  "file": "images/small_04.png",
+  "truth": {
+   "value": 6.4,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Arial); downscaled to 225px wide"
+ },
+ {
+  "file": "images/small_05.png",
+  "truth": {
+   "value": 9.4,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Trebuchet MS); downscaled to 197px wide"
+ },
+ {
+  "file": "images/small_06.png",
+  "truth": {
+   "value": 14.5,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Helvetica); downscaled to 213px wide"
+ },
+ {
+  "file": "images/small_07.png",
+  "truth": {
+   "value": 12.9,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Trebuchet MS); downscaled to 201px wide"
+ },
+ {
+  "file": "images/small_08.png",
+  "truth": {
+   "value": 8.3,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "seven-segment; downscaled to 229px wide"
+ },
+ {
+  "file": "images/small_09.png",
+  "truth": {
+   "value": 13.1,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "seven-segment; downscaled to 172px wide"
+ },
+ {
+  "file": "images/small_10.png",
+  "truth": {
+   "value": 6.1,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Verdana); downscaled to 228px wide"
+ },
+ {
+  "file": "images/small_11.png",
+  "truth": {
+   "value": 5.4,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Tahoma); downscaled to 216px wide"
+ },
+ {
+  "file": "images/noise_01.png",
+  "truth": {
+   "value": 5.7,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Arial); gaussian pixel noise sigma 31"
+ },
+ {
+  "file": "images/noise_02.png",
+  "truth": {
+   "value": 11.4,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Helvetica); gaussian pixel noise sigma 23"
+ },
+ {
+  "file": "images/noise_03.png",
+  "truth": {
+   "value": 5,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Tahoma); gaussian pixel noise sigma 32"
+ },
+ {
+  "file": "images/noise_04.png",
+  "truth": {
+   "value": 12.9,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "seven-segment; gaussian pixel noise sigma 30"
+ },
+ {
+  "file": "images/noise_05.png",
+  "truth": {
+   "value": 12.3,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Tahoma); gaussian pixel noise sigma 30"
+ },
+ {
+  "file": "images/noise_06.png",
+  "truth": {
+   "value": 6.9,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Verdana); gaussian pixel noise sigma 26"
+ },
+ {
+  "file": "images/noise_07.png",
+  "truth": {
+   "value": 6,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "seven-segment; gaussian pixel noise sigma 26"
+ },
+ {
+  "file": "images/noise_08.png",
+  "truth": {
+   "value": 10.1,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "seven-segment; gaussian pixel noise sigma 32"
+ },
+ {
+  "file": "images/noise_09.png",
+  "truth": {
+   "value": 5.7,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Helvetica); gaussian pixel noise sigma 20"
+ },
+ {
+  "file": "images/noise_10.png",
+  "truth": {
+   "value": 6.4,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "seven-segment; gaussian pixel noise sigma 31"
+ },
+ {
+  "file": "images/noise_11.png",
+  "truth": {
+   "value": 6.7,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "seven-segment; gaussian pixel noise sigma 24"
+ },
+ {
+  "file": "images/g_per_L_01.png",
+  "truth": {
+   "value": 126,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_02.png",
+  "truth": {
+   "value": 85,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Arial); device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_03.png",
+  "truth": {
+   "value": 157,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_04.png",
+  "truth": {
+   "value": 126,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Arial); device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_05.png",
+  "truth": {
+   "value": 108,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_06.png",
+  "truth": {
+   "value": 149,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Helvetica); device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_07.png",
+  "truth": {
+   "value": 117,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_08.png",
+  "truth": {
+   "value": 62,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_09.png",
+  "truth": {
+   "value": 59,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Trebuchet MS); device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_10.png",
+  "truth": {
+   "value": 128,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_11.png",
+  "truth": {
+   "value": 88,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/hard_decimal_01.png",
+  "truth": {
+   "value": 5.5,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point missing"
+ },
+ {
+  "file": "images/hard_decimal_02.png",
+  "truth": {
+   "value": 10.6,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Arial); decimal point opacity 0.1; blur 0.9"
+ },
+ {
+  "file": "images/hard_decimal_03.png",
+  "truth": {
+   "value": 12,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point opacity 0.15; blur 0.9"
+ },
+ {
+  "file": "images/hard_decimal_04.png",
+  "truth": {
+   "value": 6.1,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point missing"
+ },
+ {
+  "file": "images/hard_decimal_05.png",
+  "truth": {
+   "value": 12.9,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Arial); decimal point opacity 0.06"
+ },
+ {
+  "file": "images/hard_decimal_06.png",
+  "truth": {
+   "value": 8.6,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point missing; blur 1.3"
+ },
+ {
+  "file": "images/hard_decimal_07.png",
+  "truth": {
+   "value": 12.6,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point opacity 0.14"
+ },
+ {
+  "file": "images/hard_decimal_08.png",
+  "truth": {
+   "value": 11.2,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point opacity 0.07"
+ },
+ {
+  "file": "images/hard_decimal_09.png",
+  "truth": {
+   "value": 5.7,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Tahoma); decimal point missing"
+ },
+ {
+  "file": "images/hard_decimal_10.png",
+  "truth": {
+   "value": 5.8,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Helvetica); decimal point missing"
+ },
+ {
+  "file": "images/hard_decimal_11.png",
+  "truth": {
+   "value": 13.1,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Helvetica); decimal point opacity 0.12; blur 0.9"
+ },
+ {
+  "file": "images/two_values_01.png",
+  "truth": {
+   "value": 14.6,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "seven-segment; previous reading 9.5 also shown (\"9.5 g/dL\")"
+ },
+ {
+  "file": "images/two_values_02.png",
+  "truth": {
+   "value": 6.1,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Verdana); previous reading 11.3 also shown (\"Last 11.3 g/dL\")"
+ },
+ {
+  "file": "images/two_values_03.png",
+  "truth": {
+   "value": 16.4,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Helvetica); previous reading 15.3 also shown (\"15.3 g/dL\")"
+ },
+ {
+  "file": "images/two_values_04.png",
+  "truth": {
+   "value": 10.1,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Trebuchet MS); previous reading 5.1 also shown (\"PREV 5.1 g/dL\")"
+ },
+ {
+  "file": "images/two_values_05.png",
+  "truth": {
+   "value": 8.5,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Arial); previous reading 6.6 also shown (\"6.6 g/dL\")"
+ },
+ {
+  "file": "images/two_values_06.png",
+  "truth": {
+   "value": 7.7,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "seven-segment; previous reading 5.6 also shown (\"5.6 g/dL\")"
+ },
+ {
+  "file": "images/two_values_07.png",
+  "truth": {
+   "value": 11.4,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "seven-segment; previous reading 5.9 also shown (\"PREV 5.9 g/dL\")"
+ },
+ {
+  "file": "images/two_values_08.png",
+  "truth": {
+   "value": 10.3,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Arial); previous reading 15.6 also shown (\"15.6 g/dL\")"
+ },
+ {
+  "file": "images/two_values_09.png",
+  "truth": {
+   "value": 11.4,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "seven-segment; previous reading 13.7 also shown (\"PREV 13.7 g/dL\")"
+ },
+ {
+  "file": "images/two_values_10.png",
+  "truth": {
+   "value": 13.6,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "seven-segment; previous reading 11.6 also shown (\"PREV 11.6 g/dL\")"
+ },
+ {
+  "file": "images/two_values_11.png",
+  "truth": {
+   "value": 15.8,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Helvetica); previous reading 10.3 also shown (\"PREV 10.3 g/dL\")"
+ },
+ {
+  "file": "images/no_reading_01.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Tahoma); error/blank screen: E-3"
+ },
+ {
+  "file": "images/no_reading_02.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Trebuchet MS); error/blank screen: Hi"
+ },
+ {
+  "file": "images/no_reading_03.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Arial); error/blank screen: ---"
+ },
+ {
+  "file": "images/no_reading_04.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "seven-segment; error/blank screen: Err"
+ },
+ {
+  "file": "images/no_reading_05.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "seven-segment; error/blank screen: Hi"
+ },
+ {
+  "file": "images/no_reading_06.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Arial); error/blank screen: E-3"
+ },
+ {
+  "file": "images/no_reading_07.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Verdana); error/blank screen: Lo"
+ },
+ {
+  "file": "images/no_reading_08.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Arial); error/blank screen: blank"
+ },
+ {
+  "file": "images/no_reading_09.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Arial); error/blank screen: Hi"
+ },
+ {
+  "file": "images/no_reading_10.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "seven-segment; error/blank screen: Err"
+ },
+ {
+  "file": "images/no_reading_11.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "seven-segment; error/blank screen: Err"
+ }
+]

@@ -1,0 +1,2466 @@
+{
+ "generatedAt": "2026-11-10T05:39:02.175Z",
+ "rows": [
+  {
+   "id": "clean-001",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-002",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-003",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "DANGER_SIGNS",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-004",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "DANGER_SIGNS",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-005",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-006",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-007",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-008",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-009",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-010",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-011",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-012",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-013",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-014",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "DUPLICATE_SUSPECT"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": null,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-10",
+     "level": "possible",
+     "score": 0.65
+    }
+   ]
+  },
+  {
+   "id": "clean-015",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-016",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-017",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-018",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-019",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-020",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-021",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-022",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-023",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-024",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-025",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-026",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-027",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-028",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-029",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "DANGER_SIGNS",
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-030",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-031",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-032",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-033",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-034",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-035",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-036",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-037",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "DANGER_SIGNS",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-038",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "DANGER_SIGNS",
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-039",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-040",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-041",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-042",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-043",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "DUPLICATE_SUSPECT",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": null,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "reading_stale-5",
+     "level": "possible",
+     "score": 0.7
+    }
+   ]
+  },
+  {
+   "id": "clean-044",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-045",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-046",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-047",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-048",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-049",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-050",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-051",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "clean-052",
+   "kind": "clean",
+   "expected": null,
+   "note": "clean",
+   "codes": [
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "hb_unit_suspect-1",
+   "kind": "planted",
+   "expected": "HB_UNIT_SUSPECT",
+   "note": "device showed 91 g/L, entered as 91 g/dL",
+   "codes": [
+    "HB_UNIT_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_UNIT_SUSPECT",
+   "duplicates": []
+  },
+  {
+   "id": "hb_unit_suspect-2",
+   "kind": "planted",
+   "expected": "HB_UNIT_SUSPECT",
+   "note": "device showed 8.8 g/dL, entered as 8.8 g/L",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_UNIT_SUSPECT"
+   ],
+   "errorCodes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_UNIT_SUSPECT",
+   "duplicates": []
+  },
+  {
+   "id": "hb_unit_suspect-3",
+   "kind": "planted",
+   "expected": "HB_UNIT_SUSPECT",
+   "note": "device showed 105 g/L, entered as 105 g/dL",
+   "codes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "errorCodes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_UNIT_SUSPECT",
+   "duplicates": []
+  },
+  {
+   "id": "hb_unit_suspect-4",
+   "kind": "planted",
+   "expected": "HB_UNIT_SUSPECT",
+   "note": "device showed 13.6 g/dL, entered as 13.6 g/L",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_UNIT_SUSPECT"
+   ],
+   "errorCodes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_UNIT_SUSPECT",
+   "duplicates": []
+  },
+  {
+   "id": "hb_unit_suspect-5",
+   "kind": "planted",
+   "expected": "HB_UNIT_SUSPECT",
+   "note": "device showed 132 g/L, entered as 132 g/dL",
+   "codes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "errorCodes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_UNIT_SUSPECT",
+   "duplicates": []
+  },
+  {
+   "id": "hb_unit_suspect-6",
+   "kind": "planted",
+   "expected": "HB_UNIT_SUSPECT",
+   "note": "device showed 13.7 g/dL, entered as 13.7 g/L",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_UNIT_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_UNIT_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_UNIT_SUSPECT",
+   "duplicates": []
+  },
+  {
+   "id": "hb_implausible-1",
+   "kind": "planted",
+   "expected": "HB_IMPLAUSIBLE",
+   "note": "2.1 g/dL typed",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_IMPLAUSIBLE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_IMPLAUSIBLE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_IMPLAUSIBLE",
+   "duplicates": []
+  },
+  {
+   "id": "hb_implausible-2",
+   "kind": "planted",
+   "expected": "HB_IMPLAUSIBLE",
+   "note": "1.4 g/dL typed",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_IMPLAUSIBLE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_IMPLAUSIBLE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_IMPLAUSIBLE",
+   "duplicates": []
+  },
+  {
+   "id": "hb_implausible-3",
+   "kind": "planted",
+   "expected": "HB_IMPLAUSIBLE",
+   "note": "22.5 g/dL typed",
+   "codes": [
+    "HB_IMPLAUSIBLE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_IMPLAUSIBLE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_IMPLAUSIBLE",
+   "duplicates": []
+  },
+  {
+   "id": "hb_implausible-4",
+   "kind": "planted",
+   "expected": "HB_IMPLAUSIBLE",
+   "note": "0.9 g/dL typed",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_IMPLAUSIBLE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_IMPLAUSIBLE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_IMPLAUSIBLE",
+   "duplicates": []
+  },
+  {
+   "id": "hb_implausible-5",
+   "kind": "planted",
+   "expected": "HB_IMPLAUSIBLE",
+   "note": "24 g/dL typed",
+   "codes": [
+    "HB_IMPLAUSIBLE",
+    "DUPLICATE_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_IMPLAUSIBLE",
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_IMPLAUSIBLE",
+   "duplicates": [
+    {
+     "otherCaseId": "history_out_of_range-3",
+     "level": "possible",
+     "score": 0.65
+    }
+   ]
+  },
+  {
+   "id": "hb_implausible-6",
+   "kind": "planted",
+   "expected": "HB_IMPLAUSIBLE",
+   "note": "2.6 g/dL typed",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_IMPLAUSIBLE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_IMPLAUSIBLE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HB_IMPLAUSIBLE",
+   "duplicates": []
+  },
+  {
+   "id": "hb_decimal_correction-1",
+   "kind": "planted",
+   "expected": "HB_DECIMAL_CORRECTION",
+   "note": "captured 74 g/dL, verifier changed it to 7.4",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_DECIMAL_CORRECTION",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_DECIMAL_CORRECTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "hb_decimal_correction-2",
+   "kind": "planted",
+   "expected": "HB_DECIMAL_CORRECTION",
+   "note": "captured 1.39 g/dL, verifier changed it to 13.9",
+   "codes": [
+    "HB_DECIMAL_CORRECTION",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_DECIMAL_CORRECTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "hb_decimal_correction-3",
+   "kind": "planted",
+   "expected": "HB_DECIMAL_CORRECTION",
+   "note": "captured 60 g/dL, verifier changed it to 6",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HB_DECIMAL_CORRECTION",
+    "DUPLICATE_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_DECIMAL_CORRECTION",
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "consent_missing-5",
+     "level": "possible",
+     "score": 0.66
+    }
+   ]
+  },
+  {
+   "id": "hb_decimal_correction-4",
+   "kind": "planted",
+   "expected": "HB_DECIMAL_CORRECTION",
+   "note": "captured 1.05 g/dL, verifier changed it to 10.5",
+   "codes": [
+    "HB_DECIMAL_CORRECTION",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_DECIMAL_CORRECTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "hb_decimal_correction-5",
+   "kind": "planted",
+   "expected": "HB_DECIMAL_CORRECTION",
+   "note": "captured 133 g/dL, verifier changed it to 13.3",
+   "codes": [
+    "HB_DECIMAL_CORRECTION",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_DECIMAL_CORRECTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "hb_decimal_correction-6",
+   "kind": "planted",
+   "expected": "HB_DECIMAL_CORRECTION",
+   "note": "captured 1.04 g/dL, verifier changed it to 10.4",
+   "codes": [
+    "HB_DECIMAL_CORRECTION",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HB_DECIMAL_CORRECTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "history_contradiction-1",
+   "kind": "planted",
+   "expected": "HISTORY_CONTRADICTION",
+   "note": "heavyBleeding=false but 7 pads/day",
+   "codes": [
+    "HISTORY_CONTRADICTION",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_CONTRADICTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "history_contradiction-2",
+   "kind": "planted",
+   "expected": "HISTORY_CONTRADICTION",
+   "note": "periodDays=0 but 2 pads/day",
+   "codes": [
+    "HISTORY_CONTRADICTION"
+   ],
+   "errorCodes": [
+    "HISTORY_CONTRADICTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "history_contradiction-3",
+   "kind": "planted",
+   "expected": "HISTORY_CONTRADICTION",
+   "note": "heavyBleeding=false but 8 pads/day",
+   "codes": [
+    "DANGER_SIGNS",
+    "HISTORY_CONTRADICTION",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_CONTRADICTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "history_contradiction-4",
+   "kind": "planted",
+   "expected": "HISTORY_CONTRADICTION",
+   "note": "periodDays=0 but 4 pads/day",
+   "codes": [
+    "HISTORY_CONTRADICTION",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "HISTORY_CONTRADICTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "history_contradiction-5",
+   "kind": "planted",
+   "expected": "HISTORY_CONTRADICTION",
+   "note": "heavyBleeding=false but 6 pads/day",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HISTORY_CONTRADICTION",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_CONTRADICTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "history_contradiction-6",
+   "kind": "planted",
+   "expected": "HISTORY_CONTRADICTION",
+   "note": "periodDays=0 but 4 pads/day",
+   "codes": [
+    "HISTORY_CONTRADICTION",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "HISTORY_CONTRADICTION"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "history_missing-1",
+   "kind": "planted",
+   "expected": "HISTORY_MISSING",
+   "note": "required field \"pregnant\" left empty",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HISTORY_MISSING",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "history_missing-2",
+   "kind": "planted",
+   "expected": "HISTORY_MISSING",
+   "note": "required field \"periodDays\" left empty",
+   "codes": [
+    "DANGER_SIGNS",
+    "HISTORY_MISSING",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "history_missing-3",
+   "kind": "planted",
+   "expected": "HISTORY_MISSING",
+   "note": "required field \"padsPerDay\" left empty",
+   "codes": [
+    "HISTORY_MISSING",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "HISTORY_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "history_missing-4",
+   "kind": "planted",
+   "expected": "HISTORY_MISSING",
+   "note": "required field \"heavyBleeding\" left empty",
+   "codes": [
+    "HISTORY_MISSING",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "history_missing-5",
+   "kind": "planted",
+   "expected": "HISTORY_MISSING",
+   "note": "required field \"dizziness\" left empty",
+   "codes": [
+    "HISTORY_MISSING",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "history_missing-6",
+   "kind": "planted",
+   "expected": "HISTORY_MISSING",
+   "note": "required field \"breathless\" left empty",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HISTORY_MISSING",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "history_out_of_range-1",
+   "kind": "planted",
+   "expected": "HISTORY_OUT_OF_RANGE",
+   "note": "periodDays=45",
+   "codes": [
+    "HISTORY_OUT_OF_RANGE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_OUT_OF_RANGE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_OUT_OF_RANGE",
+   "duplicates": []
+  },
+  {
+   "id": "history_out_of_range-2",
+   "kind": "planted",
+   "expected": "HISTORY_OUT_OF_RANGE",
+   "note": "padsPerDay=60",
+   "codes": [
+    "HISTORY_OUT_OF_RANGE",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_OUT_OF_RANGE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_OUT_OF_RANGE",
+   "duplicates": []
+  },
+  {
+   "id": "history_out_of_range-3",
+   "kind": "planted",
+   "expected": "HISTORY_OUT_OF_RANGE",
+   "note": "symptomDays=5000",
+   "codes": [
+    "HISTORY_OUT_OF_RANGE",
+    "DUPLICATE_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_OUT_OF_RANGE",
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_OUT_OF_RANGE",
+   "duplicates": [
+    {
+     "otherCaseId": "hb_implausible-5",
+     "level": "possible",
+     "score": 0.65
+    }
+   ]
+  },
+  {
+   "id": "history_out_of_range-4",
+   "kind": "planted",
+   "expected": "HISTORY_OUT_OF_RANGE",
+   "note": "periodDays=6.5",
+   "codes": [
+    "HISTORY_OUT_OF_RANGE"
+   ],
+   "errorCodes": [
+    "HISTORY_OUT_OF_RANGE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_OUT_OF_RANGE",
+   "duplicates": []
+  },
+  {
+   "id": "history_out_of_range-5",
+   "kind": "planted",
+   "expected": "HISTORY_OUT_OF_RANGE",
+   "note": "padsPerDay=-2",
+   "codes": [
+    "HISTORY_OUT_OF_RANGE",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "HISTORY_OUT_OF_RANGE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_OUT_OF_RANGE",
+   "duplicates": []
+  },
+  {
+   "id": "history_out_of_range-6",
+   "kind": "planted",
+   "expected": "HISTORY_OUT_OF_RANGE",
+   "note": "periodDays=31",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HISTORY_OUT_OF_RANGE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "HISTORY_OUT_OF_RANGE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: HISTORY_OUT_OF_RANGE",
+   "duplicates": []
+  },
+  {
+   "id": "age_mismatch-1",
+   "kind": "planted",
+   "expected": "AGE_MISMATCH",
+   "note": "stated age 34, birth year 1999",
+   "codes": [
+    "AGE_MISMATCH",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "AGE_MISMATCH"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "age_mismatch-2",
+   "kind": "planted",
+   "expected": "AGE_MISMATCH",
+   "note": "stated age 35, birth year 1997",
+   "codes": [
+    "AGE_MISMATCH",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "AGE_MISMATCH"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "age_mismatch-3",
+   "kind": "planted",
+   "expected": "AGE_MISMATCH",
+   "note": "stated age 35, birth year 1988",
+   "codes": [
+    "DANGER_SIGNS",
+    "AGE_MISMATCH",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "AGE_MISMATCH"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "age_mismatch-4",
+   "kind": "planted",
+   "expected": "AGE_MISMATCH",
+   "note": "stated age 32, birth year 1998",
+   "codes": [
+    "AGE_MISMATCH",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "AGE_MISMATCH"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "age_mismatch-5",
+   "kind": "planted",
+   "expected": "AGE_MISMATCH",
+   "note": "stated age 41, birth year 1993",
+   "codes": [
+    "AGE_MISMATCH",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "AGE_MISMATCH"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "age_mismatch-6",
+   "kind": "planted",
+   "expected": "AGE_MISMATCH",
+   "note": "stated age 31, birth year 2002",
+   "codes": [
+    "AGE_MISMATCH",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "AGE_MISMATCH"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "duplicate_suspect-1",
+   "kind": "planted",
+   "expected": "DUPLICATE_SUSPECT",
+   "note": "प्रिया कुमारी (Rampur, 2008) vs existing Priya Kumari (Rampur, 2008) in anchor-01: Devanagari vs Latin, same village and birth year",
+   "codes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-01",
+     "level": "likely",
+     "score": 0.85
+    }
+   ]
+  },
+  {
+   "id": "duplicate_suspect-2",
+   "kind": "planted",
+   "expected": "DUPLICATE_SUSPECT",
+   "note": "Puja Devi (Sonpur, 1997) vs existing Pooja Devi (Sonpur, 1997) in anchor-02: Pooja/Puja spelling",
+   "codes": [
+    "DUPLICATE_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-02",
+     "level": "likely",
+     "score": 0.85
+    }
+   ]
+  },
+  {
+   "id": "duplicate_suspect-3",
+   "kind": "planted",
+   "expected": "DUPLICATE_SUSPECT",
+   "note": "Laxmi Yadav (Tekari, 2001) vs existing Lakshmi Yadav (Tekari, 2001) in anchor-03: Lakshmi/Laxmi spelling",
+   "codes": [
+    "DANGER_SIGNS",
+    "DUPLICATE_SUSPECT",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-03",
+     "level": "likely",
+     "score": 0.82
+    }
+   ]
+  },
+  {
+   "id": "duplicate_suspect-4",
+   "kind": "planted",
+   "expected": "DUPLICATE_SUSPECT",
+   "note": "सुनीता देवी (Atri, 1994) vs existing Sunita Devi (Atri, 1993) in anchor-04: Sunita/सुनीता, birth year ±1",
+   "codes": [
+    "DUPLICATE_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-04",
+     "level": "possible",
+     "score": 0.77
+    }
+   ]
+  },
+  {
+   "id": "duplicate_suspect-5",
+   "kind": "planted",
+   "expected": "DUPLICATE_SUSPECT",
+   "note": "रेखा कुमारी (Manpur, 2006) vs existing Rekha Kumari (Manpur, 2006) in anchor-05: Devanagari vs Latin",
+   "codes": [
+    "DUPLICATE_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-05",
+     "level": "likely",
+     "score": 0.85
+    }
+   ]
+  },
+  {
+   "id": "duplicate_suspect-6",
+   "kind": "planted",
+   "expected": "DUPLICATE_SUSPECT",
+   "note": "Priyanka Paswaan (Dobhi, 1999) vs existing Priyanka Paswan (Dobhi, 1999) in anchor-06: Paswan/Paswaan spelling",
+   "codes": [
+    "DUPLICATE_SUSPECT",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-06",
+     "level": "likely",
+     "score": 0.85
+    }
+   ]
+  },
+  {
+   "id": "reading_reused-1",
+   "kind": "planted",
+   "expected": "READING_REUSED",
+   "note": "photo hash copied from anchor-07",
+   "codes": [
+    "READING_REUSED",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_REUSED"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: READING_REUSED",
+   "duplicates": []
+  },
+  {
+   "id": "reading_reused-2",
+   "kind": "planted",
+   "expected": "READING_REUSED",
+   "note": "photo hash copied from anchor-08",
+   "codes": [
+    "READING_REUSED",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_REUSED"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: READING_REUSED",
+   "duplicates": []
+  },
+  {
+   "id": "reading_reused-3",
+   "kind": "planted",
+   "expected": "READING_REUSED",
+   "note": "photo hash copied from anchor-09",
+   "codes": [
+    "READING_REUSED",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "READING_REUSED"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: READING_REUSED",
+   "duplicates": []
+  },
+  {
+   "id": "reading_reused-4",
+   "kind": "planted",
+   "expected": "READING_REUSED",
+   "note": "photo hash copied from anchor-10",
+   "codes": [
+    "READING_REUSED",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_REUSED"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: READING_REUSED",
+   "duplicates": []
+  },
+  {
+   "id": "reading_reused-5",
+   "kind": "planted",
+   "expected": "READING_REUSED",
+   "note": "photo hash copied from anchor-11",
+   "codes": [
+    "READING_REUSED",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "READING_REUSED"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: READING_REUSED",
+   "duplicates": []
+  },
+  {
+   "id": "reading_reused-6",
+   "kind": "planted",
+   "expected": "READING_REUSED",
+   "note": "photo hash copied from anchor-12",
+   "codes": [
+    "READING_REUSED",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_REUSED"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: READING_REUSED",
+   "duplicates": []
+  },
+  {
+   "id": "reading_stale-1",
+   "kind": "planted",
+   "expected": "READING_STALE",
+   "note": "device timestamp 64 h before capture",
+   "codes": [
+    "READING_STALE",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_STALE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "reading_stale-2",
+   "kind": "planted",
+   "expected": "READING_STALE",
+   "note": "device timestamp 82 h before capture",
+   "codes": [
+    "DANGER_SIGNS",
+    "READING_STALE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_STALE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "reading_stale-3",
+   "kind": "planted",
+   "expected": "READING_STALE",
+   "note": "device timestamp 59 h before capture",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "READING_STALE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_STALE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "reading_stale-4",
+   "kind": "planted",
+   "expected": "READING_STALE",
+   "note": "device timestamp 93 h before capture",
+   "codes": [
+    "READING_STALE",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_STALE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "reading_stale-5",
+   "kind": "planted",
+   "expected": "READING_STALE",
+   "note": "device timestamp 33 h before capture",
+   "codes": [
+    "READING_STALE",
+    "DUPLICATE_SUSPECT",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_STALE",
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "clean-043",
+     "level": "possible",
+     "score": 0.7
+    }
+   ]
+  },
+  {
+   "id": "reading_stale-6",
+   "kind": "planted",
+   "expected": "READING_STALE",
+   "note": "device timestamp 92 h before capture",
+   "codes": [
+    "READING_STALE",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "READING_STALE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "consent_guardian-1",
+   "kind": "planted",
+   "expected": "CONSENT_GUARDIAN",
+   "note": "age 16, consent by self",
+   "codes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "errorCodes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_GUARDIAN",
+   "duplicates": []
+  },
+  {
+   "id": "consent_guardian-2",
+   "kind": "planted",
+   "expected": "CONSENT_GUARDIAN",
+   "note": "age 13, consent by self",
+   "codes": [
+    "CONSENT_GUARDIAN",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_GUARDIAN",
+   "duplicates": []
+  },
+  {
+   "id": "consent_guardian-3",
+   "kind": "planted",
+   "expected": "CONSENT_GUARDIAN",
+   "note": "age 13, consent by self",
+   "codes": [
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "CONSENT_GUARDIAN",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_GUARDIAN",
+   "duplicates": []
+  },
+  {
+   "id": "consent_guardian-4",
+   "kind": "planted",
+   "expected": "CONSENT_GUARDIAN",
+   "note": "age 12, consent by self",
+   "codes": [
+    "CONSENT_GUARDIAN",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_GUARDIAN",
+   "duplicates": []
+  },
+  {
+   "id": "consent_guardian-5",
+   "kind": "planted",
+   "expected": "CONSENT_GUARDIAN",
+   "note": "age 12, consent by self",
+   "codes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "errorCodes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_GUARDIAN",
+   "duplicates": []
+  },
+  {
+   "id": "consent_guardian-6",
+   "kind": "planted",
+   "expected": "CONSENT_GUARDIAN",
+   "note": "age 15, consent by self",
+   "codes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "errorCodes": [
+    "CONSENT_GUARDIAN"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_GUARDIAN",
+   "duplicates": []
+  },
+  {
+   "id": "out_of_scope-1",
+   "kind": "planted",
+   "expected": "OUT_OF_SCOPE",
+   "note": "pregnant",
+   "codes": [
+    "OUT_OF_SCOPE",
+    "DANGER_SIGNS",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "OUT_OF_SCOPE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "out_of_scope-2",
+   "kind": "planted",
+   "expected": "OUT_OF_SCOPE",
+   "note": "pregnant",
+   "codes": [
+    "OUT_OF_SCOPE",
+    "HB_BAND",
+    "DANGER_SIGNS",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "OUT_OF_SCOPE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "out_of_scope-3",
+   "kind": "planted",
+   "expected": "OUT_OF_SCOPE",
+   "note": "pregnant",
+   "codes": [
+    "OUT_OF_SCOPE",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "OUT_OF_SCOPE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "out_of_scope-4",
+   "kind": "planted",
+   "expected": "OUT_OF_SCOPE",
+   "note": "pregnant",
+   "codes": [
+    "OUT_OF_SCOPE",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "OUT_OF_SCOPE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "out_of_scope-5",
+   "kind": "planted",
+   "expected": "OUT_OF_SCOPE",
+   "note": "pregnant",
+   "codes": [
+    "OUT_OF_SCOPE",
+    "DANGER_SIGNS",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "OUT_OF_SCOPE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "out_of_scope-6",
+   "kind": "planted",
+   "expected": "OUT_OF_SCOPE",
+   "note": "pregnant",
+   "codes": [
+    "OUT_OF_SCOPE",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "OUT_OF_SCOPE"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "consent_missing-1",
+   "kind": "planted",
+   "expected": "CONSENT_MISSING",
+   "note": "no consent event",
+   "codes": [
+    "CONSENT_MISSING",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "CONSENT_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "consent_missing-2",
+   "kind": "planted",
+   "expected": "CONSENT_MISSING",
+   "note": "consent recorded with care=false",
+   "codes": [
+    "CONSENT_MISSING",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "CONSENT_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "consent_missing-3",
+   "kind": "planted",
+   "expected": "CONSENT_MISSING",
+   "note": "no consent event",
+   "codes": [
+    "CONSENT_MISSING",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "CONSENT_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "consent_missing-4",
+   "kind": "planted",
+   "expected": "CONSENT_MISSING",
+   "note": "consent recorded with care=false",
+   "codes": [
+    "CONSENT_MISSING",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "CONSENT_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "consent_missing-5",
+   "kind": "planted",
+   "expected": "CONSENT_MISSING",
+   "note": "no consent event",
+   "codes": [
+    "CONSENT_MISSING",
+    "DUPLICATE_SUSPECT",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "CONSENT_MISSING",
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": true,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_MISSING",
+   "duplicates": [
+    {
+     "otherCaseId": "hb_decimal_correction-3",
+     "level": "possible",
+     "score": 0.66
+    }
+   ]
+  },
+  {
+   "id": "consent_missing-6",
+   "kind": "planted",
+   "expected": "CONSENT_MISSING",
+   "note": "consent recorded with care=false",
+   "codes": [
+    "CONSENT_MISSING",
+    "HB_BAND"
+   ],
+   "errorCodes": [
+    "CONSENT_MISSING"
+   ],
+   "detected": true,
+   "extra": [],
+   "blocked": true,
+   "blockReason": "blocking flags: CONSENT_MISSING",
+   "duplicates": []
+  },
+  {
+   "id": "identity-neg-1",
+   "kind": "hard_negative",
+   "expected": null,
+   "note": "सुनीता देवी (Belaganj, 1990) vs Sunita Devi (Wazirganj, 1990): Sunita/सुनीता, different village",
+   "codes": [
+    "DUPLICATE_SUSPECT",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": null,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-13",
+     "level": "possible",
+     "score": 0.7
+    }
+   ]
+  },
+  {
+   "id": "identity-neg-2",
+   "kind": "hard_negative",
+   "expected": null,
+   "note": "Puja Kumari (Mohanpur, 2003) vs Pooja Kumari (Fatehpur, 2003): Pooja/Puja, different village",
+   "codes": [
+    "DANGER_SIGNS",
+    "DUPLICATE_SUSPECT",
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "detected": null,
+   "extra": [
+    "DUPLICATE_SUSPECT"
+   ],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-14",
+     "level": "possible",
+     "score": 0.7
+    }
+   ]
+  },
+  {
+   "id": "identity-neg-3",
+   "kind": "hard_negative",
+   "expected": null,
+   "note": "Laxmi Devi (Khizarsarai, 1992) vs Lakshmi Devi (Paraiya, 1988): Lakshmi/Laxmi, different village, birth year +4",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  },
+  {
+   "id": "identity-neg-4",
+   "kind": "hard_negative",
+   "expected": null,
+   "note": "प्रिया कुमारी (Sonpur, 2009) vs Priya Kumari (Belaganj, 2002): Priya/प्रिया, different village, birth year +7",
+   "codes": [
+    "HB_BAND",
+    "HMB_INDICATORS"
+   ],
+   "errorCodes": [],
+   "detected": null,
+   "extra": [],
+   "blocked": false,
+   "blockReason": null,
+   "duplicates": []
+  }
+ ]
+}

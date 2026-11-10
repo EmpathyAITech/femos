@@ -1,0 +1,498 @@
+{
+  "generatedBy": "learning/seed-demo.js",
+  "seed": 7,
+  "anchor": "2026-11-09T09:00:00Z",
+  "cases": [
+    {
+      "caseId": "c-gaya-0001",
+      "archetype": "ready",
+      "patientId": "pt-0001"
+    },
+    {
+      "caseId": "c-gaya-0002",
+      "archetype": "ready",
+      "patientId": "pt-0002"
+    },
+    {
+      "caseId": "c-gaya-0003",
+      "archetype": "ready",
+      "patientId": "pt-0003"
+    },
+    {
+      "caseId": "c-gaya-0004",
+      "archetype": "ready",
+      "patientId": "pt-0004"
+    },
+    {
+      "caseId": "c-gaya-0005",
+      "archetype": "ready",
+      "patientId": "pt-0005"
+    },
+    {
+      "caseId": "c-gaya-0006",
+      "archetype": "ready",
+      "patientId": "pt-0006"
+    },
+    {
+      "caseId": "c-gaya-0007",
+      "archetype": "in_review",
+      "patientId": "pt-0007"
+    },
+    {
+      "caseId": "c-gaya-0008",
+      "archetype": "in_review",
+      "patientId": "pt-0008"
+    },
+    {
+      "caseId": "c-gaya-0009",
+      "archetype": "in_review",
+      "patientId": "pt-0009"
+    },
+    {
+      "caseId": "c-gaya-0010",
+      "archetype": "in_review",
+      "patientId": "pt-0010"
+    },
+    {
+      "caseId": "c-gaya-0011",
+      "archetype": "in_review",
+      "patientId": "pt-0011"
+    },
+    {
+      "caseId": "c-gaya-0012",
+      "archetype": "in_review",
+      "patientId": "pt-0012"
+    },
+    {
+      "caseId": "c-gaya-0013",
+      "archetype": "in_review",
+      "patientId": "pt-0013"
+    },
+    {
+      "caseId": "c-gaya-0014",
+      "archetype": "in_review",
+      "patientId": "pt-0014"
+    },
+    {
+      "caseId": "c-gaya-0015",
+      "archetype": "in_review",
+      "patientId": "pt-0015"
+    },
+    {
+      "caseId": "c-gaya-0016",
+      "archetype": "in_review",
+      "patientId": "pt-0016"
+    },
+    {
+      "caseId": "c-gaya-0017",
+      "archetype": "in_review",
+      "patientId": "pt-0017"
+    },
+    {
+      "caseId": "c-gaya-0018",
+      "archetype": "in_review",
+      "patientId": "pt-0018"
+    },
+    {
+      "caseId": "c-gaya-0019",
+      "archetype": "prior_visit",
+      "patientId": "pt-0019"
+    },
+    {
+      "caseId": "c-gaya-0020",
+      "archetype": "prior_visit",
+      "patientId": "pt-0019"
+    },
+    {
+      "caseId": "c-gaya-0021",
+      "archetype": "falling_current",
+      "patientId": "pt-0019"
+    },
+    {
+      "caseId": "c-gaya-0022",
+      "archetype": "prior_visit",
+      "patientId": "pt-0020"
+    },
+    {
+      "caseId": "c-gaya-0023",
+      "archetype": "prior_visit",
+      "patientId": "pt-0020"
+    },
+    {
+      "caseId": "c-gaya-0024",
+      "archetype": "falling_current",
+      "patientId": "pt-0020"
+    },
+    {
+      "caseId": "c-gaya-0025",
+      "archetype": "blocked_unit",
+      "patientId": "pt-0021"
+    },
+    {
+      "caseId": "c-gaya-0026",
+      "archetype": "blocked_unit",
+      "patientId": "pt-0022"
+    },
+    {
+      "caseId": "c-gaya-0027",
+      "archetype": "blocked_unit",
+      "patientId": "pt-0023"
+    },
+    {
+      "caseId": "c-gaya-0028",
+      "archetype": "blocked_missing",
+      "patientId": "pt-0024"
+    },
+    {
+      "caseId": "c-gaya-0029",
+      "archetype": "blocked_missing",
+      "patientId": "pt-0025"
+    },
+    {
+      "caseId": "c-gaya-0030",
+      "archetype": "blocked_missing",
+      "patientId": "pt-0026"
+    },
+    {
+      "caseId": "c-gaya-0031",
+      "archetype": "blocked_missing",
+      "patientId": "pt-0027"
+    },
+    {
+      "caseId": "c-gaya-0032",
+      "archetype": "blocked_minor_consent",
+      "patientId": "pt-0028"
+    },
+    {
+      "caseId": "c-gaya-0033",
+      "archetype": "blocked_minor_consent",
+      "patientId": "pt-0029"
+    },
+    {
+      "caseId": "c-gaya-0034",
+      "archetype": "blocked_minor_consent",
+      "patientId": "pt-0030"
+    },
+    {
+      "caseId": "c-gaya-0035",
+      "archetype": "followup_pending",
+      "patientId": "pt-0031"
+    },
+    {
+      "caseId": "c-gaya-0036",
+      "archetype": "followup_pending",
+      "patientId": "pt-0032"
+    },
+    {
+      "caseId": "c-gaya-0037",
+      "archetype": "followup_pending",
+      "patientId": "pt-0033"
+    },
+    {
+      "caseId": "c-gaya-0038",
+      "archetype": "followup_pending",
+      "patientId": "pt-0034"
+    },
+    {
+      "caseId": "c-gaya-0039",
+      "archetype": "followup_pending",
+      "patientId": "pt-0035"
+    },
+    {
+      "caseId": "c-gaya-0040",
+      "archetype": "followup_pending",
+      "patientId": "pt-0036"
+    },
+    {
+      "caseId": "c-gaya-0041",
+      "archetype": "followup_pending",
+      "patientId": "pt-0037"
+    },
+    {
+      "caseId": "c-gaya-0042",
+      "archetype": "followup_pending",
+      "patientId": "pt-0038"
+    },
+    {
+      "caseId": "c-gaya-0043",
+      "archetype": "followup_pending",
+      "patientId": "pt-0039"
+    },
+    {
+      "caseId": "c-gaya-0044",
+      "archetype": "followup_pending",
+      "patientId": "pt-0040"
+    },
+    {
+      "caseId": "c-gaya-0045",
+      "archetype": "followup_pending",
+      "patientId": "pt-0041"
+    },
+    {
+      "caseId": "c-gaya-0046",
+      "archetype": "followup_pending",
+      "patientId": "pt-0042"
+    },
+    {
+      "caseId": "c-gaya-0047",
+      "archetype": "followup_pending",
+      "patientId": "pt-0043"
+    },
+    {
+      "caseId": "c-gaya-0048",
+      "archetype": "followup_pending",
+      "patientId": "pt-0044"
+    },
+    {
+      "caseId": "c-gaya-0049",
+      "archetype": "followup_pending",
+      "patientId": "pt-0045"
+    },
+    {
+      "caseId": "c-gaya-0050",
+      "archetype": "decided",
+      "patientId": "pt-0046"
+    },
+    {
+      "caseId": "c-gaya-0051",
+      "archetype": "decided",
+      "patientId": "pt-0047"
+    },
+    {
+      "caseId": "c-gaya-0052",
+      "archetype": "decided",
+      "patientId": "pt-0048"
+    },
+    {
+      "caseId": "c-gaya-0053",
+      "archetype": "closed",
+      "patientId": "pt-0049"
+    },
+    {
+      "caseId": "c-gaya-0054",
+      "archetype": "closed",
+      "patientId": "pt-0050"
+    },
+    {
+      "caseId": "c-gaya-0055",
+      "archetype": "closed",
+      "patientId": "pt-0051"
+    },
+    {
+      "caseId": "c-gaya-0056",
+      "archetype": "closed",
+      "patientId": "pt-0052"
+    },
+    {
+      "caseId": "c-gaya-0057",
+      "archetype": "closed",
+      "patientId": "pt-0053"
+    },
+    {
+      "caseId": "c-gaya-0058",
+      "archetype": "closed",
+      "patientId": "pt-0054"
+    },
+    {
+      "caseId": "c-gaya-0059",
+      "archetype": "closed",
+      "patientId": "pt-0055"
+    },
+    {
+      "caseId": "c-gaya-0060",
+      "archetype": "closed",
+      "patientId": "pt-0056"
+    },
+    {
+      "caseId": "c-gaya-0061",
+      "archetype": "closed",
+      "patientId": "pt-0057"
+    },
+    {
+      "caseId": "c-gaya-0062",
+      "archetype": "duplicate_a_self",
+      "patientId": "pt-0058"
+    },
+    {
+      "caseId": "c-gaya-0063",
+      "archetype": "duplicate_b",
+      "patientId": "pt-0059"
+    },
+    {
+      "caseId": "c-gaya-0064",
+      "archetype": "duplicate_a",
+      "patientId": "pt-0060"
+    },
+    {
+      "caseId": "c-gaya-0065",
+      "archetype": "duplicate_b",
+      "patientId": "pt-0061"
+    },
+    {
+      "caseId": "c-gaya-0066",
+      "archetype": "duplicate_a",
+      "patientId": "pt-0062"
+    },
+    {
+      "caseId": "c-gaya-0067",
+      "archetype": "duplicate_b_linked",
+      "patientId": "pt-0063"
+    },
+    {
+      "caseId": "c-gaya-0068",
+      "archetype": "photo_original",
+      "patientId": "pt-0064"
+    },
+    {
+      "caseId": "c-gaya-0069",
+      "archetype": "blocked_reused_photo",
+      "patientId": "pt-0065"
+    },
+    {
+      "caseId": "c-gaya-0070",
+      "archetype": "self_started",
+      "patientId": "pt-0066"
+    },
+    {
+      "caseId": "c-gaya-0071",
+      "archetype": "self_started",
+      "patientId": "pt-0067"
+    },
+    {
+      "caseId": "c-gaya-0072",
+      "archetype": "self_started",
+      "patientId": "pt-0068"
+    },
+    {
+      "caseId": "c-gaya-0073",
+      "archetype": "self_started",
+      "patientId": "pt-0069"
+    },
+    {
+      "caseId": "c-gaya-0074",
+      "archetype": "self_then_asha",
+      "patientId": "pt-0070"
+    },
+    {
+      "caseId": "c-gaya-0075",
+      "archetype": "reading_unverified",
+      "patientId": "pt-0071"
+    },
+    {
+      "caseId": "c-gaya-0076",
+      "archetype": "reading_unverified",
+      "patientId": "pt-0072"
+    },
+    {
+      "caseId": "c-gaya-0077",
+      "archetype": "reading_unverified",
+      "patientId": "pt-0073"
+    },
+    {
+      "caseId": "c-gaya-0078",
+      "archetype": "draft",
+      "patientId": "pt-0074"
+    },
+    {
+      "caseId": "c-gaya-0079",
+      "archetype": "returned",
+      "patientId": "pt-0075"
+    },
+    {
+      "caseId": "c-gaya-0080",
+      "archetype": "returned",
+      "patientId": "pt-0076"
+    },
+    {
+      "caseId": "c-gaya-0081",
+      "archetype": "conflict",
+      "patientId": "pt-0077"
+    }
+  ],
+  "events": 931,
+  "status": {
+    "closed": 13,
+    "reading_unverified": 5,
+    "ready_for_review": 22,
+    "decided": 5,
+    "followup_pending": 15,
+    "in_review": 14,
+    "returned": 2,
+    "history_captured": 3,
+    "conflict": 1,
+    "draft": 1
+  },
+  "entry": {
+    "camp": 10,
+    "school": 4,
+    "asha": 56,
+    "self": 6,
+    "nurse": 1,
+    "anm": 4
+  },
+  "flags": {
+    "DUPLICATE_SUSPECT": 13,
+    "HB_BAND": 67,
+    "HMB_INDICATORS": 48,
+    "OUT_OF_SCOPE": 1,
+    "READING_UNVERIFIED": 5,
+    "HB_FALLING": 5,
+    "HB_DECIMAL_CORRECTION": 1,
+    "DANGER_SIGNS": 6,
+    "CONSENT_GUARDIAN": 3,
+    "HISTORY_CONTRADICTION": 1,
+    "HB_UNIT_SUSPECT": 3,
+    "HISTORY_MISSING": 4,
+    "READING_REUSED": 2
+  },
+  "proposals": {
+    "PATIENTS_LINKED:pending": 13,
+    "ESCALATE:pending": 5,
+    "MESSAGE_SEND:approved": 1,
+    "ESCALATE:approved": 2,
+    "MESSAGE_SEND:pending": 3,
+    "ESCALATE:rejected": 1,
+    "PATIENTS_LINKED:approved": 1
+  },
+  "archetype": {
+    "ready": 6,
+    "in_review": 12,
+    "prior_visit": 4,
+    "falling_current": 2,
+    "blocked_unit": 3,
+    "blocked_missing": 4,
+    "blocked_minor_consent": 3,
+    "followup_pending": 15,
+    "decided": 3,
+    "closed": 9,
+    "duplicate_a_self": 1,
+    "duplicate_b": 2,
+    "duplicate_a": 2,
+    "duplicate_b_linked": 1,
+    "photo_original": 1,
+    "blocked_reused_photo": 1,
+    "self_started": 4,
+    "self_then_asha": 1,
+    "reading_unverified": 3,
+    "draft": 1,
+    "returned": 2,
+    "conflict": 1
+  },
+  "overdueTasks": 6,
+  "rejected": 2,
+  "deliberateRejections": [
+    {
+      "eventId": "e_b2e708f23b22401686ec",
+      "caseId": "c-gaya-0032",
+      "type": "SUBMITTED_FOR_REVIEW",
+      "reason": "School team tried to submit a minor's case without guardian consent (CONSENT_GUARDIAN is blocking); the engine refuses."
+    },
+    {
+      "eventId": "e_9d5b0576130241840ebe",
+      "caseId": "c-gaya-0025",
+      "type": "SUBMITTED_FOR_REVIEW",
+      "reason": "Worker tried to submit with blocking HB_UNIT_SUSPECT flag; the engine refuses."
+    }
+  ],
+  "unexpectedRejections": []
+}

@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-11-10T05:28:40.306Z",
+  "seed": 42,
+  "women": 3000,
+  "visits": 12628,
+  "months": 24,
+  "miner": "femos-mine@0.1.0",
+  "thresholds": {
+    "individual": {
+      "windowDays": 365,
+      "minReadings": 3,
+      "minSpanDays": 60,
+      "maxSlopePerMonth": -0.1,
+      "horizonMonths": 6,
+      "severe": 8,
+      "dropGdl": 1.5
+    },
+    "prevalence": {
+      "baselineMonths": 9,
+      "priorWeight": 20,
+      "k": 0.5,
+      "h": 4,
+      "minN": 5
+    },
+    "followup": {
+      "deadlineDays": 30,
+      "baselineMonths": 9,
+      "priorWeight": 20,
+      "k": 0.5,
+      "h": 4,
+      "minN": 5
+    },
+    "device": {
+      "z": 4,
+      "ratio": 1.5,
+      "minN": 100
+    },
+    "process": {
+      "z": 3.5,
+      "ratio": 1.5,
+      "minN": 40
+    }
+  },
+  "patterns": {
+    "individual": {
+      "planted": 120,
+      "found": 47,
+      "missed": 73,
+      "flaggedAfterSevere": 21,
+      "falseAlarms": 50,
+      "falseAlarmsInStockoutSchools": 8,
+      "precision": 0.576,
+      "recall": 0.392,
+      "detectable": 78,
+      "recallAmongDetectable": 0.603,
+      "medianLeadDays": 130,
+      "pctFlagged30dEarly": 35,
+      "pctOfFoundFlagged30dEarly": 89.4,
+      "definitions": {
+        "found": "planted decliners first flagged BEFORE the date their true Hb crosses 8.0",
+        "precision": "flagged women who are planted decliners / all flagged women (late flags on decliners count as correct)",
+        "recall": "found / planted",
+        "detectable": "planted decliners with ≥3 readings before becoming severe and a non-severe first reading",
+        "pctFlagged30dEarly": "% of ALL planted decliners flagged ≥30 days before becoming severe",
+        "falseAlarmsInStockoutSchools": "false alarms among girls in a stock-out school flagged after the stock-out began (a real decline, but not a planted individual pattern)"
+      }
+    },
+    "school": {
+      "planted": 3,
+      "found": 2,
+      "missed": 1,
+      "falseAlarms": 1,
+      "medianDelayMonths": 7,
+      "detail": [
+        {
+          "key": "SCH14",
+          "falseAlarm": true,
+          "flaggedAt": "2026-07-31"
+        },
+        {
+          "key": "SCH16",
+          "fromMonth": "2025-11",
+          "flaggedAt": "2026-08-31",
+          "delayMonths": 9
+        },
+        {
+          "key": "SCH03",
+          "fromMonth": "2026-05",
+          "flaggedAt": "2026-10-31",
+          "delayMonths": 5
+        },
+        {
+          "key": "SCH11",
+          "fromMonth": "2025-12",
+          "missed": true
+        }
+      ]
+    },
+    "block": {
+      "planted": 1,
+      "found": 1,
+      "missed": 0,
+      "falseAlarms": 0,
+      "medianDelayMonths": 2,
+      "detail": [
+        {
+          "key": "D1-B3",
+          "fromMonth": "2026-04",
+          "flaggedAt": "2026-06-30",
+          "delayMonths": 2
+        }
+      ]
+    },
+    "device": {
+      "planted": 1,
+      "found": 1,
+      "missed": 0,
+      "falseAlarms": 0,
+      "medianDelayMonths": 0,
+      "flagged": [
+        {
+          "key": "Hemo-Lite 3",
+          "flaggedAt": "2024-11-30",
+          "truth": true
+        }
+      ]
+    },
+    "process": {
+      "planted": 1,
+      "found": 1,
+      "missed": 0,
+      "falseAlarms": 0,
+      "medianDelayMonths": 9,
+      "flagged": [
+        {
+          "key": "D1|school",
+          "flaggedAt": "2025-08-31",
+          "truth": true
+        }
+      ]
+    }
+  },
+  "village": {
+    "planted": 0,
+    "flagged": 3,
+    "explainedByStockout": 1,
+    "unexplained": 2,
+    "keys": [
+      "V19",
+      "V22",
+      "V27"
+    ]
+  },
+  "bias": {
+    "individualRecallBy": {
+      "adult_20_49": {
+        "planted": 64,
+        "found": 25,
+        "recall": 0.391,
+        "falseAlarmPer1000": 11.4
+      },
+      "district_D1": {
+        "planted": 63,
+        "found": 28,
+        "recall": 0.444,
+        "falseAlarmPer1000": 15.9
+      },
+      "adolescent_10_19": {
+        "planted": 56,
+        "found": 22,
+        "recall": 0.393,
+        "falseAlarmPer1000": 26.6
+      },
+      "district_D2": {
+        "planted": 57,
+        "found": 19,
+        "recall": 0.333,
+        "falseAlarmPer1000": 18.9
+      }
+    },
+    "note": "Recall = planted decliners flagged before severe / planted, per group. falseAlarmPer1000 = flagged non-planted women per 1000 non-planted women in the group. Small groups: read with care."
+  },
+  "method": "Explainable rules, no ML: individual = Theil–Sen trend over ≥3 readings in 12 months projecting below 8.0 g/dL within 6 months, or a ≥1.5 g/dL drop from personal max (first-reading-severe excluded); school/village = one-sided CUSUM (k=0.5, h=4) on monthly WHO-cut-off prevalence vs own shrunk 9-month baseline; block = lower CUSUM on follow-up completion of complete referral cohorts; device = two-proportion z (≥4, ratio ≥1.5) on OCR rejection vs other models; process = two-proportion z (≥3.5, ratio ≥1.5) on referral stall rate per district×touchpoint vs all others. Evaluated month by month with no access to future data.",
+  "caveat": "Synthetic data with planted patterns; not clinical evidence.",
+  "robustness": {
+    "seeds": [
+      42,
+      1,
+      2,
+      3
+    ],
+    "note": "Same fixed thresholds on independently generated datasets. mean [min–max].",
+    "summary": {
+      "individualRecall": {
+        "mean": 0.442,
+        "min": 0.392,
+        "max": 0.483
+      },
+      "individualPrecision": {
+        "mean": 0.553,
+        "min": 0.5,
+        "max": 0.576
+      },
+      "medianLeadDays": {
+        "mean": 140.5,
+        "min": 125,
+        "max": 158
+      },
+      "pctFlagged30dEarly": {
+        "mean": 40.2,
+        "min": 35,
+        "max": 43.3
+      },
+      "individualFalseAlarms": {
+        "mean": 56.5,
+        "min": 49,
+        "max": 75
+      },
+      "schoolFound": {
+        "mean": 2,
+        "min": 1,
+        "max": 3
+      },
+      "schoolFalseAlarms": {
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "schoolMedianDelayMonths": {
+        "mean": 5.5,
+        "min": 2,
+        "max": 7
+      },
+      "blockFound": {
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "blockFalseAlarms": {
+        "mean": 0.25,
+        "min": 0,
+        "max": 1
+      },
+      "blockMedianDelayMonths": {
+        "mean": 2.5,
+        "min": 2,
+        "max": 3
+      },
+      "deviceFound": {
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "deviceFalseAlarms": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "processFound": {
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "processFalseAlarms": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "perSeed": {
+      "1": {
+        "individualRecall": 0.45,
+        "individualPrecision": 0.5,
+        "medianLeadDays": 125,
+        "pctFlagged30dEarly": 41.7,
+        "individualFalseAlarms": 75,
+        "schoolFound": 1,
+        "schoolFalseAlarms": 1,
+        "schoolMedianDelayMonths": 7,
+        "blockFound": 1,
+        "blockFalseAlarms": 1,
+        "blockMedianDelayMonths": 2,
+        "deviceFound": 1,
+        "deviceFalseAlarms": 0,
+        "processFound": 1,
+        "processFalseAlarms": 0
+      },
+      "2": {
+        "individualRecall": 0.442,
+        "individualPrecision": 0.563,
+        "medianLeadDays": 149,
+        "pctFlagged30dEarly": 40.8,
+        "individualFalseAlarms": 52,
+        "schoolFound": 3,
+        "schoolFalseAlarms": 1,
+        "schoolMedianDelayMonths": 2,
+        "blockFound": 1,
+        "blockFalseAlarms": 0,
+        "blockMedianDelayMonths": 3,
+        "deviceFound": 1,
+        "deviceFalseAlarms": 0,
+        "processFound": 1,
+        "processFalseAlarms": 0
+      },
+      "3": {
+        "individualRecall": 0.483,
+        "individualPrecision": 0.574,
+        "medianLeadDays": 158,
+        "pctFlagged30dEarly": 43.3,
+        "individualFalseAlarms": 49,
+        "schoolFound": 2,
+        "schoolFalseAlarms": 1,
+        "schoolMedianDelayMonths": 6,
+        "blockFound": 1,
+        "blockFalseAlarms": 0,
+        "blockMedianDelayMonths": 3,
+        "deviceFound": 1,
+        "deviceFalseAlarms": 0,
+        "processFound": 1,
+        "processFalseAlarms": 0
+      },
+      "42": {
+        "individualRecall": 0.392,
+        "individualPrecision": 0.576,
+        "medianLeadDays": 130,
+        "pctFlagged30dEarly": 35,
+        "individualFalseAlarms": 50,
+        "schoolFound": 2,
+        "schoolFalseAlarms": 1,
+        "schoolMedianDelayMonths": 7,
+        "blockFound": 1,
+        "blockFalseAlarms": 0,
+        "blockMedianDelayMonths": 2,
+        "deviceFound": 1,
+        "deviceFalseAlarms": 0,
+        "processFound": 1,
+        "processFalseAlarms": 0
+      }
+    }
+  },
+  "runtimeMs": 3473
+}

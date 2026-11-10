@@ -1,0 +1,740 @@
+[
+ {
+  "file": "images/clean_01.png",
+  "truth": {
+   "value": 8,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Verdana)"
+ },
+ {
+  "file": "images/clean_02.png",
+  "truth": {
+   "value": 15.1,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Helvetica)"
+ },
+ {
+  "file": "images/clean_03.png",
+  "truth": {
+   "value": 12.8,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Verdana)"
+ },
+ {
+  "file": "images/clean_04.png",
+  "truth": {
+   "value": 13.8,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Arial)"
+ },
+ {
+  "file": "images/clean_05.png",
+  "truth": {
+   "value": 15.5,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Tahoma)"
+ },
+ {
+  "file": "images/clean_06.png",
+  "truth": {
+   "value": 15.6,
+   "unit": "g/dL"
+  },
+  "condition": "clean",
+  "notes": "sans (Arial)"
+ },
+ {
+  "file": "images/seven_segment_01.png",
+  "truth": {
+   "value": 8.8,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_02.png",
+  "truth": {
+   "value": 15.8,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_03.png",
+  "truth": {
+   "value": 14.5,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_04.png",
+  "truth": {
+   "value": 12,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_05.png",
+  "truth": {
+   "value": 10,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/seven_segment_06.png",
+  "truth": {
+   "value": 9.2,
+   "unit": "g/dL"
+  },
+  "condition": "seven_segment",
+  "notes": "seven-segment"
+ },
+ {
+  "file": "images/distractors_01.png",
+  "truth": {
+   "value": 13.9,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Verdana); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_02.png",
+  "truth": {
+   "value": 11.2,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Trebuchet MS); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_03.png",
+  "truth": {
+   "value": 8.4,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Arial); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_04.png",
+  "truth": {
+   "value": 13.2,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Trebuchet MS); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_05.png",
+  "truth": {
+   "value": 8.3,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Verdana); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/distractors_06.png",
+  "truth": {
+   "value": 13.7,
+   "unit": "g/dL"
+  },
+  "condition": "distractors",
+  "notes": "sans (Helvetica); time, battery %, memory slot, date on LCD; model on bezel"
+ },
+ {
+  "file": "images/low_contrast_01.png",
+  "truth": {
+   "value": 10.7,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Arial); ink 63% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_02.png",
+  "truth": {
+   "value": 8.2,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "seven-segment; ink 73% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_03.png",
+  "truth": {
+   "value": 7,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "seven-segment; ink 65% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_04.png",
+  "truth": {
+   "value": 11,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Trebuchet MS); ink 63% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_05.png",
+  "truth": {
+   "value": 14.5,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "seven-segment; ink 73% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/low_contrast_06.png",
+  "truth": {
+   "value": 7.8,
+   "unit": "g/dL"
+  },
+  "condition": "low_contrast",
+  "notes": "sans (Tahoma); ink 68% towards panel colour, global contrast 0.6"
+ },
+ {
+  "file": "images/blur_01.png",
+  "truth": {
+   "value": 12.6,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "seven-segment; gaussian blur sigma 1.9"
+ },
+ {
+  "file": "images/blur_02.png",
+  "truth": {
+   "value": 14.8,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "seven-segment; gaussian blur sigma 2.5"
+ },
+ {
+  "file": "images/blur_03.png",
+  "truth": {
+   "value": 15.8,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "seven-segment; gaussian blur sigma 1.4"
+ },
+ {
+  "file": "images/blur_04.png",
+  "truth": {
+   "value": 13.5,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Tahoma); gaussian blur sigma 1.9"
+ },
+ {
+  "file": "images/blur_05.png",
+  "truth": {
+   "value": 14.9,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Tahoma); gaussian blur sigma 2"
+ },
+ {
+  "file": "images/blur_06.png",
+  "truth": {
+   "value": 8.1,
+   "unit": "g/dL"
+  },
+  "condition": "blur",
+  "notes": "sans (Helvetica); gaussian blur sigma 1.3"
+ },
+ {
+  "file": "images/glare_01.png",
+  "truth": {
+   "value": 5,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "seven-segment; white radial glare r=198 opacity 0.83"
+ },
+ {
+  "file": "images/glare_02.png",
+  "truth": {
+   "value": 13.8,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "seven-segment; white radial glare r=118 opacity 0.77"
+ },
+ {
+  "file": "images/glare_03.png",
+  "truth": {
+   "value": 6.8,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Trebuchet MS); white radial glare r=110 opacity 0.7"
+ },
+ {
+  "file": "images/glare_04.png",
+  "truth": {
+   "value": 16.1,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Verdana); white radial glare r=184 opacity 0.88"
+ },
+ {
+  "file": "images/glare_05.png",
+  "truth": {
+   "value": 12.6,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "seven-segment; white radial glare r=111 opacity 0.83"
+ },
+ {
+  "file": "images/glare_06.png",
+  "truth": {
+   "value": 10.8,
+   "unit": "g/dL"
+  },
+  "condition": "glare",
+  "notes": "sans (Arial); white radial glare r=158 opacity 0.91"
+ },
+ {
+  "file": "images/rotation_01.png",
+  "truth": {
+   "value": 9,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Verdana); rotated 8.5°"
+ },
+ {
+  "file": "images/rotation_02.png",
+  "truth": {
+   "value": 13.9,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Arial); rotated 6.6°"
+ },
+ {
+  "file": "images/rotation_03.png",
+  "truth": {
+   "value": 12,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "sans (Helvetica); rotated 4.6°"
+ },
+ {
+  "file": "images/rotation_04.png",
+  "truth": {
+   "value": 5.7,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "seven-segment; rotated 7.1°"
+ },
+ {
+  "file": "images/rotation_05.png",
+  "truth": {
+   "value": 15.9,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "seven-segment; rotated 8°"
+ },
+ {
+  "file": "images/rotation_06.png",
+  "truth": {
+   "value": 5.9,
+   "unit": "g/dL"
+  },
+  "condition": "rotation",
+  "notes": "seven-segment; rotated 9.7°"
+ },
+ {
+  "file": "images/skew_01.png",
+  "truth": {
+   "value": 14,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "seven-segment; affine shear kx=0.23 ky=-0.03 sy=0.94 (perspective-like)"
+ },
+ {
+  "file": "images/skew_02.png",
+  "truth": {
+   "value": 16.1,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Trebuchet MS); affine shear kx=0.19 ky=-0.04 sy=0.81 (perspective-like)"
+ },
+ {
+  "file": "images/skew_03.png",
+  "truth": {
+   "value": 15.6,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Verdana); affine shear kx=0.23 ky=0.04 sy=0.92 (perspective-like)"
+ },
+ {
+  "file": "images/skew_04.png",
+  "truth": {
+   "value": 13.1,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "seven-segment; affine shear kx=-0.28 ky=-0.03 sy=0.89 (perspective-like)"
+ },
+ {
+  "file": "images/skew_05.png",
+  "truth": {
+   "value": 10.9,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Trebuchet MS); affine shear kx=-0.15 ky=0.03 sy=0.82 (perspective-like)"
+ },
+ {
+  "file": "images/skew_06.png",
+  "truth": {
+   "value": 15,
+   "unit": "g/dL"
+  },
+  "condition": "skew",
+  "notes": "sans (Trebuchet MS); affine shear kx=-0.2 ky=0.06 sy=0.86 (perspective-like)"
+ },
+ {
+  "file": "images/small_01.png",
+  "truth": {
+   "value": 14,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Verdana); downscaled to 250px wide"
+ },
+ {
+  "file": "images/small_02.png",
+  "truth": {
+   "value": 5.2,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "seven-segment; downscaled to 219px wide"
+ },
+ {
+  "file": "images/small_03.png",
+  "truth": {
+   "value": 8.2,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Arial); downscaled to 212px wide"
+ },
+ {
+  "file": "images/small_04.png",
+  "truth": {
+   "value": 13.7,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Tahoma); downscaled to 222px wide"
+ },
+ {
+  "file": "images/small_05.png",
+  "truth": {
+   "value": 11.8,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Helvetica); downscaled to 215px wide"
+ },
+ {
+  "file": "images/small_06.png",
+  "truth": {
+   "value": 7,
+   "unit": "g/dL"
+  },
+  "condition": "small",
+  "notes": "sans (Trebuchet MS); downscaled to 231px wide"
+ },
+ {
+  "file": "images/noise_01.png",
+  "truth": {
+   "value": 10.2,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "seven-segment; gaussian pixel noise sigma 21"
+ },
+ {
+  "file": "images/noise_02.png",
+  "truth": {
+   "value": 11.5,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Tahoma); gaussian pixel noise sigma 20"
+ },
+ {
+  "file": "images/noise_03.png",
+  "truth": {
+   "value": 15.2,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Verdana); gaussian pixel noise sigma 20"
+ },
+ {
+  "file": "images/noise_04.png",
+  "truth": {
+   "value": 12.5,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Arial); gaussian pixel noise sigma 22"
+ },
+ {
+  "file": "images/noise_05.png",
+  "truth": {
+   "value": 9.9,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Tahoma); gaussian pixel noise sigma 28"
+ },
+ {
+  "file": "images/noise_06.png",
+  "truth": {
+   "value": 10,
+   "unit": "g/dL"
+  },
+  "condition": "noise",
+  "notes": "sans (Trebuchet MS); gaussian pixel noise sigma 26"
+ },
+ {
+  "file": "images/g_per_L_01.png",
+  "truth": {
+   "value": 139,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Verdana); device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_02.png",
+  "truth": {
+   "value": 138,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Trebuchet MS); device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_03.png",
+  "truth": {
+   "value": 113,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_04.png",
+  "truth": {
+   "value": 111,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "seven-segment; device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_05.png",
+  "truth": {
+   "value": 156,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Helvetica); device configured to g/L"
+ },
+ {
+  "file": "images/g_per_L_06.png",
+  "truth": {
+   "value": 70,
+   "unit": "g/L"
+  },
+  "condition": "g_per_L",
+  "notes": "sans (Tahoma); device configured to g/L"
+ },
+ {
+  "file": "images/hard_decimal_01.png",
+  "truth": {
+   "value": 8.5,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point missing"
+ },
+ {
+  "file": "images/hard_decimal_02.png",
+  "truth": {
+   "value": 11,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "seven-segment; decimal point missing"
+ },
+ {
+  "file": "images/hard_decimal_03.png",
+  "truth": {
+   "value": 11.7,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Verdana); decimal point opacity 0.11"
+ },
+ {
+  "file": "images/hard_decimal_04.png",
+  "truth": {
+   "value": 16,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Tahoma); decimal point missing; blur 1.1"
+ },
+ {
+  "file": "images/hard_decimal_05.png",
+  "truth": {
+   "value": 9.7,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Verdana); decimal point missing"
+ },
+ {
+  "file": "images/hard_decimal_06.png",
+  "truth": {
+   "value": 12.3,
+   "unit": "g/dL"
+  },
+  "condition": "hard_decimal",
+  "notes": "sans (Helvetica); decimal point missing"
+ },
+ {
+  "file": "images/two_values_01.png",
+  "truth": {
+   "value": 9.6,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "seven-segment; previous reading 7.3 also shown (\"PREV 7.3 g/dL\")"
+ },
+ {
+  "file": "images/two_values_02.png",
+  "truth": {
+   "value": 13.4,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Arial); previous reading 7.7 also shown (\"Last 7.7 g/dL\")"
+ },
+ {
+  "file": "images/two_values_03.png",
+  "truth": {
+   "value": 11.9,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Helvetica); previous reading 8.7 also shown (\"8.7 g/dL\")"
+ },
+ {
+  "file": "images/two_values_04.png",
+  "truth": {
+   "value": 5.3,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Verdana); previous reading 16.1 also shown (\"16.1 g/dL\")"
+ },
+ {
+  "file": "images/two_values_05.png",
+  "truth": {
+   "value": 11.4,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "sans (Helvetica); previous reading 12.1 also shown (\"Last 12.1 g/dL\")"
+ },
+ {
+  "file": "images/two_values_06.png",
+  "truth": {
+   "value": 14.1,
+   "unit": "g/dL"
+  },
+  "condition": "two_values",
+  "notes": "seven-segment; previous reading 13.6 also shown (\"Last 13.6 g/dL\")"
+ },
+ {
+  "file": "images/no_reading_01.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "seven-segment; error/blank screen: Hi"
+ },
+ {
+  "file": "images/no_reading_02.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "seven-segment; error/blank screen: Lo"
+ },
+ {
+  "file": "images/no_reading_03.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Arial); error/blank screen: blank"
+ },
+ {
+  "file": "images/no_reading_04.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Tahoma); error/blank screen: Lo"
+ },
+ {
+  "file": "images/no_reading_05.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "seven-segment; error/blank screen: E-3"
+ },
+ {
+  "file": "images/no_reading_06.png",
+  "truth": null,
+  "condition": "no_reading",
+  "notes": "sans (Verdana); error/blank screen: Hi"
+ }
+]

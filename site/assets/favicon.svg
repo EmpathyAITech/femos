@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bg { fill: #3b1a47; }
+    .loop { stroke: #fbf7f2; }
+    @media (prefers-color-scheme: dark) { .bg { fill: #fbf7f2; } .loop { stroke: #3b1a47; } }
+  </style>
+  <rect class="bg" width="64" height="64" rx="16"/>
+  <circle class="loop" cx="32" cy="32" r="17" fill="none" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <circle cx="32" cy="15" r="6" fill="#e0526c"/>
+  <circle cx="46.7" cy="40.5" r="6" fill="#1fa392"/>
+  <circle cx="17.3" cy="40.5" r="6" fill="#e39a2a"/>
+</svg>

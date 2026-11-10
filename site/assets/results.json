@@ -1,0 +1,465 @@
+{
+ "generatedAt": "2026-11-10T07:16:43.438Z",
+ "tests": {
+  "pass": 90,
+  "fail": 0
+ },
+ "ocr": {
+  "generatedAt": "2026-11-10T06:19:04.636Z",
+  "engine": "tesseract.js 7.0.0 eng best_int",
+  "ocrParams": {
+   "tessedit_pageseg_mode": "6",
+   "tessedit_char_whitelist": null,
+   "oem": "LSTM (1)"
+  },
+  "preprocessing": "sharp/canvas: greyscale → resize to width 1200 → [preprocess.js] contrast stretch (1st–99th percentile) → Otsu threshold → display panel = largest light 4-connected region not touching the photo border and ≥4% of the area (fallback: whole photo) → crop to its bounding box → re-stretch + Otsu inside the crop → paint dark regions connected to the crop border white → two variants: A = stretched greyscale, B = Otsu black/white → resize to width 500 → pad 40px white",
+  "rule": "Each variant is parsed by core/ocr.js parseHbDisplay. Accept only if (a) both variants return status \"candidate\" with the same value (unit kept only if both read the same unit; one unit missing → unit null, worker selects; two different units → reject), or (b) exactly one variant returns \"candidate\" and the other returns \"no_reading\" (no plausible number, no decimal-less number) or \"low_confidence\" whose plausible numbers all equal the candidate value; unit then kept only if the other variant read no unit or the same unit. Anything else — different values, ambiguous/decimal_suspect/unit_conflict in either variant beside a candidate, or no candidate at all — is rejected and the worker types the reading.",
+  "images": 154,
+  "correct": 30,
+  "rejected": 124,
+  "unsafe": 0,
+  "correctRate": 0.195,
+  "unsafeRate": 0,
+  "byCondition": {
+   "clean": {
+    "n": 11,
+    "correct": 5,
+    "rejected": 6,
+    "unsafe": 0
+   },
+   "seven_segment": {
+    "n": 11,
+    "correct": 1,
+    "rejected": 10,
+    "unsafe": 0
+   },
+   "distractors": {
+    "n": 11,
+    "correct": 2,
+    "rejected": 9,
+    "unsafe": 0
+   },
+   "low_contrast": {
+    "n": 11,
+    "correct": 3,
+    "rejected": 8,
+    "unsafe": 0
+   },
+   "blur": {
+    "n": 11,
+    "correct": 6,
+    "rejected": 5,
+    "unsafe": 0
+   },
+   "glare": {
+    "n": 11,
+    "correct": 3,
+    "rejected": 8,
+    "unsafe": 0
+   },
+   "rotation": {
+    "n": 11,
+    "correct": 3,
+    "rejected": 8,
+    "unsafe": 0
+   },
+   "skew": {
+    "n": 11,
+    "correct": 2,
+    "rejected": 9,
+    "unsafe": 0
+   },
+   "small": {
+    "n": 11,
+    "correct": 3,
+    "rejected": 8,
+    "unsafe": 0
+   },
+   "noise": {
+    "n": 11,
+    "correct": 1,
+    "rejected": 10,
+    "unsafe": 0
+   },
+   "g_per_L": {
+    "n": 11,
+    "correct": 0,
+    "rejected": 11,
+    "unsafe": 0
+   },
+   "hard_decimal": {
+    "n": 11,
+    "correct": 0,
+    "rejected": 11,
+    "unsafe": 0
+   },
+   "two_values": {
+    "n": 11,
+    "correct": 1,
+    "rejected": 10,
+    "unsafe": 0
+   },
+   "no_reading": {
+    "n": 11,
+    "correct": 0,
+    "rejected": 11,
+    "unsafe": 0
+   }
+  },
+  "singleVariant": {
+   "grey": {
+    "correct": 21,
+    "rejected": 133,
+    "unsafe": 0
+   },
+   "binary": {
+    "correct": 47,
+    "rejected": 105,
+    "unsafe": 2
+   }
+  },
+  "medianMs": 81.5,
+  "totalSeconds": 17.6,
+  "dataset": "benchmarks/ocr/holdout/labels.json (synthetic, fresh seed 20261110, generated after parser v2 changes, never used for tuning)",
+  "parser": "core/ocr.js v2",
+  "unsafeExamples": [],
+  "v1": {
+   "images": 154,
+   "correct": 14,
+   "unsafe": 8,
+   "dataset": "benchmarks/ocr/labels.json (synthetic, seed 20261109)"
+  }
+ },
+ "checks": {
+  "generatedAt": "2026-11-10T05:39:02.175Z",
+  "seed": 4242,
+  "now": "2026-11-05T12:00:00.000Z",
+  "pack": "anemia-hmb@0.1.0-draft",
+  "anchorCases": 16,
+  "cases": 134,
+  "cleanCases": 52,
+  "plantedCases": 78,
+  "hardNegativeCases": 4,
+  "planted": 78,
+  "detected": 78,
+  "missed": 0,
+  "detectionRate": 1,
+  "falseAlarms": 7,
+  "falseAlarmsOnClean": 2,
+  "extraFlagsOnPlanted": 5,
+  "falseAlarmCodes": {
+   "DUPLICATE_SUSPECT": 7
+  },
+  "cleanFlagged": 2,
+  "cleanBlocked": 0,
+  "baselinePlainForm": {
+   "detected": 6,
+   "rate": 0.077,
+   "catches": [
+    "HISTORY_MISSING"
+   ]
+  },
+  "baselineValidatedForm": {
+   "detected": 24,
+   "rate": 0.308,
+   "catches": [
+    "HISTORY_MISSING",
+    "HISTORY_OUT_OF_RANGE",
+    "HB_IMPLAUSIBLE",
+    "HB_UNIT_SUSPECT"
+   ]
+  },
+  "blocking": {
+   "expectedToBlock": [
+    "HB_UNIT_SUSPECT",
+    "HB_IMPLAUSIBLE",
+    "HISTORY_MISSING",
+    "HISTORY_OUT_OF_RANGE",
+    "READING_REUSED",
+    "CONSENT_GUARDIAN",
+    "CONSENT_MISSING"
+   ],
+   "shouldBlock": 42,
+   "blocked": 42,
+   "shouldNotBlock": 36,
+   "wronglyBlocked": 0,
+   "byType": {
+    "HB_UNIT_SUSPECT": "6/6 blocked",
+    "HB_IMPLAUSIBLE": "6/6 blocked",
+    "HB_DECIMAL_CORRECTION": "0/6 blocked",
+    "HISTORY_CONTRADICTION": "0/6 blocked",
+    "HISTORY_MISSING": "6/6 blocked",
+    "HISTORY_OUT_OF_RANGE": "6/6 blocked",
+    "AGE_MISMATCH": "0/6 blocked",
+    "DUPLICATE_SUSPECT": "0/6 blocked",
+    "READING_REUSED": "6/6 blocked",
+    "READING_STALE": "0/6 blocked",
+    "CONSENT_GUARDIAN": "6/6 blocked",
+    "OUT_OF_SCOPE": "0/6 blocked",
+    "CONSENT_MISSING": "6/6 blocked"
+   }
+  },
+  "byType": {
+   "HB_UNIT_SUSPECT": {
+    "planted": 6,
+    "detected": 6
+   },
+   "HB_IMPLAUSIBLE": {
+    "planted": 6,
+    "detected": 6
+   },
+   "HB_DECIMAL_CORRECTION": {
+    "planted": 6,
+    "detected": 6
+   },
+   "HISTORY_CONTRADICTION": {
+    "planted": 6,
+    "detected": 6
+   },
+   "HISTORY_MISSING": {
+    "planted": 6,
+    "detected": 6
+   },
+   "HISTORY_OUT_OF_RANGE": {
+    "planted": 6,
+    "detected": 6
+   },
+   "AGE_MISMATCH": {
+    "planted": 6,
+    "detected": 6
+   },
+   "DUPLICATE_SUSPECT": {
+    "planted": 6,
+    "detected": 6
+   },
+   "READING_REUSED": {
+    "planted": 6,
+    "detected": 6
+   },
+   "READING_STALE": {
+    "planted": 6,
+    "detected": 6
+   },
+   "CONSENT_GUARDIAN": {
+    "planted": 6,
+    "detected": 6
+   },
+   "OUT_OF_SCOPE": {
+    "planted": 6,
+    "detected": 6
+   },
+   "CONSENT_MISSING": {
+    "planted": 6,
+    "detected": 6
+   }
+  },
+  "seconds": 0.358,
+  "identityHardNegatives": {
+   "n": 4,
+   "likely": 0,
+   "possible": 2
+  },
+  "missedExamples": [],
+  "falseAlarmExamples": [
+   {
+    "id": "clean-014",
+    "code": "DUPLICATE_SUSPECT",
+    "kind": "clean"
+   },
+   {
+    "id": "clean-043",
+    "code": "DUPLICATE_SUSPECT",
+    "kind": "clean"
+   },
+   {
+    "id": "hb_implausible-5",
+    "code": "DUPLICATE_SUSPECT",
+    "kind": "planted HB_IMPLAUSIBLE"
+   },
+   {
+    "id": "hb_decimal_correction-3",
+    "code": "DUPLICATE_SUSPECT",
+    "kind": "planted HB_DECIMAL_CORRECTION"
+   },
+   {
+    "id": "history_out_of_range-3",
+    "code": "DUPLICATE_SUSPECT",
+    "kind": "planted HISTORY_OUT_OF_RANGE"
+   },
+   {
+    "id": "reading_stale-5",
+    "code": "DUPLICATE_SUSPECT",
+    "kind": "planted READING_STALE"
+   },
+   {
+    "id": "consent_missing-5",
+    "code": "DUPLICATE_SUSPECT",
+    "kind": "planted CONSENT_MISSING"
+   }
+  ]
+ },
+ "learning": {
+  "generatedAt": "2026-11-10T05:28:40.306Z",
+  "women": 3000,
+  "visits": 12628,
+  "months": 24,
+  "miner": "femos-mine@0.1.0",
+  "patterns": {
+   "individual": {
+    "planted": 120,
+    "found": 47,
+    "missed": 73,
+    "flaggedAfterSevere": 21,
+    "falseAlarms": 50,
+    "falseAlarmsInStockoutSchools": 8,
+    "precision": 0.576,
+    "recall": 0.392,
+    "detectable": 78,
+    "recallAmongDetectable": 0.603,
+    "medianLeadDays": 130,
+    "pctFlagged30dEarly": 35,
+    "pctOfFoundFlagged30dEarly": 89.4
+   },
+   "school": {
+    "planted": 3,
+    "found": 2,
+    "missed": 1,
+    "falseAlarms": 1,
+    "medianDelayMonths": 7
+   },
+   "block": {
+    "planted": 1,
+    "found": 1,
+    "missed": 0,
+    "falseAlarms": 0,
+    "medianDelayMonths": 2
+   },
+   "device": {
+    "planted": 1,
+    "found": 1,
+    "missed": 0,
+    "falseAlarms": 0,
+    "medianDelayMonths": 0
+   },
+   "process": {
+    "planted": 1,
+    "found": 1,
+    "missed": 0,
+    "falseAlarms": 0,
+    "medianDelayMonths": 9
+   }
+  },
+  "robustness": {
+   "individualRecall": {
+    "mean": 0.442,
+    "min": 0.392,
+    "max": 0.483
+   },
+   "individualPrecision": {
+    "mean": 0.553,
+    "min": 0.5,
+    "max": 0.576
+   },
+   "medianLeadDays": {
+    "mean": 140.5,
+    "min": 125,
+    "max": 158
+   },
+   "pctFlagged30dEarly": {
+    "mean": 40.2,
+    "min": 35,
+    "max": 43.3
+   },
+   "individualFalseAlarms": {
+    "mean": 56.5,
+    "min": 49,
+    "max": 75
+   },
+   "schoolFound": {
+    "mean": 2,
+    "min": 1,
+    "max": 3
+   },
+   "schoolFalseAlarms": {
+    "mean": 1,
+    "min": 1,
+    "max": 1
+   },
+   "schoolMedianDelayMonths": {
+    "mean": 5.5,
+    "min": 2,
+    "max": 7
+   },
+   "blockFound": {
+    "mean": 1,
+    "min": 1,
+    "max": 1
+   },
+   "blockFalseAlarms": {
+    "mean": 0.25,
+    "min": 0,
+    "max": 1
+   },
+   "blockMedianDelayMonths": {
+    "mean": 2.5,
+    "min": 2,
+    "max": 3
+   },
+   "deviceFound": {
+    "mean": 1,
+    "min": 1,
+    "max": 1
+   },
+   "deviceFalseAlarms": {
+    "mean": 0,
+    "min": 0,
+    "max": 0
+   },
+   "processFound": {
+    "mean": 1,
+    "min": 1,
+    "max": 1
+   },
+   "processFalseAlarms": {
+    "mean": 0,
+    "min": 0,
+    "max": 0
+   }
+  },
+  "method": "Explainable rules, no ML: individual = Theil–Sen trend over ≥3 readings in 12 months projecting below 8.0 g/dL within 6 months, or a ≥1.5 g/dL drop from personal max (first-reading-severe excluded); school/village = one-sided CUSUM (k=0.5, h=4) on monthly WHO-cut-off prevalence vs own shrunk 9-month baseline; block = lower CUSUM on follow-up completion of complete referral cohorts; device = two-proportion z (≥4, ratio ≥1.5) on OCR rejection vs other models; process = two-proportion z (≥3.5, ratio ≥1.5) on referral stall rate per district×touchpoint vs all others. Evaluated month by month with no access to future data.",
+  "caveat": "Synthetic data with planted patterns; not clinical evidence."
+ },
+ "fhir": {
+  "bundles": 81,
+  "resources": 425,
+  "valid": 425,
+  "invalid": 0,
+  "byType": {
+   "Patient": {
+    "n": 81,
+    "valid": 81
+   },
+   "Encounter": {
+    "n": 81,
+    "valid": 81
+   },
+   "Observation": {
+    "n": 73,
+    "valid": 73
+   },
+   "QuestionnaireResponse": {
+    "n": 80,
+    "valid": 80
+   },
+   "Provenance": {
+    "n": 81,
+    "valid": 81
+   },
+   "Task": {
+    "n": 29,
+    "valid": 29
+   }
+  },
+  "scope": "structure and datatypes; terminology and invariants not checked"
+ }
+}

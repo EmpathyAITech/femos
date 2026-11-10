@@ -1,0 +1,14 @@
+# DigitalOcean App Platform spec: static site only (free tier). The public site hosts the
+# website plus the field app and console in standalone demo mode with synthetic data.
+# Connectors, server-side agents and the LLM need the Node server (see docs/DEPLOY.md).
+name: femos
+static_sites:
+  - name: femos-site
+    github:
+      repo: EmpathyAITech/femos
+      branch: main
+      deploy_on_push: true
+    build_command: npm ci && npm run build:static
+    output_dir: public
+    environment_slug: node-js
+    catchall_document: index.html

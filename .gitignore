@@ -1,0 +1,12 @@
+node_modules/
+public/
+data/events.jsonl
+data/outbox/
+data/*.local.*
+.env
+.env.*
+.DS_Store
+*.traineddata
+benchmarks/ocr/last-run.json
+benchmarks/ocr/holdout/last-run.json
+docs/screenshots/_e2e-display.png

@@ -1,0 +1,109 @@
+/* FEMOS design tokens: shared by the field app, clinician console and website.
+   Palette: aubergine ink, rose (primary action), saffron (attention), teal (verified/safe),
+   on warm paper. Every pair used for text meets WCAG AA in both themes. */
+:root {
+  --paper: #fbf7f2;
+  --paper-2: #f4ede4;
+  --card: #ffffff;
+  --ink: #241128;
+  --ink-2: #4a3a4f;
+  --ink-3: #7a6c7e;
+  --line: #e7ddd2;
+  --line-2: #d6c8ba;
+
+  --rose: #c2334f;
+  --rose-ink: #ffffff;
+  --rose-soft: #fbe7ea;
+  --plum: #3b1a47;
+  --plum-soft: #efe6f3;
+  --saffron: #b86e00;
+  --saffron-soft: #fdf0d8;
+  --teal: #13756a;
+  --teal-soft: #dcf1ed;
+  --red: #b3261e;
+  --red-soft: #fde4e1;
+  --blue: #2457a6;
+  --blue-soft: #e3ecfa;
+
+  --urgent: var(--red);
+  --urgent-soft: var(--red-soft);
+  --warn: var(--saffron);
+  --warn-soft: var(--saffron-soft);
+  --ok: var(--teal);
+  --ok-soft: var(--teal-soft);
+  --info: var(--blue);
+  --info-soft: var(--blue-soft);
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --radius-lg: 22px;
+  --shadow: 0 1px 2px rgba(36, 17, 40, 0.06), 0 6px 24px rgba(36, 17, 40, 0.07);
+  --shadow-lg: 0 2px 6px rgba(36, 17, 40, 0.08), 0 24px 60px rgba(36, 17, 40, 0.14);
+  --font: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Bengali', sans-serif;
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #160b19;
+    --paper-2: #1f1123;
+    --card: #24152a;
+    --ink: #f6eef8;
+    --ink-2: #d4c6d8;
+    --ink-3: #a594aa;
+    --line: #3a2741;
+    --line-2: #4c3655;
+    --rose: #f0657f;
+    --rose-ink: #2a0610;
+    --rose-soft: #3d1621;
+    --plum: #d9b8e6;
+    --plum-soft: #2e1a36;
+    --saffron: #f2b14a;
+    --saffron-soft: #3a2a0e;
+    --teal: #4fd1bf;
+    --teal-soft: #0f302c;
+    --red: #ff8a80;
+    --red-soft: #3d1512;
+    --blue: #8fb4f5;
+    --blue-soft: #15233d;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 24px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.5), 0 24px 60px rgba(0, 0, 0, 0.5);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --paper: #160b19;
+  --paper-2: #1f1123;
+  --card: #24152a;
+  --ink: #f6eef8;
+  --ink-2: #d4c6d8;
+  --ink-3: #a594aa;
+  --line: #3a2741;
+  --line-2: #4c3655;
+  --rose: #f0657f;
+  --rose-ink: #2a0610;
+  --rose-soft: #3d1621;
+  --plum: #d9b8e6;
+  --plum-soft: #2e1a36;
+  --saffron: #f2b14a;
+  --saffron-soft: #3a2a0e;
+  --teal: #4fd1bf;
+  --teal-soft: #0f302c;
+  --red: #ff8a80;
+  --red-soft: #3d1512;
+  --blue: #8fb4f5;
+  --blue-soft: #15233d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.5), 0 24px 60px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.5 var(--font); -webkit-font-smoothing: antialiased; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--rose); outline-offset: 2px; border-radius: 6px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }

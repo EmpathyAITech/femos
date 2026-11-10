@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#3b1a47">
+  <meta name="description" content="FEMOS Field: offline capture, verification and follow-up for last-mile women's healthcare. Engineering prototype, synthetic data only.">
+  <title>FEMOS Field</title>
+  <link rel="manifest" href="/app/manifest.webmanifest">
+  <link rel="icon" href="/app/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/core/ui/tokens.css">
+  <link rel="stylesheet" href="/app/app.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="#/" aria-label="FEMOS home">
+      <img src="/app/icon.svg" alt="" width="28" height="28">
+      <span>FEMOS</span>
+    </a>
+    <div class="bar-right">
+      <button id="sync" class="pill" type="button" aria-live="polite">…</button>
+      <select id="lang" class="pill pill-lang" aria-label="Language / भाषा / ভাষা / भाषा / மொழி"></select>
+      <button id="who" class="avatar" type="button" aria-label="Switch user"></button>
+    </div>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>FEMOS Field needs JavaScript.</noscript>
+  <script type="module" src="/app/app.js"></script>
+</body>
+</html>

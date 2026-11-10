@@ -1,0 +1,35 @@
+{
+  "name": "femos",
+  "version": "0.1.0",
+  "description": "FEMOS: open-source, offline-first agentic layer for last-mile women's healthcare (engineering prototype, not for clinical use)",
+  "type": "module",
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js",
+    "vendor": "node scripts/vendor.js",
+    "synth": "node learning/synth.js",
+    "learn": "node learning/evaluate.js",
+    "seed": "node learning/seed-demo.js",
+    "bench:ocr": "node benchmarks/ocr/run.js",
+    "bench:checks": "node benchmarks/checks/run.js",
+    "results": "node scripts/results.js",
+    "bench:fhir": "node benchmarks/fhir/validate.js",
+    "e2e": "node scripts/e2e.js && node scripts/e2e-console.js && node scripts/e2e-langs.js",
+    "build:static": "node scripts/i18n-pack.js && node scripts/build-static.js",
+    "i18n:pack": "node scripts/i18n-pack.js --check"
+  },
+  "dependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "puppeteer-core": "^25.16.0",
+    "sharp": "^0.35.5"
+  }
+}

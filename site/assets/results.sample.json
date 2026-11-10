@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-11-09T10:30:00Z",
+  "tests": { "pass": 412, "fail": 0 },
+  "ocr": {
+    "images": 600, "correct": 561, "rejected": 39, "unsafe": 0,
+    "byCondition": {
+      "clean": { "n": 200, "correct": 198, "rejected": 2, "unsafe": 0 },
+      "glare": { "n": 100, "correct": 88, "rejected": 12, "unsafe": 0 },
+      "blur": { "n": 100, "correct": 86, "rejected": 14, "unsafe": 0 },
+      "low_light": { "n": 100, "correct": 93, "rejected": 7, "unsafe": 0 },
+      "tilted": { "n": 100, "correct": 96, "rejected": 4, "unsafe": 0 }
+    }
+  },
+  "checks": {
+    "cases": 500, "planted": 240, "detected": 236, "falseAlarms": 6, "cleanCases": 260, "cleanFlagged": 5,
+    "byType": {
+      "decimal_shift": { "planted": 40, "detected": 40 },
+      "unit_mismatch": { "planted": 40, "detected": 40 },
+      "duplicate_cross_script": { "planted": 40, "detected": 38 },
+      "reused_photo": { "planted": 40, "detected": 40 },
+      "consent_gap": { "planted": 40, "detected": 40 },
+      "contradiction": { "planted": 40, "detected": 38 }
+    }
+  },
+  "learning": {
+    "women": 2000, "visits": 11840,
+    "patterns": {
+      "individual": { "planted": 60, "found": 57, "falseAlarms": 4, "medianLeadDays": 41 },
+      "community": { "planted": 8, "found": 7, "falseAlarms": 1, "medianLeadDays": 23 },
+      "programme": { "planted": 4, "found": 4, "falseAlarms": 0, "medianLeadDays": 18 },
+      "process": { "planted": 6, "found": 6, "falseAlarms": 1 },
+      "data_quality": { "planted": 3, "found": 3, "falseAlarms": 0 }
+    }
+  }
+}

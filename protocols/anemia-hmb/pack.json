@@ -1,0 +1,588 @@
+{
+  "id": "anemia-hmb",
+  "version": "0.1.0-draft",
+  "status": "draft-pending-clinical-review",
+  "title": {
+    "en": "Anemia and heavy menstrual bleeding: community screening, review and follow-up",
+    "hi": "एनीमिया और अधिक मासिक रक्तस्राव: सामुदायिक जाँच, समीक्षा और फ़ॉलो-अप",
+    "bn": "রক্তাল্পতা ও মাসিকে বেশি রক্তপাত: সমাজে পরীক্ষা, পর্যালোচনা ও ফলো-আপ",
+    "mr": "ॲनिमिया आणि मासिक पाळीत जास्त रक्तस्राव: समुदाय पातळीवर तपासणी, आढावा आणि पाठपुरावा",
+    "ta": "ரத்தசோகையும் அதிக மாதவிடாய் ரத்தப்போக்கும்: சமூகப் பரிசோதனை, பரிசீலனை மற்றும் பின்தொடர்வு"
+  },
+  "disclaimer": "Prototype protocol pack encoded from published documents by the FEMOS engineering team. It has NOT been reviewed or approved by a clinician and must not be used for patient care.",
+  "jurisdiction": {
+    "country": "IN",
+    "level": "national-reference",
+    "authority": "To be confirmed by state/district programme"
+  },
+  "effective": {
+    "from": null,
+    "to": null
+  },
+  "precedence": [
+    "state",
+    "national",
+    "who"
+  ],
+  "sources": [
+    {
+      "id": "who-hb-2024",
+      "level": "who",
+      "title": "WHO guideline on haemoglobin cutoffs to define anaemia in individuals and populations (2024)",
+      "url": "https://www.who.int/publications/i/item/9789240088542",
+      "note": "Cut-offs at sea level; altitude and smoking adjustments are NOT applied in this draft."
+    },
+    {
+      "id": "amb",
+      "level": "national",
+      "title": "Anemia Mukt Bharat (Test, Treat, Talk), Ministry of Health and Family Welfare, India",
+      "url": "https://anemiamuktbharat.info/",
+      "note": "Programme context for screening and IFA supplementation. Treatment content is shown to clinicians only and not encoded as automated advice."
+    },
+    {
+      "id": "nice-ng88",
+      "level": "reference",
+      "title": "NICE NG88: Heavy menstrual bleeding: assessment and management",
+      "url": "https://www.nice.org.uk/guidance/ng88",
+      "note": "Basis for symptom-based (not measured blood loss) HMB questions."
+    },
+    {
+      "id": "dpdp-2023",
+      "level": "national",
+      "title": "Digital Personal Data Protection Act, 2023 (India)",
+      "url": "https://www.meity.gov.in/data-protection-framework",
+      "note": "Verifiable guardian consent for children (under 18)."
+    },
+    {
+      "id": "femos-ops",
+      "level": "operational",
+      "title": "FEMOS draft operational rules (follow-up windows, trend flags)",
+      "url": null,
+      "note": "Engineering defaults for the prototype. Each must be set by the implementing programme."
+    }
+  ],
+  "scope": {
+    "sex": "female",
+    "ageYears": {
+      "min": 10,
+      "max": 49
+    },
+    "excludes": [
+      {
+        "field": "pregnant",
+        "equals": "yes",
+        "route": "anc",
+        "message": {
+          "en": "Pregnancy is outside this pack. Route to the antenatal care pathway.",
+          "hi": "गर्भावस्था इस प्रोटोकॉल में शामिल नहीं है। प्रसवपूर्व देखभाल मार्ग पर भेजें।",
+          "bn": "গর্ভাবস্থা এই প্যাকের বাইরে। প্রসবপূর্ব যত্নের পথে পাঠান।",
+          "mr": "गरोदरपण या प्रोटोकॉलमध्ये येत नाही. प्रसूतीपूर्व काळजीच्या मार्गावर पाठवा.",
+          "ta": "கர்ப்பம் இந்தத் தொகுப்பில் அடங்காது. கர்ப்பகாலப் பராமரிப்பு வழிக்கு அனுப்பவும்."
+        }
+      }
+    ]
+  },
+  "measurements": {
+    "hb": {
+      "label": {
+        "en": "Haemoglobin",
+        "hi": "हीमोग्लोबिन",
+        "bn": "হিমোগ্লোবিন",
+        "mr": "हिमोग्लोबिन",
+        "ta": "ஹீமோகுளோபின்"
+      },
+      "loinc": {
+        "code": "718-7",
+        "display": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "unit": "g/dL",
+      "ucum": "g/dL",
+      "acceptedUnits": {
+        "g/dL": 1,
+        "g/L": 0.1,
+        "mmol/L": 1.611
+      },
+      "plausible": {
+        "min": 3,
+        "max": 20
+      },
+      "decimals": 1,
+      "classification": {
+        "source": "who-hb-2024",
+        "bands": [
+          {
+            "ageYears": [
+              10,
+              11
+            ],
+            "severe": 8,
+            "moderate": 11,
+            "mild": 11.5
+          },
+          {
+            "ageYears": [
+              12,
+              49
+            ],
+            "severe": 8,
+            "moderate": 11,
+            "mild": 12
+          }
+        ],
+        "explain": "value < severe → severe; < moderate → moderate; < mild → mild; otherwise no anaemia"
+      }
+    }
+  },
+  "questionnaire": {
+    "id": "anemia-hmb-history",
+    "items": [
+      {
+        "linkId": "ageYears",
+        "type": "integer",
+        "required": true,
+        "min": 5,
+        "max": 80,
+        "text": {
+          "en": "Age (years)",
+          "hi": "उम्र (वर्ष)",
+          "bn": "বয়স (বছর)",
+          "mr": "वय (वर्षे)",
+          "ta": "வயது (ஆண்டுகள்)"
+        }
+      },
+      {
+        "linkId": "pregnant",
+        "type": "choice",
+        "options": [
+          "yes",
+          "no",
+          "unknown"
+        ],
+        "required": true,
+        "text": {
+          "en": "Currently pregnant?",
+          "hi": "क्या अभी गर्भवती हैं?",
+          "bn": "এখন কি গর্ভবতী?",
+          "mr": "सध्या गरोदर आहे का?",
+          "ta": "தற்போது கர்ப்பமாக உள்ளாரா?"
+        }
+      },
+      {
+        "linkId": "periodDays",
+        "type": "integer",
+        "required": true,
+        "min": 0,
+        "max": 30,
+        "text": {
+          "en": "How many days does your period usually last?",
+          "hi": "माहवारी आमतौर पर कितने दिन चलती है?",
+          "bn": "সাধারণত আপনার মাসিক কত দিন চলে?",
+          "mr": "तुमची पाळी साधारणपणे किती दिवस चालते?",
+          "ta": "உங்கள் மாதவிடாய் வழக்கமாக எத்தனை நாட்கள் இருக்கும்?"
+        }
+      },
+      {
+        "linkId": "padsPerDay",
+        "type": "integer",
+        "required": true,
+        "min": 0,
+        "max": 40,
+        "text": {
+          "en": "Pads or cloths used on the heaviest day",
+          "hi": "सबसे ज़्यादा रक्तस्राव वाले दिन कितने पैड या कपड़े लगते हैं?",
+          "bn": "সবচেয়ে বেশি রক্তপাতের দিনে কটা প্যাড বা কাপড় লাগে",
+          "mr": "सर्वात जास्त रक्तस्रावाच्या दिवशी किती पॅड किंवा कापड लागतात",
+          "ta": "அதிகப் போக்கு உள்ள நாளில் பயன்படுத்தும் பேட் அல்லது துணிகள்"
+        }
+      },
+      {
+        "linkId": "soakingHourly",
+        "type": "boolean",
+        "required": false,
+        "text": {
+          "en": "Soaks through a pad or cloth every 1–2 hours?",
+          "hi": "क्या हर 1–2 घंटे में पैड या कपड़ा पूरा भीग जाता है?",
+          "bn": "প্রতি 1–2 ঘণ্টায় প্যাড বা কাপড় ভিজে যায়?",
+          "mr": "दर 1–2 तासांनी पॅड किंवा कापड पूर्ण भिजते का?",
+          "ta": "ஒவ்வொரு 1–2 மணி நேரத்திலும் பேட் அல்லது துணி முழுதும் நனைகிறதா?"
+        }
+      },
+      {
+        "linkId": "clots",
+        "type": "boolean",
+        "required": false,
+        "text": {
+          "en": "Clots larger than a ₹5 coin?",
+          "hi": "क्या ₹5 के सिक्के से बड़े थक्के आते हैं?",
+          "bn": "₹5 কয়েনের চেয়ে বড় চাকা চাকা রক্ত?",
+          "mr": "₹5 च्या नाण्यापेक्षा मोठ्या रक्ताच्या गाठी पडतात का?",
+          "ta": "₹5 நாணயத்தை விடப் பெரிய ரத்தக் கட்டிகள் வருகிறதா?"
+        }
+      },
+      {
+        "linkId": "flooding",
+        "type": "boolean",
+        "required": false,
+        "text": {
+          "en": "Leaks onto clothes or bedding?",
+          "hi": "क्या कपड़ों या बिस्तर पर दाग लग जाता है?",
+          "bn": "জামাকাপড় বা বিছানায় রক্ত লেগে যায়?",
+          "mr": "कपड्यांवर किंवा अंथरुणावर डाग लागतात का?",
+          "ta": "உடையிலோ படுக்கையிலோ கசிகிறதா?"
+        }
+      },
+      {
+        "linkId": "heavyBleeding",
+        "type": "boolean",
+        "required": true,
+        "text": {
+          "en": "Does she feel her bleeding is heavy?",
+          "hi": "क्या उन्हें लगता है कि रक्तस्राव ज़्यादा होता है?",
+          "bn": "তাঁর কি মনে হয় রক্তপাত বেশি হয়?",
+          "mr": "तिला आपला रक्तस्राव जास्त आहे असे वाटते का?",
+          "ta": "தனக்கு ரத்தப்போக்கு அதிகம் என்று அவர் உணர்கிறாரா?"
+        }
+      },
+      {
+        "linkId": "fatigue",
+        "type": "boolean",
+        "required": false,
+        "text": {
+          "en": "Tired or weak most days?",
+          "hi": "ज़्यादातर दिन थकान या कमज़ोरी?",
+          "bn": "বেশিরভাগ দিন ক্লান্ত বা দুর্বল লাগে?",
+          "mr": "बहुतेक दिवस थकवा किंवा अशक्तपणा जाणवतो का?",
+          "ta": "பெரும்பாலான நாட்களில் சோர்வாக அல்லது பலவீனமாக உணர்கிறாரா?"
+        }
+      },
+      {
+        "linkId": "dizziness",
+        "type": "boolean",
+        "required": true,
+        "text": {
+          "en": "Dizziness?",
+          "hi": "चक्कर आते हैं?",
+          "bn": "মাথা ঘোরে?",
+          "mr": "चक्कर येते का?",
+          "ta": "தலைசுற்றல் உள்ளதா?"
+        }
+      },
+      {
+        "linkId": "breathless",
+        "type": "boolean",
+        "required": true,
+        "text": {
+          "en": "Breathless at rest or with light activity?",
+          "hi": "आराम करते या हल्का काम करते समय साँस फूलती है?",
+          "bn": "বিশ্রামে বা হালকা কাজে শ্বাসকষ্ট হয়?",
+          "mr": "आराम करताना किंवा हलके काम करताना दम लागतो का?",
+          "ta": "ஓய்விலோ லேசான வேலையிலோ மூச்சுத் திணறுகிறதா?"
+        }
+      },
+      {
+        "linkId": "fainting",
+        "type": "boolean",
+        "required": true,
+        "text": {
+          "en": "Fainted recently?",
+          "hi": "हाल में बेहोश हुई हैं?",
+          "bn": "সম্প্রতি অজ্ঞান হয়েছেন?",
+          "mr": "अलीकडे भोवळ येऊन बेशुद्ध झाली होती का?",
+          "ta": "சமீபத்தில் மயங்கி விழுந்தாரா?"
+        }
+      },
+      {
+        "linkId": "ifaLastMonth",
+        "type": "boolean",
+        "required": false,
+        "text": {
+          "en": "Took iron-folic acid tablets in the last month?",
+          "hi": "पिछले महीने आयरन-फ़ोलिक एसिड की गोली ली?",
+          "bn": "গত মাসে আয়রন-ফলিক অ্যাসিড ট্যাবলেট খেয়েছেন?",
+          "mr": "मागच्या महिन्यात लोह-फॉलिक ॲसिडच्या (IFA) गोळ्या घेतल्या का?",
+          "ta": "கடந்த மாதம் இரும்புச்சத்து-ஃபோலிக் அமில (IFA) மாத்திரைகள் எடுத்தாரா?"
+        }
+      },
+      {
+        "linkId": "dewormedLastYear",
+        "type": "choice",
+        "options": [
+          "yes",
+          "no",
+          "unknown"
+        ],
+        "required": false,
+        "text": {
+          "en": "Deworming tablet in the last year?",
+          "hi": "पिछले साल पेट के कीड़ों की दवा ली?",
+          "bn": "গত বছরে কৃমির ট্যাবলেট খেয়েছেন?",
+          "mr": "मागच्या वर्षी जंतनाशक गोळी घेतली का?",
+          "ta": "கடந்த ஆண்டு குடற்புழு நீக்க மாத்திரை எடுத்தாரா?"
+        }
+      },
+      {
+        "linkId": "symptomDays",
+        "type": "integer",
+        "required": false,
+        "min": 0,
+        "max": 3650,
+        "text": {
+          "en": "For how many days have symptoms been present?",
+          "hi": "लक्षण कितने दिनों से हैं?",
+          "bn": "কত দিন ধরে উপসর্গগুলি আছে?",
+          "mr": "लक्षणे किती दिवसांपासून आहेत?",
+          "ta": "எத்தனை நாட்களாக அறிகுறிகள் உள்ளன?"
+        }
+      }
+    ]
+  },
+  "rules": {
+    "hmbIndicators": {
+      "source": "nice-ng88",
+      "status": "draft-operational",
+      "any": [
+        {
+          "field": "periodDays",
+          "gt": 7,
+          "label": {
+            "en": "Period lasts more than 7 days",
+            "hi": "माहवारी 7 दिन से ज़्यादा",
+            "bn": "মাসিক 7 দিনের বেশি চলে",
+            "mr": "पाळी 7 दिवसांपेक्षा जास्त चालते",
+            "ta": "மாதவிடாய் 7 நாட்களுக்கு மேல் நீடிக்கிறது"
+          }
+        },
+        {
+          "field": "soakingHourly",
+          "equals": true,
+          "label": {
+            "en": "Soaks through every 1–2 hours",
+            "hi": "हर 1–2 घंटे में भीग जाता है",
+            "bn": "প্রতি 1–2 ঘণ্টায় ভিজে যায়",
+            "mr": "दर 1–2 तासांनी पूर्ण भिजते",
+            "ta": "ஒவ்வொரு 1–2 மணி நேரத்திலும் முழுதும் நனைகிறது"
+          }
+        },
+        {
+          "field": "clots",
+          "equals": true,
+          "label": {
+            "en": "Large clots",
+            "hi": "बड़े थक्के",
+            "bn": "বড় চাকা চাকা রক্ত",
+            "mr": "रक्ताच्या मोठ्या गाठी",
+            "ta": "பெரிய ரத்தக் கட்டிகள்"
+          }
+        },
+        {
+          "field": "flooding",
+          "equals": true,
+          "label": {
+            "en": "Flooding onto clothes/bedding",
+            "hi": "कपड़ों/बिस्तर पर दाग",
+            "bn": "জামাকাপড়/বিছানায় রক্ত লেগে যায়",
+            "mr": "कपड्यांवर/अंथरुणावर डाग",
+            "ta": "உடை/படுக்கையில் கசிவு"
+          }
+        },
+        {
+          "field": "padsPerDay",
+          "gte": 6,
+          "label": {
+            "en": "6 or more pads/cloths on heaviest day",
+            "hi": "सबसे भारी दिन 6 या ज़्यादा पैड/कपड़े",
+            "bn": "সবচেয়ে বেশি রক্তপাতের দিনে 6 বা তার বেশি প্যাড/কাপড়",
+            "mr": "सर्वात जास्त रक्तस्रावाच्या दिवशी 6 किंवा जास्त पॅड/कापड",
+            "ta": "அதிகப் போக்கு நாளில் 6 அல்லது அதற்கு மேற்பட்ட பேட்/துணிகள்"
+          }
+        }
+      ]
+    },
+    "dangerSigns": {
+      "source": "femos-ops",
+      "status": "draft-operational",
+      "action": "urgent_review",
+      "any": [
+        {
+          "field": "fainting",
+          "equals": true,
+          "label": {
+            "en": "Recent fainting",
+            "hi": "हाल में बेहोशी",
+            "bn": "সম্প্রতি অজ্ঞান হয়েছেন",
+            "mr": "अलीकडे बेशुद्ध होणे",
+            "ta": "சமீபத்தில் மயங்கி விழுதல்"
+          }
+        },
+        {
+          "field": "breathless",
+          "equals": true,
+          "label": {
+            "en": "Breathless at rest or light activity",
+            "hi": "आराम में साँस फूलना",
+            "bn": "বিশ্রামে বা হালকা কাজে শ্বাসকষ্ট",
+            "mr": "आराम करताना किंवा हलक्या कामात दम लागणे",
+            "ta": "ஓய்விலோ லேசான வேலையிலோ மூச்சுத் திணறல்"
+          }
+        },
+        {
+          "all": [
+            {
+              "field": "soakingHourly",
+              "equals": true
+            },
+            {
+              "field": "dizziness",
+              "equals": true
+            }
+          ],
+          "label": {
+            "en": "Soaking every 1–2 hours with dizziness",
+            "hi": "हर 1–2 घंटे भीगना और चक्कर",
+            "bn": "প্রতি 1–2 ঘণ্টায় ভিজে যায়, সঙ্গে মাথা ঘোরা",
+            "mr": "दर 1–2 तासांनी भिजणे आणि चक्कर येणे",
+            "ta": "தலைசுற்றலுடன் ஒவ்வொரு 1–2 மணி நேரத்திலும் நனைதல்"
+          }
+        },
+        {
+          "hbClass": "severe",
+          "label": {
+            "en": "Haemoglobin in WHO severe range",
+            "hi": "हीमोग्लोबिन WHO गंभीर सीमा में",
+            "bn": "হিমোগ্লোবিন WHO-র গুরুতর স্তরে",
+            "mr": "हिमोग्लोबिन WHO च्या गंभीर श्रेणीत",
+            "ta": "ஹீமோகுளோபின் WHO கடுமையான வரம்பில்"
+          }
+        }
+      ]
+    },
+    "contradictions": {
+      "source": "femos-ops",
+      "list": [
+        {
+          "id": "hmb-denied-but-indicators",
+          "when": {
+            "field": "heavyBleeding",
+            "equals": false
+          },
+          "andAnyHmbIndicator": true,
+          "label": {
+            "en": "Says bleeding is not heavy, but answers indicate heavy bleeding",
+            "hi": "कहती हैं रक्तस्राव ज़्यादा नहीं, पर जवाब ज़्यादा रक्तस्राव दिखाते हैं",
+            "bn": "বলছেন রক্তপাত বেশি নয়, কিন্তু উত্তরগুলি বেশি রক্তপাতের দিকে ইঙ্গিত করে",
+            "mr": "रक्तस्राव जास्त नाही असे म्हणते, पण उत्तरांवरून जास्त रक्तस्राव दिसतो",
+            "ta": "ரத்தப்போக்கு அதிகமில்லை என்கிறார், ஆனால் பதில்கள் அதிக ரத்தப்போக்கைக் காட்டுகின்றன"
+          }
+        },
+        {
+          "id": "zero-period-but-pads",
+          "when": {
+            "field": "periodDays",
+            "equals": 0
+          },
+          "and": {
+            "field": "padsPerDay",
+            "gt": 0
+          },
+          "label": {
+            "en": "Period length 0 days, but pads used",
+            "hi": "माहवारी 0 दिन, पर पैड इस्तेमाल",
+            "bn": "মাসিকের সময় 0 দিন, কিন্তু প্যাড ব্যবহার হয়েছে",
+            "mr": "पाळीचे दिवस 0, पण पॅड वापरले",
+            "ta": "மாதவிடாய் நாட்கள் 0, ஆனால் பேட் பயன்படுத்தப்பட்டுள்ளது"
+          }
+        }
+      ]
+    },
+    "trend": {
+      "source": "femos-ops",
+      "status": "draft-operational",
+      "windowDays": 180,
+      "minReadings": 2,
+      "dropGdl": 1,
+      "label": {
+        "en": "Haemoglobin falling across visits",
+        "hi": "हर जाँच में हीमोग्लोबिन घट रहा है",
+        "bn": "ভিজিটের সঙ্গে সঙ্গে হিমোগ্লোবিন কমছে",
+        "mr": "भेटींमध्ये हिमोग्लोबिन कमी होत आहे",
+        "ta": "வருகைகளுக்கு இடையே ஹீமோகுளோபின் குறைகிறது"
+      }
+    },
+    "followUp": {
+      "source": "femos-ops",
+      "status": "draft-operational",
+      "defaultDaysByDecision": {
+        "refer": 7,
+        "manage_locally": 30,
+        "close": null
+      },
+      "lostAfterDays": 30,
+      "escalationChain": [
+        "asha",
+        "anm",
+        "medical_officer"
+      ]
+    },
+    "readingFreshnessHours": 24
+  },
+  "messages": {
+    "policy": "Never name the condition, test or result. Patient messages require approval and messaging consent.",
+    "templates": {
+      "followup_reminder": {
+        "en": "Namaste {name}. A reminder of your visit at {facility} on {date}. Reply 1 if you need help getting there.",
+        "hi": "नमस्ते {name}। {date} को {facility} में आपकी मुलाक़ात याद दिला रहे हैं। वहाँ पहुँचने में मदद चाहिए तो 1 लिखें।",
+        "bn": "নমস্কার {name}। {date} তারিখে {facility}-তে আপনার ভিজিটের কথা মনে করিয়ে দিচ্ছি। সেখানে যেতে সাহায্য লাগলে 1 লিখে উত্তর দিন।",
+        "mr": "नमस्कार {name}. {date} रोजी {facility} येथे तुमच्या भेटीची आठवण. तिथे पोहोचण्यासाठी मदत हवी असल्यास 1 असे उत्तर द्या.",
+        "ta": "வணக்கம் {name}. {date} அன்று {facility}-இல் உங்கள் வருகைக்கான நினைவூட்டல். அங்கு வர உதவி தேவைப்பட்டால் 1 என பதில் அனுப்புங்கள்."
+      },
+      "worker_overdue": {
+        "en": "Follow-up overdue for case {caseRef} ({village}). Please visit or update the record.",
+        "hi": "केस {caseRef} ({village}) का फ़ॉलो-अप बाकी है। कृपया मिलें या रिकॉर्ड अपडेट करें।",
+        "bn": "কেস {caseRef} ({village})-এর ফলো-আপে দেরি হয়েছে। দয়া করে দেখা করুন বা রেকর্ড আপডেট করুন।",
+        "mr": "केस {caseRef} ({village}) चा पाठपुरावा उशिरा आहे. कृपया भेट द्या किंवा नोंद अद्ययावत करा.",
+        "ta": "கேஸ் {caseRef} ({village}) பின்தொடர்வு தாமதமாகியுள்ளது. தயவுசெய்து சென்று பார்க்கவும் அல்லது பதிவைப் புதுப்பிக்கவும்."
+      }
+    }
+  },
+  "clinicianReference": {
+    "note": "Shown to authorised clinicians only, as cited reading material. FEMOS does not generate treatment recommendations.",
+    "links": [
+      {
+        "source": "amb",
+        "label": {
+          "en": "Anemia Mukt Bharat operational guidelines",
+          "hi": "एनीमिया मुक्त भारत दिशानिर्देश",
+          "bn": "Anemia Mukt Bharat কার্যকরী নির্দেশিকা",
+          "mr": "ॲनिमिया मुक्त भारत कार्यपद्धती मार्गदर्शक सूचना",
+          "ta": "Anemia Mukt Bharat செயல்பாட்டு வழிகாட்டுதல்கள்"
+        }
+      },
+      {
+        "source": "who-hb-2024",
+        "label": {
+          "en": "WHO haemoglobin cut-offs (2024)",
+          "hi": "WHO हीमोग्लोबिन सीमाएँ (2024)",
+          "bn": "WHO হিমোগ্লোবিন সীমা (2024)",
+          "mr": "WHO हिमोग्लोबिन मर्यादा (2024)",
+          "ta": "WHO ஹீமோகுளோபின் வரம்புகள் (2024)"
+        }
+      }
+    ]
+  },
+  "reporting": {
+    "dhis2": {
+      "note": "Data element UIDs are placeholders. Map to the implementing programme's DHIS2 metadata.",
+      "period": "monthly",
+      "indicators": {
+        "screened": "FEMOS_SCREENED",
+        "hb_mild": "FEMOS_HB_MILD",
+        "hb_moderate": "FEMOS_HB_MODERATE",
+        "hb_severe": "FEMOS_HB_SEVERE",
+        "hmb_indicated": "FEMOS_HMB_INDICATED",
+        "referred": "FEMOS_REFERRED",
+        "followup_completed": "FEMOS_FU_COMPLETED",
+        "followup_overdue": "FEMOS_FU_OVERDUE"
+      }
+    }
+  }
+}

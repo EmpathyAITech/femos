@@ -1,0 +1,258 @@
+{
+ "generatedAt": "2026-11-10T05:39:02.175Z",
+ "seed": 4242,
+ "now": "2026-11-05T12:00:00.000Z",
+ "pack": "anemia-hmb@0.1.0-draft",
+ "anchorCases": 16,
+ "cases": 134,
+ "cleanCases": 52,
+ "plantedCases": 78,
+ "hardNegativeCases": 4,
+ "planted": 78,
+ "detected": 78,
+ "missed": 0,
+ "detectionRate": 1,
+ "falseAlarms": 7,
+ "falseAlarmsOnClean": 2,
+ "extraFlagsOnPlanted": 5,
+ "falseAlarmCodes": {
+  "DUPLICATE_SUSPECT": 7
+ },
+ "cleanFlagged": 2,
+ "cleanBlocked": 0,
+ "baselinePlainForm": {
+  "detected": 6,
+  "rate": 0.077,
+  "catches": [
+   "HISTORY_MISSING"
+  ]
+ },
+ "baselineValidatedForm": {
+  "detected": 24,
+  "rate": 0.308,
+  "catches": [
+   "HISTORY_MISSING",
+   "HISTORY_OUT_OF_RANGE",
+   "HB_IMPLAUSIBLE",
+   "HB_UNIT_SUSPECT"
+  ]
+ },
+ "blocking": {
+  "expectedToBlock": [
+   "HB_UNIT_SUSPECT",
+   "HB_IMPLAUSIBLE",
+   "HISTORY_MISSING",
+   "HISTORY_OUT_OF_RANGE",
+   "READING_REUSED",
+   "CONSENT_GUARDIAN",
+   "CONSENT_MISSING"
+  ],
+  "shouldBlock": 42,
+  "blocked": 42,
+  "shouldNotBlock": 36,
+  "wronglyBlocked": 0,
+  "byType": {
+   "HB_UNIT_SUSPECT": "6/6 blocked",
+   "HB_IMPLAUSIBLE": "6/6 blocked",
+   "HB_DECIMAL_CORRECTION": "0/6 blocked",
+   "HISTORY_CONTRADICTION": "0/6 blocked",
+   "HISTORY_MISSING": "6/6 blocked",
+   "HISTORY_OUT_OF_RANGE": "6/6 blocked",
+   "AGE_MISMATCH": "0/6 blocked",
+   "DUPLICATE_SUSPECT": "0/6 blocked",
+   "READING_REUSED": "6/6 blocked",
+   "READING_STALE": "0/6 blocked",
+   "CONSENT_GUARDIAN": "6/6 blocked",
+   "OUT_OF_SCOPE": "0/6 blocked",
+   "CONSENT_MISSING": "6/6 blocked"
+  }
+ },
+ "identityHardNegatives": {
+  "n": 4,
+  "likely": 0,
+  "possible": 2,
+  "examples": [
+   {
+    "id": "identity-neg-1",
+    "note": "सुनीता देवी (Belaganj, 1990) vs Sunita Devi (Wazirganj, 1990): Sunita/सुनीता, different village",
+    "duplicates": [
+     {
+      "otherCaseId": "anchor-13",
+      "level": "possible",
+      "score": 0.7
+     }
+    ]
+   },
+   {
+    "id": "identity-neg-2",
+    "note": "Puja Kumari (Mohanpur, 2003) vs Pooja Kumari (Fatehpur, 2003): Pooja/Puja, different village",
+    "duplicates": [
+     {
+      "otherCaseId": "anchor-14",
+      "level": "possible",
+      "score": 0.7
+     }
+    ]
+   },
+   {
+    "id": "identity-neg-3",
+    "note": "Laxmi Devi (Khizarsarai, 1992) vs Lakshmi Devi (Paraiya, 1988): Lakshmi/Laxmi, different village, birth year +4",
+    "duplicates": []
+   },
+   {
+    "id": "identity-neg-4",
+    "note": "प्रिया कुमारी (Sonpur, 2009) vs Priya Kumari (Belaganj, 2002): Priya/प्रिया, different village, birth year +7",
+    "duplicates": []
+   }
+  ]
+ },
+ "byType": {
+  "HB_UNIT_SUSPECT": {
+   "planted": 6,
+   "detected": 6
+  },
+  "HB_IMPLAUSIBLE": {
+   "planted": 6,
+   "detected": 6
+  },
+  "HB_DECIMAL_CORRECTION": {
+   "planted": 6,
+   "detected": 6
+  },
+  "HISTORY_CONTRADICTION": {
+   "planted": 6,
+   "detected": 6
+  },
+  "HISTORY_MISSING": {
+   "planted": 6,
+   "detected": 6
+  },
+  "HISTORY_OUT_OF_RANGE": {
+   "planted": 6,
+   "detected": 6
+  },
+  "AGE_MISMATCH": {
+   "planted": 6,
+   "detected": 6
+  },
+  "DUPLICATE_SUSPECT": {
+   "planted": 6,
+   "detected": 6
+  },
+  "READING_REUSED": {
+   "planted": 6,
+   "detected": 6
+  },
+  "READING_STALE": {
+   "planted": 6,
+   "detected": 6
+  },
+  "CONSENT_GUARDIAN": {
+   "planted": 6,
+   "detected": 6
+  },
+  "OUT_OF_SCOPE": {
+   "planted": 6,
+   "detected": 6
+  },
+  "CONSENT_MISSING": {
+   "planted": 6,
+   "detected": 6
+  }
+ },
+ "missedExamples": [],
+ "falseAlarmExamples": [
+  {
+   "id": "clean-014",
+   "code": "DUPLICATE_SUSPECT",
+   "kind": "clean",
+   "note": "clean",
+   "duplicates": [
+    {
+     "otherCaseId": "anchor-10",
+     "level": "possible",
+     "score": 0.65
+    }
+   ]
+  },
+  {
+   "id": "clean-043",
+   "code": "DUPLICATE_SUSPECT",
+   "kind": "clean",
+   "note": "clean",
+   "duplicates": [
+    {
+     "otherCaseId": "reading_stale-5",
+     "level": "possible",
+     "score": 0.7
+    }
+   ]
+  },
+  {
+   "id": "hb_implausible-5",
+   "code": "DUPLICATE_SUSPECT",
+   "kind": "planted HB_IMPLAUSIBLE",
+   "note": "24 g/dL typed",
+   "duplicates": [
+    {
+     "otherCaseId": "history_out_of_range-3",
+     "level": "possible",
+     "score": 0.65
+    }
+   ]
+  },
+  {
+   "id": "hb_decimal_correction-3",
+   "code": "DUPLICATE_SUSPECT",
+   "kind": "planted HB_DECIMAL_CORRECTION",
+   "note": "captured 60 g/dL, verifier changed it to 6",
+   "duplicates": [
+    {
+     "otherCaseId": "consent_missing-5",
+     "level": "possible",
+     "score": 0.66
+    }
+   ]
+  },
+  {
+   "id": "history_out_of_range-3",
+   "code": "DUPLICATE_SUSPECT",
+   "kind": "planted HISTORY_OUT_OF_RANGE",
+   "note": "symptomDays=5000",
+   "duplicates": [
+    {
+     "otherCaseId": "hb_implausible-5",
+     "level": "possible",
+     "score": 0.65
+    }
+   ]
+  },
+  {
+   "id": "reading_stale-5",
+   "code": "DUPLICATE_SUSPECT",
+   "kind": "planted READING_STALE",
+   "note": "device timestamp 33 h before capture",
+   "duplicates": [
+    {
+     "otherCaseId": "clean-043",
+     "level": "possible",
+     "score": 0.7
+    }
+   ]
+  },
+  {
+   "id": "consent_missing-5",
+   "code": "DUPLICATE_SUSPECT",
+   "kind": "planted CONSENT_MISSING",
+   "note": "no consent event",
+   "duplicates": [
+    {
+     "otherCaseId": "hb_decimal_correction-3",
+     "level": "possible",
+     "score": 0.66
+    }
+   ]
+  }
+ ],
+ "seconds": 0.358
+}
