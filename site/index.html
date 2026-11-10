@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FEMOS · Women's health, stitched together</title>
-<meta name="description" content="FEMOS is an open-source, offline-first agentic layer that connects health workers, diagnostic devices, doctors and public-health platforms so fewer women are lost between screening, review and follow-up.">
-<meta name="theme-color" content="#fbf7f2" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#160b19" media="(prefers-color-scheme: dark)">
+<title>FEMOS · No woman lost between screening and care</title>
+<meta name="description" content="FEMOS connects frontline health workers, the devices they already carry, doctors and government health systems, offline and in five Indian languages. Open source, by Empathy AI.">
+<meta property="og:title" content="FEMOS · No woman lost between screening and care">
+<meta property="og:description" content="Offline-first, agentic care coordination for women's health, in five Indian languages.">
+<meta property="og:image" content="assets/shots/console-review.webp">
+<meta name="theme-color" content="#2a1233">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <script>
-  /* Apply stored theme and language before first paint to avoid a flash. */
   (function () {
     try {
       var t = localStorage.getItem('femos-theme');
@@ -21,14 +22,14 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..650;1,9..144,300..500&family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..650;1,9..144,300..500&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/tokens.css">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/home.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-<!-- Shared SVG symbols -->
 <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
   <symbol id="mark" viewBox="0 0 32 32">
     <circle cx="16" cy="16" r="10.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3.2 3.4"/>
@@ -38,8 +39,6 @@
   </symbol>
   <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h11m-4-4.5L15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-check" viewBox="0 0 20 20"><path d="M5 10.5l3.2 3.2L15 6.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-next" viewBox="0 0 20 20"><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-dasharray="2.6 2.4"/></symbol>
-  <symbol id="i-no" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 15L15 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
 </svg>
 
 <header class="site-header" id="top">
@@ -50,15 +49,12 @@
     </a>
     <nav class="site-nav" id="site-nav" aria-label="Primary">
       <ul>
-        <li><a href="#problem" data-i18n="nav.problem">Problem</a></li>
+        <li><a href="#product" data-i18n="home.nav.product">Product</a></li>
         <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+        <li><a href="#languages" data-i18n="home.nav.languages">Languages</a></li>
         <li><a href="#kit" data-i18n="nav.kit">Kit</a></li>
-        <li><a href="#agents" data-i18n="nav.agents">Agents</a></li>
-        <li><a href="#architecture" data-i18n="nav.arch">Architecture</a></li>
-        <li><a href="#results" data-i18n="nav.results">Results</a></li>
-        <li><a href="#safety" data-i18n="nav.safety">Safety</a></li>
         <li><a href="#team" data-i18n="nav.team">Team</a></li>
-        <li><a href="#open" data-i18n="nav.open">Open source</a></li>
+        <li><a href="https://github.com/EmpathyAITech/femos" rel="noopener">GitHub</a></li>
       </ul>
     </nav>
     <div class="header-tools">
@@ -71,6 +67,7 @@
           <option value="ta" lang="ta">தமிழ்</option>
         </select>
       </label>
+      <a class="btn btn-primary btn-sm h-nav-cta" href="app/" data-i18n="home.cta.app">Open the app</a>
       <button type="button" class="icon-btn theme-toggle" aria-label="Switch to dark theme" title="Theme">
         <svg class="i-sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.3 4.3l1.4 1.4M14.3 14.3l1.4 1.4M4.3 15.7l1.4-1.4M14.3 5.7l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         <svg class="i-moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M15.8 12.6A6.5 6.5 0 0 1 7.4 4.2a6.5 6.5 0 1 0 8.4 8.4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
@@ -84,575 +81,149 @@
 
 <main id="main">
 
-<!-- 1. HERO -->
-<section class="hero" aria-labelledby="hero-title">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="badge"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.badge">Open source · Offline-first · Five Indian languages</span></p>
-      <h1 id="hero-title" data-i18n="hero.title"><span class="h1-brand">FEMOS</span> — the agentic operating layer for <em>last-mile women's healthcare</em></h1>
-      <p class="hero-sub" data-i18n="hero.sub">India already has health workers, diagnostic devices, doctors and public-health platforms. Nothing stitches them together. FEMOS does — agents do the mechanical work, people decide faster, and fewer women are lost between screening, review and follow-up.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="app/"><span data-i18n="hero.cta1">Try the field app</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-secondary" href="console/" data-i18n="hero.cta2">Open the clinician console</a>
-        <a class="btn btn-ghost" href="https://github.com/EmpathyAITech/femos" rel="noopener"><span data-i18n="hero.cta3">Read the code</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<!-- HERO -->
+<section class="h-hero" aria-labelledby="hero-title">
+  <div class="wrap h-hero-grid">
+    <div class="h-hero-copy">
+      <p class="h-pill"><span class="h-dot"></span><span data-i18n="home.hero.pill">Open source · Works offline · 5 Indian languages</span></p>
+      <h1 id="hero-title" data-i18n="home.hero.title">No woman lost between screening and care.</h1>
+      <p class="h-lead" data-i18n="home.hero.lead">FEMOS connects frontline health workers, the devices they already carry, doctors and government health systems, offline and in her language. AI agents do the paperwork. People make the decisions.</p>
+      <div class="h-cta">
+        <a class="btn btn-primary btn-lg" href="app/"><span data-i18n="home.cta.try">Try the field app</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-onDark btn-lg" href="console/" data-i18n="home.cta.console">See the clinician console</a>
       </div>
-    </div>
-
-    <figure class="case-card reveal" aria-labelledby="case-cap">
-      <div class="case-head">
-        <span class="case-id">Case FM-0142</span>
-        <span class="chip chip-quiet">Sample case</span>
-      </div>
-      <ol class="journey">
-        <li>
-          <span class="j-node j-ok" aria-hidden="true"></span>
-          <span class="j-place">Home</span>
-          <span class="j-what">Hb <strong>9.8 g/dL</strong> read from the meter screen</span>
-          <span class="chip chip-ok"><svg aria-hidden="true"><use href="#i-check"/></svg>Verified by ASHA</span>
-        </li>
-        <li>
-          <span class="j-node" aria-hidden="true"></span>
-          <span class="j-place">Community</span>
-          <span class="j-what">History from a voice note, <span lang="hi">“महीने में दो बार पीरियड…”</span></span>
-          <span class="chip chip-info">Her words kept</span>
-        </li>
-        <li>
-          <span class="j-node j-warn" aria-hidden="true"></span>
-          <span class="j-place">Clinic</span>
-          <span class="j-what">30-second summary, every line linked to its source</span>
-          <span class="chip chip-warn">For clinician review</span>
-        </li>
-        <li>
-          <span class="j-node j-rose" aria-hidden="true"></span>
-          <span class="j-place">District</span>
-          <span class="j-what">Referral tracked · FHIR and DHIS2 sync queued</span>
-          <span class="chip chip-rose">Follow-up due 14 Nov</span>
-        </li>
-      </ol>
-      <figcaption id="case-cap" class="case-cap">One woman's case, kept whole as it moves.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- 2. PROBLEM -->
-<section class="section alt" id="problem" aria-labelledby="problem-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="problem.eyebrow">The problem</p>
-      <h2 id="problem-title" data-i18n="problem.title">Women are lost in the gaps between visits.</h2>
-      <p class="lead" data-i18n="problem.lead">A woman's information and follow-up get lost as she moves between home, community, clinic and district. Readings are copied by hand from device screens. Her history is incomplete. Referrals are not tracked. The same data is typed twice into government systems.</p>
-    </header>
-
-    <div class="track reveal" role="img" aria-label="Four places a woman moves between: home, community, clinic and district. At each handover something is lost.">
-      <div class="track-node"><span class="t-dot"></span><span class="t-label">Home</span></div>
-      <div class="track-gap"><span class="t-break"></span><span class="t-note">reading copied by hand</span></div>
-      <div class="track-node"><span class="t-dot"></span><span class="t-label">Community</span></div>
-      <div class="track-gap"><span class="t-break"></span><span class="t-note">history incomplete</span></div>
-      <div class="track-node"><span class="t-dot"></span><span class="t-label">Clinic</span></div>
-      <div class="track-gap"><span class="t-break"></span><span class="t-note">referral not tracked</span></div>
-      <div class="track-node"><span class="t-dot"></span><span class="t-label">District</span></div>
-    </div>
-
-    <ul class="fail-grid reveal">
-      <li><h3>Copied by hand</h3><p>Haemoglobin readings are read off a device screen and written into a register, then typed again later. Each copy is a chance for a slipped decimal.</p></li>
-      <li><h3>Partial history</h3><p>Symptoms such as heavy bleeding are under-reported, asked in a language that is not hers, or never written down.</p></li>
-      <li><h3>Untracked referrals</h3><p>A referral slip leaves the community. Whether she reached the clinic, and what happened there, rarely comes back.</p></li>
-      <li><h3>Typed twice</h3><p>Workers re-enter the same visit into more than one government system, at the end of a long day.</p></li>
-    </ul>
-
-    <!-- NOTE: verify these figures against the official NFHS-5 India national report before launch. -->
-    <div class="stats reveal">
-      <div class="stat">
-        <p class="stat-num">57.0<span>%</span></p>
-        <p class="stat-label" data-i18n="problem.stat1">of women aged 15–49 in India are anaemic</p>
-      </div>
-      <div class="stat">
-        <p class="stat-num">59.1<span>%</span></p>
-        <p class="stat-label" data-i18n="problem.stat2">of adolescent girls aged 15–19 are anaemic</p>
-      </div>
-      <p class="stat-src"><span data-i18n="problem.src">Source:</span> <a href="https://rchiips.org/nfhs/" rel="noopener">National Family Health Survey (NFHS-5), 2019–21</a>, Ministry of Health and Family Welfare, Government of India.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 3. WHAT -->
-<section class="section" id="what" aria-labelledby="what-title">
-  <div class="wrap what-grid">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="what.eyebrow">What FEMOS is</p>
-      <h2 id="what-title" data-i18n="what.title">A layer that connects what already exists.</h2>
-      <p class="lead" data-i18n="what.lead">FEMOS is an open-source, offline-first agentic AI layer. It turns readings from existing instruments and multilingual histories into verified health records, prepares clinician-ready cases, and coordinates authorised follow-up through existing systems.</p>
-    </header>
-    <div class="what-body reveal">
-      <p>It is not tied to one worker, one device, one network or one platform. A case can start wherever she is first seen:</p>
-      <ul class="entry-list">
-        <li>an ASHA at home</li>
-        <li>an ANM at a sub-centre</li>
-        <li>a nurse at a clinic</li>
-        <li>a school health team</li>
-        <li>an NGO worker</li>
-        <li>a health camp</li>
-        <li class="entry-self">or the woman herself, from her own phone</li>
+      <ul class="h-trust" aria-label="Works with">
+        <li>FHIR R4</li><li>DHIS2</li><li>OpenSRP</li><li>RapidPro</li><li>WhatsApp</li><li>ABHA</li>
       </ul>
-      <blockquote class="pull" data-i18n="what.quote">Rather than replacing healthcare workers or medical systems, FEMOS makes them work together.</blockquote>
+    </div>
+    <div class="h-hero-visual" aria-hidden="true">
+      <div class="h-laptop">
+        <div class="h-laptop-screen"><img src="assets/shots/console-review.webp" alt="" width="1600" height="1000"></div>
+        <div class="h-laptop-base"></div>
+      </div>
+      <div class="h-phone h-phone-hero"><img src="assets/shots/phone-case.webp" alt="" width="560" height="1212"></div>
+      <div class="h-float h-float-1"><svg><use href="#i-check"/></svg><span data-i18n="home.float.1">Hb 7.3 g/dL · verified on device</span></div>
+      <div class="h-float h-float-2"><span class="h-urgent"></span><span data-i18n="home.float.2">Urgent review flagged by protocol</span></div>
+      <div class="h-float h-float-3"><span data-i18n="home.float.3">Reminder sent in বাংলা</span></div>
     </div>
   </div>
 </section>
 
-<!-- 4. HOW IT WORKS -->
-<section class="section alt" id="how" aria-labelledby="how-title">
+<!-- STATS -->
+<section class="h-stats" id="impact" aria-label="Results">
+  <div class="wrap h-stats-grid">
+    <div class="h-stat"><p class="h-stat-v" data-stat="errors">78/78</p><p class="h-stat-k" data-i18n="home.stat.errors">record errors caught before they reach a doctor</p></div>
+    <div class="h-stat"><p class="h-stat-v">6</p><p class="h-stat-k" data-i18n="home.stat.agents">AI agents working alongside every health worker</p></div>
+    <div class="h-stat"><p class="h-stat-v" data-stat="lead">130 days</p><p class="h-stat-k" data-i18n="home.stat.lead">median early warning before haemoglobin turns severe</p></div>
+    <div class="h-stat"><p class="h-stat-v">5</p><p class="h-stat-k" data-i18n="home.stat.langs">Indian languages and 3 scripts, at every level</p></div>
+  </div>
+  <p class="wrap h-stats-note"><a href="https://github.com/EmpathyAITech/femos/blob/main/docs/RESULTS.md" rel="noopener" data-i18n="home.stat.note">FEMOS open benchmark suite →</a></p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="h-section" id="how" aria-labelledby="how-title">
   <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
-      <h2 id="how-title" data-i18n="how.title">Six steps from a screen reading to a tracked follow-up.</h2>
-      <p class="lead" data-i18n="how.lead">Each step leaves a record, and every step works offline.</p>
+    <header class="h-head">
+      <p class="eyebrow" data-i18n="nav.how">How it works</p>
+      <h2 id="how-title" data-i18n="home.how.title">From her doorstep to the doctor, and back.</h2>
     </header>
-    <ol class="steps">
-      <li class="step reveal">
-        <span class="step-n">01</span>
-        <h3 data-i18n="how.s1">Capture</h3>
-        <p>The worker photographs the haemoglobin meter's screen. On-device OCR reads the number; nothing leaves the phone to do it.</p>
+    <ol class="h-steps">
+      <li class="h-step">
+        <div class="h-step-visual"><div class="h-phone"><img src="assets/shots/phone-words.webp" alt="FEMOS field app turning a health worker's notes into structured answers" width="560" height="1212" loading="lazy"></div></div>
+        <div class="h-step-copy"><span class="h-num">1</span><h3 data-i18n="home.how.1.t">Capture, in her words</h3><p data-i18n="home.how.1.d">Any health worker, or the woman herself, records her history in any of five languages. A photo of the meter becomes a verified reading. FEMOS drafts; the worker confirms.</p></div>
       </li>
-      <li class="step reveal">
-        <span class="step-n">02</span>
-        <h3 data-i18n="how.s2">Verify</h3>
-        <p>She compares the reading with the screen and confirms it. Unclear readings are rejected and retaken, never guessed.</p>
+      <li class="h-step">
+        <div class="h-step-visual"><div class="h-browser"><img src="assets/shots/console-review.webp" alt="Clinician console with a prioritised review queue and a sourced case summary" width="1600" height="1000" loading="lazy"></div></div>
+        <div class="h-step-copy"><span class="h-num">2</span><h3 data-i18n="home.how.2.t">Review in thirty seconds</h3><p data-i18n="home.how.2.d">The doctor sees a priority queue and a one-page summary where every line links to its source and every warning cites WHO or national guidance. One click to refer.</p></div>
       </li>
-      <li class="step reveal">
-        <span class="step-n">03</span>
-        <h3 data-i18n="how.s3">History</h3>
-        <p>A guided form, typed text or a voice note, in the woman's own language. Her original words are kept beside any translation.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step-n">04</span>
-        <h3 data-i18n="how.s4">Handoff</h3>
-        <p>The clinician gets a short summary in which every line links back to its source: the photo, the answer, the protocol rule.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step-n">05</span>
-        <h3 data-i18n="how.s5">Sync</h3>
-        <p>Records go out as FHIR resources to OpenSRP and as aggregates to DHIS2. Offline, they wait in a safe queue and are sent once.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step-n">06</span>
-        <h3 data-i18n="how.s6">Follow-up</h3>
-        <p>Referrals become tracked tasks. Reminders by WhatsApp or SMS are neutral and never name the condition.</p>
+      <li class="h-step">
+        <div class="h-step-visual"><div class="h-browser"><img src="assets/shots/console-proposals.webp" alt="Agent proposals awaiting approval: escalations and neutral reminders" width="1600" height="1000" loading="lazy"></div></div>
+        <div class="h-step-copy"><span class="h-num">3</span><h3 data-i18n="home.how.3.t">Follow up until it closes</h3><p data-i18n="home.how.3.d">Agents track every referral, propose escalations and draft discreet reminders in her language. Records flow to FHIR, OpenSRP and DHIS2 automatically.</p></div>
       </li>
     </ol>
   </div>
 </section>
 
-<!-- 5. FOUNDATIONS -->
-<section class="section" id="foundations" aria-labelledby="found-title">
+<!-- FEATURES -->
+<section class="h-section h-alt" id="product" aria-labelledby="product-title">
   <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="found.eyebrow">Foundations</p>
-      <h2 id="found-title" data-i18n="found.title">Six foundations, each with one clear job.</h2>
-      <p class="lead" data-i18n="found.lead">They are separate parts, so a programme can adopt the pieces it needs and keep the systems it already runs.</p>
+    <header class="h-head">
+      <p class="eyebrow" data-i18n="home.nav.product">Product</p>
+      <h2 id="product-title" data-i18n="home.feat.title">AI agents handle the paperwork. People make the decisions, faster.</h2>
     </header>
-    <ul class="cards cards-3">
-      <li class="card reveal" style="--accent: var(--teal)">
-        <span class="card-k">01</span>
-        <h3>Capture</h3>
-        <p>Readings from instruments already in the field: camera OCR of device screens, forms, voice notes, lab reports and manual entry, each marked with how it was captured.</p>
-      </li>
-      <li class="card reveal" style="--accent: var(--plum)">
-        <span class="card-k">02</span>
-        <h3>Orchestration</h3>
-        <p>A durable workflow engine owns the case state. Agents propose; humans decide. Nothing changes a case without an event in the log.</p>
-      </li>
-      <li class="card reveal" style="--accent: var(--saffron)">
-        <span class="card-k">03</span>
-        <h3>Policy</h3>
-        <p>Versioned, cited protocol packs built from WHO and UNICEF guidance, national programmes such as Anemia Mukt Bharat, state rules and the DPDP Act 2023.</p>
-      </li>
-      <li class="card reveal" style="--accent: var(--rose)">
-        <span class="card-k">04</span>
-        <h3>Language</h3>
-        <p>Adapted at every level, from the worker's prompts to the clinician's summary. Her original words are always kept beside the translation.</p>
-      </li>
-      <li class="card reveal" style="--accent: var(--blue)">
-        <span class="card-k">05</span>
-        <h3>Interoperability</h3>
-        <p>FHIR R4, OpenSRP, DHIS2, RapidPro and WhatsApp today. ABHA and ABDM integration is next.</p>
-      </li>
-      <li class="card reveal" style="--accent: var(--teal)">
-        <span class="card-k">06</span>
-        <h3>Learning</h3>
-        <p>Governed pattern mining and early detection on consented, de-identified records, tested silently before any clinical team approves it.</p>
-      </li>
+    <ul class="h-features">
+      <li><span class="h-ic h-ic-rose">✦</span><h3 data-i18n="home.feat.1.t">Six bounded agents</h3><p data-i18n="home.feat.1.d">Intake, checks, handoff, follow-up, interoperability and supervision. They propose; a person approves.</p></li>
+      <li><span class="h-ic h-ic-teal">✓</span><h3 data-i18n="home.feat.2.t">Errors caught at the source</h3><p data-i18n="home.feat.2.d">Unit mix-ups, decimal slips, contradictions, duplicates across scripts and reused photos, flagged before they reach a record.</p></li>
+      <li><span class="h-ic h-ic-plum">⇅</span><h3 data-i18n="home.feat.3.t">Offline first</h3><p data-i18n="home.feat.3.d">Capture, checks and handoff run on the phone. Everything syncs safely when there is a signal.</p></li>
+      <li><span class="h-ic h-ic-saffron">अ</span><h3 data-i18n="home.feat.4.t">Her language, her words</h3><p data-i18n="home.feat.4.d">Hindi, Bengali, Marathi, Tamil and English, in native script, romanised or mixed. Her original words always stay with the record.</p></li>
+      <li><span class="h-ic h-ic-blue">◎</span><h3 data-i18n="home.feat.5.t">Early detection</h3><p data-i18n="home.feat.5.d">One record per woman across every visit reveals falling haemoglobin, stalled referrals and school-level spikes early.</p></li>
+      <li><span class="h-ic h-ic-rose">⛨</span><h3 data-i18n="home.feat.6.t">Privacy on shared phones</h3><p data-i18n="home.feat.6.d">Neutral messages, guardian consent for adolescents, photos that stay on the device, and an audit trail for every action.</p></li>
     </ul>
   </div>
 </section>
 
-<!-- 5b. KIT -->
-<section class="section alt" id="kit" aria-labelledby="kit-title">
+<!-- LANGUAGES -->
+<section class="h-section" id="languages" aria-labelledby="lang-title">
   <div class="wrap">
-    <header class="section-head reveal">
+    <header class="h-head h-center">
+      <p class="eyebrow" data-i18n="home.nav.languages">Languages</p>
+      <h2 id="lang-title" data-i18n="home.lang.title">The same app, in the language she speaks.</h2>
+      <p class="lead" data-i18n="home.lang.lead">Every screen, question, summary and message, in five languages. A case recorded in Tamil reads correctly for a doctor who reads Bengali.</p>
+    </header>
+    <div class="h-lang-row">
+      <figure><div class="h-phone"><img src="assets/shots/phone-home.webp" alt="FEMOS field app in English" width="560" height="1212" loading="lazy"></div><figcaption>English</figcaption></figure>
+      <figure><div class="h-phone"><img src="assets/shots/phone-home-hi.webp" alt="FEMOS field app in Hindi" width="560" height="1212" loading="lazy"></div><figcaption lang="hi">हिन्दी</figcaption></figure>
+      <figure><div class="h-phone"><img src="assets/shots/phone-home-bn.webp" alt="FEMOS field app in Bengali" width="560" height="1212" loading="lazy"></div><figcaption lang="bn">বাংলা</figcaption></figure>
+      <figure><div class="h-phone"><img src="assets/shots/phone-home-mr.webp" alt="FEMOS field app in Marathi" width="560" height="1212" loading="lazy"></div><figcaption lang="mr">मराठी</figcaption></figure>
+      <figure><div class="h-phone"><img src="assets/shots/phone-home-ta.webp" alt="FEMOS field app in Tamil" width="560" height="1212" loading="lazy"></div><figcaption lang="ta">தமிழ்</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- EARLY DETECTION -->
+<section class="h-section h-dark" aria-labelledby="ed-title">
+  <div class="wrap h-split">
+    <div>
+      <p class="eyebrow h-eyebrow-light" data-i18n="home.ed.eyebrow">Early detection</p>
+      <h2 id="ed-title" data-i18n="home.ed.title">See the decline before it becomes an emergency.</h2>
+      <p class="h-lead" data-i18n="home.ed.lead">FEMOS follows each woman across home visits, school camps and clinics. Its learning module spots patterns no single visit shows, and brings them to the right person early.</p>
+      <ul class="h-ticks">
+        <li data-i18n="home.ed.1">Falling haemoglobin across visits</li>
+        <li data-i18n="home.ed.2">Anaemia rising in a school or village</li>
+        <li data-i18n="home.ed.3">Referrals stalling in a block</li>
+        <li data-i18n="home.ed.4">A device model producing unreadable screens</li>
+      </ul>
+    </div>
+    <div class="h-browser h-browser-dark"><img src="assets/shots/console-insights.webp" alt="Supervisor insights with computed counts and learning-module findings" width="1600" height="1000" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- KIT -->
+<section class="h-section" id="kit" aria-labelledby="kit-title">
+  <div class="wrap h-split h-split-rev">
+    <div>
       <p class="eyebrow" data-i18n="kit.eyebrow">The FEMOS Kit</p>
-      <h2 id="kit-title" data-i18n="kit.title">Integration, not new hardware.</h2>
-      <p class="lead" data-i18n="kit.lead">The kit is software, a printed setup card and, only where needed, a validated device bought locally. FEMOS reads the haemoglobin meters, BP monitors and glucometers clinics already use, in whichever way each one allows.</p>
-    </header>
-    <ul class="cards cards-5 kit-modes">
-      <li class="card reveal" style="--accent: var(--teal)"><span class="card-k">Camera</span><h3>Any display</h3><p>Photo of the screen, read on the phone, confirmed by a person. Unclear reads are declined, never guessed.</p></li>
-      <li class="card reveal" style="--accent: var(--blue)"><span class="card-k">Bluetooth</span><h3>Standard profiles</h3><p>Bluetooth SIG Blood Pressure, Glucose and Thermometer profiles. Parsers tested on specification byte vectors.</p></li>
-      <li class="card reveal" style="--accent: var(--plum)"><span class="card-k">USB</span><h3>Documented exports</h3><p>Only where the manufacturer documents the protocol and permits its use.</p></li>
-      <li class="card reveal" style="--accent: var(--saffron)"><span class="card-k">Lab files</span><h3>CSV · HL7 · FHIR</h3><p>Lab results imported with patient identity matched by a person.</p></li>
-      <li class="card reveal" style="--accent: var(--rose)"><span class="card-k">Manual</span><h3>Double entry</h3><p>Typed twice to confirm, so a slip of a decimal point is caught at entry.</p></li>
+      <h2 id="kit-title" data-i18n="home.kit.title">Works with the devices clinics already use.</h2>
+      <p class="lead" data-i18n="home.kit.lead">Haemoglobin meters, BP monitors, glucometers and lab reports, read by camera, Bluetooth, lab file or double-checked entry. The FEMOS Kit adds a phone app and a one-page setup card.</p>
+      <a class="h-link" href="https://github.com/EmpathyAITech/femos/blob/main/docs/KIT.md" rel="noopener" data-i18n="home.kit.link">Device compatibility →</a>
+    </div>
+    <ul class="h-devices" aria-label="Devices">
+      <li><b>HemoCue</b> Hb 201+</li><li><b>HemoCue</b> Hb 301</li><li><b>ACON</b> Mission Hb</li><li><b>Wrig</b> TrueHb</li>
+      <li><b>Bioptik</b> EasyTouch GCHb</li><li><b>Omron</b> BP monitors</li><li><b>Roche</b> Accu-Chek</li><li><b>Lab</b> CBC reports</li>
     </ul>
-    <div class="kit-table reveal" id="kit-devices" aria-live="polite"><p class="muted">Device compatibility registry loads here.</p></div>
-    <div class="kit-options reveal" id="kit-options"></div>
-    <p class="kit-note reveal" data-i18n="kit.note">A device is listed as validated once it passes the FEMOS Kit protocol on physical units, with real photos, real readings and published results. Prices are planning estimates for procurement.</p>
   </div>
 </section>
 
-<!-- 6. ARCHITECTURE -->
-<section class="section" id="architecture" aria-labelledby="arch-title">
+<!-- TEAM -->
+<section class="h-section h-alt" id="team" aria-labelledby="team-title">
   <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="arch.eyebrow">Architecture</p>
-      <h2 id="arch-title" data-i18n="arch.title">The engine owns the case. Agents only propose.</h2>
-      <p class="lead" data-i18n="arch.lead">A durable workflow engine keeps the case state, the event log and the protocol rules. Agents read from it and propose actions; the engine carries them out only after a person approves.</p>
-    </header>
-
-    <figure class="arch reveal" aria-labelledby="arch-cap">
-      <div class="arch-grid">
-        <div class="arch-col">
-          <p class="arch-h">Capture</p>
-          <ul class="arch-list">
-            <li>Camera OCR</li><li>Forms</li><li>Voice note</li><li>Lab report</li><li>Manual entry</li>
-          </ul>
-        </div>
-        <div class="arch-link" aria-hidden="true"><svg viewBox="0 0 48 16"><path d="M2 8h40m-6-5 6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="arch-core">
-          <p class="arch-h arch-h-core">Workflow engine</p>
-          <p class="arch-sub">owns state · event log · protocol rules</p>
-          <div class="arch-inner">
-            <div class="arch-agents">
-              <p class="arch-h">Agents</p>
-              <p class="arch-verbs">extract · check · summarise · find · propose</p>
-            </div>
-            <div class="arch-flow" aria-hidden="true">
-              <span class="flow flow-up"><svg viewBox="0 0 60 12"><path d="M2 6h54m-5-4 5 4-5 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>proposes</span></span>
-              <span class="flow flow-down"><svg viewBox="0 0 60 12"><path d="M58 6H4m5-4-5 4 5 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>executes after approval</span></span>
-            </div>
-            <div class="arch-state">
-              <p class="arch-h">Case state</p>
-              <p class="arch-verbs">events · approvals · audit</p>
-              <p class="arch-person"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="6.5" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 17c.8-3.4 3.2-5 6-5s5.2 1.6 6 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>a person approves</p>
-            </div>
-          </div>
-        </div>
-        <div class="arch-link" aria-hidden="true"><svg viewBox="0 0 48 16"><path d="M2 8h40m-6-5 6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="arch-col">
-          <p class="arch-h">Interoperability</p>
-          <ul class="arch-list">
-            <li>FHIR server</li><li>OpenSRP</li><li>DHIS2</li><li>RapidPro / WhatsApp</li><li class="is-next">ABHA / ABDM <em>next</em></li>
-          </ul>
-        </div>
-      </div>
-      <div class="arch-sync">
-        <span class="sync-pill">Offline on device</span>
-        <span class="sync-arrow" aria-hidden="true">⇄</span>
-        <span class="sync-pill sync-mid">idempotent event sync</span>
-        <span class="sync-arrow" aria-hidden="true">⇄</span>
-        <span class="sync-pill">Server</span>
-      </div>
-      <figcaption id="arch-cap" class="fig-cap">Inputs on the left become events in the engine. Agents work inside it but cannot act on their own; approved actions flow out to existing systems on the right. The device keeps working offline and syncs each event exactly once.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- 7. AGENTS -->
-<section class="section alt" id="agents" aria-labelledby="agents-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="agents.eyebrow">The agents</p>
-      <h2 id="agents-title" data-i18n="agents.title">Six agents, each with a narrow job.</h2>
-      <p class="lead" data-i18n="agents.lead">They do the mechanical work that takes a health worker's time away from the woman in front of her.</p>
-    </header>
-
-    <ul class="cards cards-3 agents">
-      <li class="card agent reveal">
-        <h3>Intake</h3>
-        <p>Guides the history. Turns Hindi, English or Hinglish speech or text into structured fields, and keeps her exact words alongside.</p>
-      </li>
-      <li class="card agent reveal">
-        <h3>Check</h3>
-        <p>Flags implausible readings, unit and decimal errors, contradictions, missing fields, duplicates across scripts (<span lang="hi">प्रिया</span> = Priya), reused photos and consent gaps.</p>
-      </li>
-      <li class="card agent reveal">
-        <h3>Handoff</h3>
-        <p>Writes a 30-second clinician summary. Every line carries its source, and protocol signals cite the rule they come from.</p>
-      </li>
-      <li class="card agent reveal">
-        <h3>Follow-up</h3>
-        <p>Tracks every referral to an outcome. Proposes escalations when a case stalls, and drafts neutral reminders for approval.</p>
-      </li>
-      <li class="card agent reveal">
-        <h3>Connect</h3>
-        <p>Maps records to FHIR, matches identities across systems, and syncs to OpenSRP and DHIS2 so nothing is typed twice.</p>
-      </li>
-      <li class="card agent reveal">
-        <h3>Supervisor</h3>
-        <p>Answers questions like “who is overdue in my block?” with numbers computed from the records, never generated by a model.</p>
-      </li>
-    </ul>
-
-    <div class="split reveal">
-      <div class="split-side split-agents">
-        <h3 data-i18n="agents.left">Agents do the mechanical work</h3>
-        <ul>
-          <li>Fill forms from voice or text</li>
-          <li>Check against the protocol</li>
-          <li>Find errors, gaps and duplicates</li>
-          <li>Draft summaries, referrals and reports</li>
-          <li>Chase follow-ups</li>
-          <li>Translate</li>
-        </ul>
-      </div>
-      <div class="split-side split-people">
-        <h3 data-i18n="agents.right">People decide</h3>
-        <ul>
-          <li>Confirm the reading</li>
-          <li>Make the clinical judgement</li>
-          <li>Resolve conflicts</li>
-          <li>Approve referrals and messages</li>
-          <li>Handle the exceptions</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="guardrails reveal">
-      <h3 class="guard-h" data-i18n="agents.guard">Four guardrails</h3>
-      <ol>
-        <li><strong>Agents propose, people decide.</strong> No agent can change a case or send a message on its own.</li>
-        <li><strong>Clinical logic comes from cited protocols,</strong> not from the model.</li>
-        <li><strong>Every action is logged,</strong> with who proposed it, who approved it and why.</li>
-        <li><strong>It works offline</strong> with guided forms when no model is available.</li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- 8. LEARNING -->
-<section class="section" id="learning" aria-labelledby="learn-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="learn.eyebrow">Early detection &amp; learning</p>
-      <h2 id="learn-title" data-i18n="learn.title">One record per woman shows what no single visit can.</h2>
-      <p class="lead" data-i18n="learn.lead">A longitudinal record across every touchpoint makes slow signals visible: a falling haemoglobin trend, warning signs that matter only together, missed screenings, referrals that have stalled.</p>
-    </header>
-
-    <div class="learn-grid">
-      <figure class="trend card reveal" aria-labelledby="trend-cap">
-        <p class="trend-h">Haemoglobin across four touchpoints <span class="chip chip-quiet">Sample</span></p>
-        <svg class="trend-svg" viewBox="0 0 320 150" role="img" aria-label="Line chart: haemoglobin falls from 12.1 to 9.6 grams per decilitre over four visits, crossing below the 12 g/dL anaemia threshold after the first visit.">
-          <line x1="16" x2="304" y1="38" y2="38" class="trend-th" stroke-dasharray="4 4"/>
-          <polyline class="trend-line" fill="none" points="30,35 120,57 210,80 296,111"/>
-          <circle class="trend-pt" cx="30" cy="35" r="5"/>
-          <circle class="trend-pt" cx="120" cy="57" r="5"/>
-          <circle class="trend-pt" cx="210" cy="80" r="5"/>
-          <circle class="trend-pt trend-pt-last" cx="296" cy="111" r="6"/>
-        </svg>
-        <ol class="trend-legend">
-          <li><b>12.1</b> School camp</li>
-          <li><b>11.4</b> ASHA visit</li>
-          <li><b>10.6</b> Sub-centre</li>
-          <li><b>9.6</b> ASHA visit</li>
-        </ol>
-        <figcaption id="trend-cap" class="fig-cap">Each visit alone looks minor. Together they show a steady fall below the 12 g/dL line, which is flagged for clinician review.</figcaption>
-      </figure>
-
-      <div class="levels reveal">
-        <h3>Patterns at five levels</h3>
-        <dl>
-          <div><dt>Individual</dt><dd>A falling trend, or warning signs that only matter in combination.</dd></div>
-          <div><dt>Community / school</dt><dd>A cluster of low readings in one village or one school.</dd></div>
-          <div><dt>Programme</dt><dd>Signals that line up with supply problems, such as IFA stock-outs.</dd></div>
-          <div><dt>Process</dt><dd>Where cases stall: after referral, before review, at sync.</dd></div>
-          <div><dt>Data quality</dt><dd>A device or site with an unusually high rejection rate.</dd></div>
-        </dl>
-      </div>
-    </div>
-
-    <div class="loop-wrap reveal">
-      <h3 class="loop-h">The learning loop</h3>
-      <ol class="loop">
-        <li><b>Collect</b><span>consented, de-identified</span></li>
-        <li><b>Mine</b><span>find candidate patterns</span></li>
-        <li><b>Propose</b><span>with evidence attached</span></li>
-        <li><b>Test silently</b><span>shadow mode, no effect on care</span></li>
-        <li><b>Approve</b><span>clinical governance</span></li>
-        <li><b>Deploy</b><span>versioned, reversible</span></li>
-        <li><b>Monitor</b><span>drift and bias</span></li>
-      </ol>
-      <p class="loop-note" data-i18n="learn.never">Patterns are never applied automatically.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 9. WHY FEMOS -->
-<section class="section alt" id="why" aria-labelledby="why-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="why.eyebrow">Why FEMOS</p>
-      <h2 id="why-title" data-i18n="why.title">Not another health OS.</h2>
-      <p class="lead" data-i18n="why.lead">General platforms such as OpenSRP, OpenMRS, CommCare and Google's Open Health Stack already exist, and FEMOS connects to them. What is missing is a layer designed around the ways women's care actually fails.</p>
-    </header>
-    <ul class="cards cards-4">
-      <li class="card reveal"><h3>Shared phones</h3><p>A reminder that names a condition can expose it to the whole household. Messages stay neutral by default.</p></li>
-      <li class="card reveal"><h3>Adolescent consent</h3><p>Girls aged 15–19 need guardian consent and their own assent, recorded separately.</p></li>
-      <li class="card reveal"><h3>Under-reported symptoms</h3><p>Heavy menstrual bleeding is often normalised. Intake asks about it directly, in her language.</p></li>
-      <li class="card reveal"><h3>No health worker nearby</h3><p>A woman can start her own record from her own phone, and a worker picks it up later.</p></li>
-    </ul>
-    <p class="motto reveal" data-i18n="why.motto">Women first, reusable by design.</p>
-  </div>
-</section>
-
-<!-- 10. ANAEMIA -->
-<section class="section" id="anaemia" aria-labelledby="anaemia-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="anaemia.eyebrow">Why start with anaemia</p>
-      <h2 id="anaemia-title" data-i18n="anaemia.title">Anaemia is a doorway, not a single disease.</h2>
-      <p class="lead" data-i18n="anaemia.lead">It is common, it can be measured with devices already in the field, and it connects to many other conditions that share the same roots.</p>
-    </header>
-
-    <figure class="hub reveal" aria-labelledby="hub-cap">
-      <svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <line x1="50" y1="50" x2="33" y2="9.5"/><line x1="50" y1="50" x2="33" y2="50"/><line x1="50" y1="50" x2="33" y2="90.5"/>
-        <line x1="50" y1="50" x2="67" y2="9.5"/><line x1="50" y1="50" x2="67" y2="50"/><line x1="50" y1="50" x2="67" y2="90.5"/>
-      </svg>
-      <div class="hub-center"><span>Anaemia</span></div>
-      <ul class="hub-nodes">
-        <li>Heavy menstrual bleeding</li>
-        <li>Thyroid disorders</li>
-        <li>Sickle cell / thalassaemia</li>
-        <li>Worms &amp; malaria</li>
-        <li>Undernutrition</li>
-        <li>Pregnancy risk</li>
-      </ul>
-      <figcaption id="hub-cap" class="hub-roots">
-        <span class="roots-h">Shared roots</span>
-        <span>nutrition</span><span>poverty</span><span>distance to care</span><span>stigma</span><span>late care-seeking</span><span>lost follow-up</span>
-      </figcaption>
-    </figure>
-
-    <h3 class="sub-h reveal" data-i18n="anaemia.road">Protocol packs, in order</h3>
-    <ol class="roadmap reveal">
-      <li class="road-now"><span class="road-stage" data-i18n="anaemia.now">Now</span><p>Anaemia and heavy menstrual bleeding</p></li>
-      <li><span class="road-stage" data-i18n="anaemia.pilot">Pilot</span><p>Thyroid, haemoglobinopathies, adolescent nutrition</p></li>
-      <li><span class="road-stage" data-i18n="anaemia.scale">Scale</span><p>Maternal anaemia, PCOS, cervical and breast cancer screening follow-up, diabetes and hypertension</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- 11. RESULTS -->
-<section class="section alt" id="results" aria-labelledby="results-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="results.eyebrow">Results</p>
-      <h2 id="results-title" data-i18n="results.title">Measured, reproducible, open.</h2>
-      <p class="lead" data-i18n="results.lead">Every number below comes from the FEMOS open benchmark suite: generated test sets that anyone can re-run with a single command.</p>
-    </header>
-        <div id="results-root" class="results" aria-live="polite">
-      <div class="results-empty">
-        <p class="empty-h">No benchmark results published yet.</p>
-        <p>Benchmarks run with <code>npm run results</code>. When a run is published, its numbers appear here, including the failures.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 12. STATUS -->
-<section class="section" id="status" aria-labelledby="status-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="status.eyebrow">Status</p>
-      <h2 id="status-title" data-i18n="status.title">Roadmap.</h2>
-      <p class="lead" data-i18n="status.lead">What runs today, and what the next phase delivers with our clinical and field partners.</p>
-    </header>
-    <div class="status-grid">
-      <div class="status-col reveal">
-        <h3><span class="chip chip-ok" data-i18n="status.built">Available now</span></h3>
-        <ul class="tick-list">
-          <li>Offline web field app</li>
-          <li>On-device OCR that rejects unclear reads</li>
-          <li>Workflow engine with event log, approvals and audit</li>
-          <li>Check, handoff, follow-up, connect and supervisor agents: rule-based baseline with a model-agnostic LLM adapter</li>
-          <li>Anaemia and heavy menstrual bleeding protocol pack, built from WHO 2024 and Anemia Mukt Bharat guidance</li>
-          <li>Five languages: English, हिन्दी, বাংলা, मराठी, தமிழ்</li>
-          <li>FHIR R4 export</li>
-          <li>DHIS2, WhatsApp and RapidPro connectors</li>
-          <li>Governed learning pipeline for early detection</li>
-        </ul>
-      </div>
-      <div class="status-col status-next reveal">
-        <h3><span class="chip chip-quiet" data-i18n="status.next">Next phase</span></h3>
-        <ul class="tick-list">
-          <li>Native Android app</li>
-          <li>Offline speech recognition in all five languages</li>
-          <li>Bluetooth and USB device adapters</li>
-          <li>ABHA / ABDM integration</li>
-          <li>Clinical validation of care pathways with our medical advisors</li>
-          <li>Field pilots with our collaborating health centres, under ethics approval</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 13. SAFETY -->
-<section class="section alt" id="safety" aria-labelledby="safety-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="safety.eyebrow">Safety</p>
-      <h2 id="safety-title" data-i18n="safety.title">Safety by design.</h2>
-      <p class="lead" data-i18n="safety.lead">These guardrails are built into the engine. They are not settings that can be switched off.</p>
-    </header>
-    <ul class="nots reveal">
-      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No diagnosis or prescription.</strong> It prepares cases; clinicians decide.</p></li>
-      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No diagnosis from photos of the body.</strong> The camera reads instrument displays only.</p></li>
-      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No autonomous messages about sensitive conditions.</strong> Every message is approved and neutral.</p></li>
-      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No silent fixes.</strong> A suspected decimal or unit error is flagged for a person, never corrected quietly.</p></li>
-      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No shortcuts for minors.</strong> Guardian consent plus the girl's own assent, and neutral messages only.</p></li>
-      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No data leaves the device unapproved.</strong> Records stay on the phone until they sync to an approved health system.</p></li>
-    </ul>
-    <aside class="note-samd reveal">
-      <p>Software that influences individual clinical decisions may count as Software as a Medical Device under India's Medical Device Rules, regulated by CDSCO. That is why individual flags in FEMOS stay labelled <strong>“for clinician review”</strong>.</p>
-    </aside>
-  </div>
-</section>
-
-<!-- 14. OPEN SOURCE -->
-<section class="section" id="open" aria-labelledby="open-title">
-  <div class="wrap open-grid">
-    <header class="section-head reveal">
-      <p class="eyebrow" data-i18n="open.eyebrow">Open source</p>
-      <h2 id="open-title" data-i18n="open.title">Open, auditable, and not tied to one model.</h2>
-      <p class="lead" data-i18n="open.lead">FEMOS is licensed under Apache-2.0. It uses open-weight models by default and can use others through one adapter. Every dependency and model weight goes through a licence audit.</p>
-      <a class="btn btn-primary" href="https://github.com/EmpathyAITech/femos" rel="noopener"><span data-i18n="hero.cta3">Read the code</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-    </header>
-    <dl class="facts reveal">
-      <div><dt>Licence</dt><dd>Apache-2.0</dd></div>
-      <div><dt>Models</dt><dd>Open-weight by default; model-agnostic adapter</dd></div>
-      <div><dt>Audit</dt><dd>Licence check on every dependency and model weight</dd></div>
-      <div><dt>Standards</dt><dd>Designed to interoperate with digital public goods such as DHIS2, OpenSRP and RapidPro</dd></div>
-    </dl>
-  </div>
-</section>
-
-<!-- TEAM & COLLABORATIONS -->
-<section class="section" id="team" aria-labelledby="team-title">
-  <div class="wrap">
-    <header class="section-head reveal">
+    <header class="h-head">
       <p class="eyebrow" data-i18n="team.eyebrow">Team</p>
       <h2 id="team-title" data-i18n="team.title">The people behind FEMOS.</h2>
       <p class="lead" data-i18n="team.lead">Technology leadership from Empathy AI, with practising doctors who serve communities in and around Kolkata.</p>
     </header>
     <ul class="team-grid">
-      <li class="person reveal">
+      <li class="person">
         <img class="person-photo" src="assets/team/ankita-paul.webp" alt="Ankita Paul" width="720" height="540" loading="lazy">
         <div class="person-body">
           <h3>Ankita Paul</h3>
@@ -661,7 +232,7 @@
           <a class="person-link" href="https://www.linkedin.com/in/ankitapaul007/" rel="noopener" target="_blank">LinkedIn ↗</a>
         </div>
       </li>
-      <li class="person reveal">
+      <li class="person">
         <img class="person-photo" src="assets/team/milon-kanti-paul.webp" alt="Dr. Milon Kanti Paul in his clinic" width="720" height="540" loading="lazy">
         <div class="person-body">
           <h3>Dr. Milon Kanti Paul</h3>
@@ -674,7 +245,7 @@
           </ul>
         </div>
       </li>
-      <li class="person reveal">
+      <li class="person">
         <img class="person-photo" src="assets/team/aditi-paul.webp" alt="Dr. Aditi Paul in her clinic" width="720" height="540" loading="lazy">
         <div class="person-body">
           <h3>Dr. Aditi Paul</h3>
@@ -682,14 +253,26 @@
         </div>
       </li>
     </ul>
-
-    <div class="collab reveal" aria-labelledby="collab-title">
-      <h3 id="collab-title" class="collab-h" data-i18n="team.collab">Collaborations</h3>
+    <div class="collab">
+      <h3 class="collab-h" data-i18n="team.collab">Collaborations</h3>
       <ul class="collab-list">
         <li><strong>Purulia–Andra Rural Health Development</strong><span>Rural health, Purulia, West Bengal</span></li>
         <li><strong>Birati Doctor's Club</strong><span>Kolkata, West Bengal</span></li>
         <li><strong>Dumdum Municipal Corporation Health Centre</strong><span>Dum Dum, West Bengal</span></li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="h-final" aria-labelledby="final-title">
+  <div class="wrap h-final-inner">
+    <h2 id="final-title" data-i18n="home.final.title">See FEMOS working.</h2>
+    <p data-i18n="home.final.lead">Open the field app on your phone, or the clinician console on your laptop. Sample cases are loaded.</p>
+    <div class="h-cta">
+      <a class="btn btn-primary btn-lg" href="app/"><span data-i18n="home.cta.try">Try the field app</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-onDark btn-lg" href="console/" data-i18n="home.cta.console">See the clinician console</a>
+      <a class="btn btn-onDark btn-lg" href="https://github.com/EmpathyAITech/femos" rel="noopener" data-i18n="hero.cta3">Read the code</a>
     </div>
   </div>
 </section>
@@ -707,7 +290,7 @@
     </div>
     <div class="footer-links">
       <p><span data-i18n="footer.contact">Contact</span> · <a href="mailto:ankita@empathyaitech.com">ankita@empathyaitech.com</a></p>
-      <p><a href="app/" data-i18n="hero.cta1">Try the field app</a> · <a href="console/" data-i18n="footer.console">Clinician console</a></p>
+      <p><a href="app/" data-i18n="hero.cta1">Try the field app</a> · <a href="console/" data-i18n="footer.console">Clinician console</a> · <a href="https://github.com/EmpathyAITech/femos" rel="noopener">GitHub</a></p>
     </div>
   </div>
 </footer>
@@ -717,5 +300,6 @@
 <script src="assets/i18n/mr.js" defer></script>
 <script src="assets/i18n/ta.js" defer></script>
 <script src="assets/site.js" defer></script>
+<script src="assets/home.js" defer></script>
 </body>
 </html>
