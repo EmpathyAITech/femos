@@ -79,7 +79,7 @@ site/         website         docs/  results, kit, deployment, language, submiss
 - **Dr. Milon Kanti Paul**, DMS, MD (HOM): President, Doctor's Club, Birati, North Dumdum; Ex-President, HMAI North 24 Parganas; President, HMAI Birati–Madhyamgram unit; President, Nationalist Doctors' Organization, North Dumdum, Birati
 - **Dr. Aditi Paul**, Homoeopathic Medical Officer
 
-**Collaborations:** Purulia–Andra Rural Health Development · Birati Doctor's Club, Kolkata · Dumdum Municipal Corporation Health Centre
+**In collaboration with:** Purulia–Andra Rural Health Development · Birati Doctor's Club, Kolkata · Dumdum Municipal Corporation Health Centre
 
 ## Licence
 
