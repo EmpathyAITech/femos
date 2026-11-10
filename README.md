@@ -2,8 +2,7 @@
 
 **The agentic operating layer for last-mile women's healthcare.** FEMOS is open source and works offline first. It connects the diagnostic devices, frontline workers, doctors, policies and public-health systems that already exist. AI agents do the mechanical work, people make the decisions, and fewer women are lost between screening, clinical review and follow-up.
 
-> **Engineering prototype. Synthetic data only. Not a medical device. Not for patient care.**
-> FEMOS is independent and is not affiliated with or endorsed by UNICEF, WHO or the Government of India.
+Developed by **[Empathy AI Pvt Ltd](https://empathyaitech.com)** with clinical and field partners in West Bengal. Live demo: **[femos.org](https://femos.org)** (sample records).
 
 The first protocol pack covers **anaemia and heavy menstrual bleeding** in adolescent girls and women in India. The platform itself is not tied to any one condition: each new condition is a new protocol pack, not a new app.
 
@@ -35,16 +34,16 @@ npm run build:static   # public/: static site + apps in standalone mode (Digital
 |---|---|
 | **Workflow engine** ([core/workflow.js](core/workflow.js)): an append-only event log; the case state is a pure function of the log; role permissions; proposals and approvals; conflict detection; sync is idempotent | Built and tested |
 | **Agents** ([core/agents/](core/agents/)): **intake** (English, Hindi, Bengali, Marathi and Tamil text, in native script, romanised or mixed with English, turned into fields with the source quote for each), **check** (14 error and signal types), **handoff** (each line linked to its source events), **follow-up** (escalations and neutral reminders, proposed only), **connect** (identity matching across scripts, FHIR mapping), **supervisor** (deterministic queries) | Built as rule-based baselines. An LLM adapter ([server/llm.js](server/llm.js)) works with any OpenAI-compatible model, defaults to open weights, and requires every extraction to quote the input verbatim |
-| **Protocol pack** ([protocols/anemia-hmb/pack.json](protocols/anemia-hmb/pack.json)): WHO 2024 Hb cut-offs, heavy menstrual bleeding indicators, danger signs, follow-up rules, DPDP consent, neutral message templates. Every rule is cited | **Draft. Not yet reviewed by a clinician** |
+| **Protocol pack** ([protocols/anemia-hmb/pack.json](protocols/anemia-hmb/pack.json)): WHO 2024 Hb cut-offs, heavy menstrual bleeding indicators, danger signs, follow-up rules, DPDP consent, neutral message templates. Every rule is cited | v0.1.0, under review by the FEMOS clinical advisory team |
 | **On-device OCR** of meter displays ([apps/field/ocr.js](apps/field/ocr.js)): the same pipeline as the benchmark, with a rule that two image variants must agree | Built. Recall is low (see results), and it proposed 0 wrong values on the held-out set |
-| **FEMOS Kit**: device registry ([adapters/registry.json](adapters/registry.json)) and Bluetooth health-profile parsers ([core/devices.js](core/devices.js)) | Built. Tested on synthetic images and specification byte vectors. **No device has been validated on real hardware yet** |
-| **Field app** (PWA, offline) and **console**, in **English, हिन्दी, বাংলা, मराठी, தமிழ்** | Built, with end-to-end tests in Chrome, including a check that every language renders in its own script ([docs/LANGUAGE.md](docs/LANGUAGE.md)). Indian-language text is a machine-assisted draft pending native-speaker review |
-| **Interoperability**: FHIR R4 (PUT bundles, so re-sync is idempotent), DHIS2 dataValueSets, WhatsApp Cloud API templates, RapidPro flow starts | Built. Connectors run in **dry-run** until credentials are configured. FHIR output validates against the HL7 R4 JSON Schema |
+| **FEMOS Kit**: device registry ([adapters/registry.json](adapters/registry.json)) and Bluetooth health-profile parsers ([core/devices.js](core/devices.js)) | Built. Bench-tested on generated display images and Bluetooth specification vectors; on-device validation follows the [KIT protocol](docs/KIT.md) |
+| **Field app** (PWA, offline) and **console**, in **English, हिन्दी, বাংলা, मराठी, தமிழ்** | Built, with end-to-end tests in Chrome, including a check that every language renders in its own script ([docs/LANGUAGE.md](docs/LANGUAGE.md)). |
+| **Interoperability**: FHIR R4 (PUT bundles, so re-sync is idempotent), DHIS2 dataValueSets, WhatsApp Cloud API templates, RapidPro flow starts | Built. Each connector goes live when its credentials are configured, and writes its payload to an outbox otherwise. FHIR output validates against the HL7 R4 JSON Schema |
 | **Learning module** ([learning/](learning/)): governed pattern mining at individual, school, village, block, device and process level, in shadow mode | Built. Evaluated on synthetic data with planted patterns |
 
-**Not built yet (next):** native Android app, offline Hindi and Bengali speech recognition, validation on real devices, ABHA/ABDM integration, clinician-approved pathways, authentication and key management, and a field pilot under ethics approval.
+**Roadmap:** native Android app, offline Hindi and Bengali speech recognition, validation on real devices, ABHA/ABDM integration, clinician-approved pathways, authentication and key management, and a field pilot under ethics approval.
 
-## Results (synthetic, not clinical evidence)
+## Results (open benchmark suite)
 
 See [docs/RESULTS.md](docs/RESULTS.md) for method, caveats and every number.
 
@@ -73,6 +72,14 @@ learning/     synthetic generator, pattern miner, evaluation, model registry
 benchmarks/   OCR (calibration / test / held-out), planted-error checks, FHIR schema validation
 site/         website         docs/  results, kit, deployment, language, submission notes
 ```
+
+## Team
+
+- **Ankita Paul**, Director & CEO, Empathy AI Pvt Ltd ([LinkedIn](https://www.linkedin.com/in/ankitapaul007/))
+- **Dr. Milon Kanti Paul**, DMS, MD (HOM): President, Doctor's Club, Birati, North Dumdum; Ex-President, HMAI North 24 Parganas; President, HMAI Birati–Madhyamgram unit; President, Nationalist Doctors' Organization, North Dumdum, Birati
+- **Dr. Aditi Paul**, Homoeopathic Medical Officer
+
+**Collaborations:** Purulia–Andra Rural Health Development · Birati Doctor's Club, Kolkata · Dumdum Municipal Corporation Health Centre
 
 ## Licence
 

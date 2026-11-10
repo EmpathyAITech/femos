@@ -627,3 +627,24 @@ table.kit tr:last-child th, table.kit tr:last-child td { border-bottom: 0; }
 /* Long agglutinative words (Tamil, Marathi compounds) must wrap on phones. */
 html[lang="ta"] body, html[lang="mr"] body, html[lang="bn"] body { overflow-wrap: anywhere; hyphens: auto; }
 html, body { overflow-x: clip; }
+
+/* ---- Team & collaborations ---- */
+.team-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.person { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); }
+.person-photo { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 30%; background: var(--paper-2); }
+.person-initials { display: grid; place-items: center; font: 500 clamp(3rem, 8vw, 4.4rem)/1 var(--font-display); letter-spacing: .04em; color: #fff;
+  background: radial-gradient(120% 90% at 20% 10%, color-mix(in srgb, var(--rose) 70%, transparent), transparent 60%), linear-gradient(135deg, var(--plum), #5a1f37); }
+.person-body { padding: 20px 22px 24px; }
+.person-body h3 { font-size: 1.3rem; margin-bottom: 4px; }
+.person-role { color: var(--rose); font-weight: 600; font-size: .92rem; margin: 0 0 12px; }
+.person-body p { color: var(--ink-2); font-size: .97rem; }
+.person-cred { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: .93rem; color: var(--ink-2); }
+.person-cred li { padding-left: 14px; position: relative; }
+.person-cred li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+.person-link { display: inline-block; margin-top: 12px; font-weight: 600; color: var(--plum); }
+.collab { margin-top: clamp(40px, 6vw, 64px); }
+.collab-h { font-size: 1.4rem; margin-bottom: 16px; }
+.collab-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.collab-list li { border: 1px solid var(--line); border-left: 4px solid var(--teal); border-radius: var(--radius); padding: 16px 18px; background: var(--card); }
+.collab-list strong { display: block; font-size: 1.02rem; }
+.collab-list span { display: block; color: var(--ink-3); font-size: .9rem; margin-top: 4px; }

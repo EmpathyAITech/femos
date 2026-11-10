@@ -1,7 +1,7 @@
 {
   "name": "FEMOS Field",
   "short_name": "FEMOS",
-  "description": "Offline capture, verification and follow-up for last-mile women's healthcare (engineering prototype, synthetic data only).",
+  "description": "Offline capture, verification and follow-up for last-mile women's healthcare in five Indian languages.",
   "start_url": "/app/",
   "scope": "/app/",
   "display": "standalone",

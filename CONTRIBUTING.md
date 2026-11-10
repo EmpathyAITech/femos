@@ -27,4 +27,4 @@ See [docs/KIT.md](docs/KIT.md). A device moves to `validated` only after the val
 
 ## Translations
 
-Hindi strings are in `core/i18n.js`, `site/assets/site.js` and the protocol packs. All current Hindi is a **machine-assisted draft**. Native-speaker review is very welcome. Clinical text must be reviewed by a clinician fluent in the language.
+Hindi strings are in `core/i18n.js`, `site/assets/site.js` and the protocol packs. Native-speaker review is very welcome in every language. Clinical text must be reviewed by a clinician fluent in the language.

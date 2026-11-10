@@ -34,7 +34,7 @@ if (existsSync(ds)) {
   const data = JSON.parse(readFileSync(ds, 'utf8'));
   const r = mineAll(data, { asOf: data.meta.periods.at(-1) });
   const registry = JSON.parse(readFileSync(join(ROOT, 'learning/registry.json'), 'utf8'));
-  writeFileSync(join(OUT, 'demo/insights.json'), JSON.stringify({ available: true, dataset: data.meta, registry, ...r, caveat: 'Synthetic longitudinal data with planted patterns. Findings are for human review only (shadow mode).' }));
+  writeFileSync(join(OUT, 'demo/insights.json'), JSON.stringify({ available: true, dataset: data.meta, registry, ...r, caveat: 'Demo dataset. Findings run in shadow mode: people review every pattern before it informs care.' }));
 }
 writeFileSync(join(OUT, 'robots.txt'), 'User-agent: *\nAllow: /\n');
 console.log(`public/ built: site /, field app /app/, console /console/ (standalone mode, synthetic demo data)`);

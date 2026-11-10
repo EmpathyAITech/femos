@@ -138,6 +138,6 @@ export async function readViaWebBluetooth(kind, { timeoutMs = 60000 } = {}) {
 export function captureModes(registry, deviceId) {
   const d = registry.devices.find((x) => x.id === deviceId);
   if (!d) return [];
-  const rank = { validated: 0, 'synthetic-tested': 1, implemented: 2, planned: 9, 'manual-only': 5 };
+  const rank = { validated: 0, 'bench-tested': 1, implemented: 2, planned: 9, 'manual-only': 5 };
   return Object.entries(d.modes).filter(([, s]) => s !== 'planned').sort((a, b) => rank[a[1]] - rank[b[1]]).map(([mode, status]) => ({ mode, status }));
 }

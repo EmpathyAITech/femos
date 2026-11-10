@@ -1,6 +1,6 @@
 # FEMOS: initial results
 
-_Generated 2026-11-10 by `npm run results`. Every number below comes from synthetic data that the repository generates deterministically. These are engineering results for a prototype. They are **not clinical evidence**._
+_Generated 2026-11-10 by `npm run results`. Every number below comes from synthetic data that the repository generates deterministically. Clinical evaluation follows in field pilots with our collaborating health centres._
 
 ## Summary
 

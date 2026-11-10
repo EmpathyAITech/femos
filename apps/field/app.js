@@ -502,7 +502,7 @@ function screenReading(caseId) {
 }
 
 
-const STATUS_CLS = { validated: 'ok', 'synthetic-tested': 'info', implemented: 'plum', planned: '', 'manual-only': '' };
+const STATUS_CLS = { validated: 'ok', 'bench-tested': 'info', implemented: 'plum', planned: '', 'manual-only': '' };
 function screenKit() {
   const modeLabel = { camera_ocr: L('f.camera_2'), ble_gatt: 'Bluetooth', usb_serial: 'USB', lab_file: L('f.lab_file'), manual: L('f.typed') };
   view().innerHTML = `

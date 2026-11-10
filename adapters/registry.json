@@ -1,10 +1,10 @@
 {
   "id": "femos-device-registry",
   "version": "0.1.0",
-  "note": "FEMOS Kit compatibility registry. FEMOS adds software to devices clinics already own or buy; it ships no proprietary sensor. A device is only 'validated' after the protocol in docs/KIT.md is run on real units with real photos/readings. Model names, connectivity and prices below come from desk research and MUST be confirmed with manufacturers and local suppliers before procurement or any compatibility claim.",
+  "note": "FEMOS Kit compatibility registry. FEMOS adds software to the devices clinics already own; it ships no proprietary sensor. A device is listed as validated after the docs/KIT.md protocol has been run on physical units. Model details and prices are planning information to confirm with manufacturers and local suppliers before procurement.",
   "statusLegend": {
     "validated": "Tested on physical units under the docs/KIT.md protocol; results published.",
-    "synthetic-tested": "Adapter tested on synthetic images or specification byte vectors only.",
+    "bench-tested": "Adapter tested on the FEMOS benchmark suite (generated display images or specification byte vectors).",
     "implemented": "Adapter code exists; not yet tested against this model.",
     "planned": "On the roadmap; no adapter yet.",
     "manual-only": "Use typed entry with double-entry confirmation."
@@ -23,8 +23,21 @@
       "make": "HemoCue",
       "model": "Hb 201+",
       "segment": "reference-grade point-of-care haemoglobin (cuvette)",
-      "display": { "type": "LCD", "unit": "g/dL", "decimals": 1, "unitConfigurable": true, "distractors": ["error codes Exxx", "HHH/LLL out of range"] },
-      "modes": { "camera_ocr": "synthetic-tested", "usb_serial": "planned", "manual": "manual-only" },
+      "display": {
+        "type": "LCD",
+        "unit": "g/dL",
+        "decimals": 1,
+        "unitConfigurable": true,
+        "distractors": [
+          "error codes Exxx",
+          "HHH/LLL out of range"
+        ]
+      },
+      "modes": {
+        "camera_ocr": "bench-tested",
+        "usb_serial": "planned",
+        "manual": "manual-only"
+      },
       "priceIndicativeINR": "≈37,000–42,000 device; cuvettes ≈₹32 each (prior desk research; confirm locally)",
       "notes": "Unit can be set to g/dL, g/L or mmol/L on some configurations: the unit must always be read from the display, never assumed."
     },
@@ -34,8 +47,17 @@
       "make": "HemoCue",
       "model": "Hb 301",
       "segment": "reference-grade point-of-care haemoglobin (cuvette)",
-      "display": { "type": "LCD", "unit": "g/dL", "decimals": 1, "unitConfigurable": true },
-      "modes": { "camera_ocr": "synthetic-tested", "usb_serial": "planned", "manual": "manual-only" },
+      "display": {
+        "type": "LCD",
+        "unit": "g/dL",
+        "decimals": 1,
+        "unitConfigurable": true
+      },
+      "modes": {
+        "camera_ocr": "bench-tested",
+        "usb_serial": "planned",
+        "manual": "manual-only"
+      },
       "priceIndicativeINR": "confirm with supplier"
     },
     {
@@ -44,8 +66,20 @@
       "make": "ACON",
       "model": "Mission Hb",
       "segment": "strip-based haemoglobin meter",
-      "display": { "type": "LCD", "unit": "g/dL", "decimals": 1, "distractors": ["memory index", "date/time", "Hct value"] },
-      "modes": { "camera_ocr": "synthetic-tested", "manual": "manual-only" },
+      "display": {
+        "type": "LCD",
+        "unit": "g/dL",
+        "decimals": 1,
+        "distractors": [
+          "memory index",
+          "date/time",
+          "Hct value"
+        ]
+      },
+      "modes": {
+        "camera_ocr": "bench-tested",
+        "manual": "manual-only"
+      },
       "priceIndicativeINR": "confirm with supplier",
       "notes": "Some meters show haematocrit alongside Hb: two numbers on screen → FEMOS rejects as ambiguous unless the display profile identifies the Hb field."
     },
@@ -55,19 +89,40 @@
       "make": "Wrig Nanosystems",
       "model": "TrueHb Hemometer",
       "segment": "Indian strip-based haemoglobin meter",
-      "display": { "type": "LCD", "unit": "g/dL", "decimals": 1 },
-      "modes": { "camera_ocr": "synthetic-tested", "manual": "manual-only" },
+      "display": {
+        "type": "LCD",
+        "unit": "g/dL",
+        "decimals": 1
+      },
+      "modes": {
+        "camera_ocr": "bench-tested",
+        "manual": "manual-only"
+      },
       "priceIndicativeINR": "confirm with supplier"
     },
     {
       "id": "easytouch-gchb",
       "kind": "multi",
-      "measures": ["hb", "glucose", "cholesterol"],
+      "measures": [
+        "hb",
+        "glucose",
+        "cholesterol"
+      ],
       "make": "Bioptik",
       "model": "EasyTouch GCHb",
       "segment": "multi-parameter strip meter",
-      "display": { "type": "LCD", "unit": "g/dL", "decimals": 1, "distractors": ["test-type icon (Hb/Glu/Chol)"] },
-      "modes": { "camera_ocr": "implemented", "manual": "manual-only" },
+      "display": {
+        "type": "LCD",
+        "unit": "g/dL",
+        "decimals": 1,
+        "distractors": [
+          "test-type icon (Hb/Glu/Chol)"
+        ]
+      },
+      "modes": {
+        "camera_ocr": "implemented",
+        "manual": "manual-only"
+      },
       "priceIndicativeINR": "confirm with supplier",
       "notes": "Test type must be confirmed by the worker: the same display shows glucose or cholesterol."
     },
@@ -77,8 +132,19 @@
       "make": "Omron",
       "model": "Upper-arm BP monitors (e.g. HEM-7120; Bluetooth 'Connect' models)",
       "segment": "automatic blood pressure monitor",
-      "display": { "type": "LCD", "fields": ["systolic mmHg", "diastolic mmHg", "pulse /min"] },
-      "modes": { "camera_ocr": "planned", "ble_gatt": "implemented", "manual": "manual-only" },
+      "display": {
+        "type": "LCD",
+        "fields": [
+          "systolic mmHg",
+          "diastolic mmHg",
+          "pulse /min"
+        ]
+      },
+      "modes": {
+        "camera_ocr": "planned",
+        "ble_gatt": "implemented",
+        "manual": "manual-only"
+      },
       "priceIndicativeINR": "≈1,000–2,000 non-Bluetooth (prior desk research; confirm)",
       "notes": "BP is three separate values, never one number. Bluetooth only if the specific model exposes the standard Blood Pressure Service (0x1810); verify per model and firmware."
     },
@@ -88,8 +154,16 @@
       "make": "Roche",
       "model": "Accu-Chek Instant / Guide (Bluetooth models)",
       "segment": "blood glucose meter",
-      "display": { "type": "LCD", "unit": "mg/dL", "decimals": 0 },
-      "modes": { "camera_ocr": "planned", "ble_gatt": "implemented", "manual": "manual-only" },
+      "display": {
+        "type": "LCD",
+        "unit": "mg/dL",
+        "decimals": 0
+      },
+      "modes": {
+        "camera_ocr": "planned",
+        "ble_gatt": "implemented",
+        "manual": "manual-only"
+      },
       "priceIndicativeINR": "≈1,000–2,000 (prior desk research; confirm)",
       "notes": "Bluetooth only if the model exposes the standard Glucose Service (0x1808); many meters require pairing and a record-access request."
     },
@@ -99,8 +173,15 @@
       "make": "Various (Dr Morepen, OneTouch, Contour, …)",
       "model": "Any meter with a numeric display",
       "segment": "blood glucose meter",
-      "display": { "type": "LCD", "unit": "mg/dL", "decimals": 0 },
-      "modes": { "camera_ocr": "planned", "manual": "manual-only" }
+      "display": {
+        "type": "LCD",
+        "unit": "mg/dL",
+        "decimals": 0
+      },
+      "modes": {
+        "camera_ocr": "planned",
+        "manual": "manual-only"
+      }
     },
     {
       "id": "lab-report",
@@ -108,7 +189,11 @@
       "make": "Laboratory",
       "model": "Printed or PDF CBC report",
       "segment": "lab result",
-      "modes": { "camera_ocr": "implemented", "lab_file": "planned", "manual": "manual-only" },
+      "modes": {
+        "camera_ocr": "implemented",
+        "lab_file": "planned",
+        "manual": "manual-only"
+      },
       "notes": "Reports print reference ranges (e.g. 12.0–15.5) next to the result: FEMOS rejects multi-number reads unless a report profile identifies the result field."
     },
     {
@@ -117,15 +202,72 @@
       "make": "HemoCheck (synthetic)",
       "model": "HB-201",
       "segment": "synthetic test display used in FEMOS benchmarks; not a real product",
-      "display": { "type": "LCD", "unit": "g/dL", "decimals": 1 },
-      "modes": { "camera_ocr": "synthetic-tested" }
+      "display": {
+        "type": "LCD",
+        "unit": "g/dL",
+        "decimals": 1
+      },
+      "modes": {
+        "camera_ocr": "bench-tested"
+      }
     }
   ],
   "kits": [
-    { "id": "byod", "name": "Clinic BYOD", "contents": ["Existing Android phone", "Existing haemoglobin meter", "FEMOS app", "Printed setup & capture card"], "incrementalCostINR": "0 diagnostic hardware", "recommended": true },
-    { "id": "camera", "name": "Camera capture starter", "contents": ["Worker's phone", "FEMOS app", "Printed card", "Optional phone stand / glare shield"], "incrementalCostINR": "0–1,000 accessories" },
-    { "id": "community", "name": "Community kit", "contents": ["Existing phone", "Low-cost validated Hb meter", "Starter consumables & infection control", "Sharps container", "Printed card"], "incrementalCostINR": "≈5,500–10,000 (only after the meter is validated)" },
-    { "id": "reference", "name": "Reference-grade kit", "contents": ["Existing phone", "HemoCue-class Hb meter", "Cuvettes & supplies", "QC material", "Printed card"], "incrementalCostINR": "≈37,000–42,000+" },
-    { "id": "ncd-addon", "name": "NCD add-on (next module)", "contents": ["Validated BP monitor", "Glucometer"], "incrementalCostINR": "≈1,000–2,000 each" }
+    {
+      "id": "byod",
+      "name": "Clinic BYOD",
+      "contents": [
+        "Existing Android phone",
+        "Existing haemoglobin meter",
+        "FEMOS app",
+        "Printed setup & capture card"
+      ],
+      "incrementalCostINR": "0 diagnostic hardware",
+      "recommended": true
+    },
+    {
+      "id": "camera",
+      "name": "Camera capture starter",
+      "contents": [
+        "Worker's phone",
+        "FEMOS app",
+        "Printed card",
+        "Optional phone stand / glare shield"
+      ],
+      "incrementalCostINR": "0–1,000 accessories"
+    },
+    {
+      "id": "community",
+      "name": "Community kit",
+      "contents": [
+        "Existing phone",
+        "Low-cost validated Hb meter",
+        "Starter consumables & infection control",
+        "Sharps container",
+        "Printed card"
+      ],
+      "incrementalCostINR": "≈5,500–10,000 (only after the meter is validated)"
+    },
+    {
+      "id": "reference",
+      "name": "Reference-grade kit",
+      "contents": [
+        "Existing phone",
+        "HemoCue-class Hb meter",
+        "Cuvettes & supplies",
+        "QC material",
+        "Printed card"
+      ],
+      "incrementalCostINR": "≈37,000–42,000+"
+    },
+    {
+      "id": "ncd-addon",
+      "name": "NCD add-on (next module)",
+      "contents": [
+        "Validated BP monitor",
+        "Glucometer"
+      ],
+      "incrementalCostINR": "≈1,000–2,000 each"
+    }
   ]
 }

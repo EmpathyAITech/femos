@@ -1,4 +1,4 @@
-# Deploying FEMOS (synthetic demo)
+# Deploying FEMOS
 
 There are two ways to run FEMOS. **Neither is for real patient data** (see [SECURITY.md](../SECURITY.md)).
 
@@ -15,7 +15,7 @@ Both apps start in **standalone mode**, with a synthetic demo log and precompute
 2. DigitalOcean → App Platform → Create App → GitHub → this repo. The spec is in [.do/app.yaml](../.do/app.yaml):
    - build command `npm ci && npm run build:static`
    - output directory `public`
-3. Check the `*.ondigitalocean.app` URL. The footer must say "engineering prototype, synthetic data".
+3. Check the `*.ondigitalocean.app` URL.
 4. After registering the domain (`femos.org` recommended, with `femoshealth.com` redirecting), go to App → Settings → Domains and add the DNS records DigitalOcean gives you. TLS is provisioned automatically.
 
 All paths are root-relative (`/core/…`), so serve the app at the domain root, not a sub-path.

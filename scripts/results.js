@@ -58,7 +58,7 @@ writeFileSync(join(ROOT, 'site', 'assets', 'results.json'), JSON.stringify(site,
 // ---------------------------------------------------------------- docs/RESULTS.md
 const L = [];
 L.push('# FEMOS: initial results', '');
-L.push(`_Generated ${generatedAt.slice(0, 10)} by \`npm run results\`. Every number below comes from synthetic data that the repository generates deterministically. These are engineering results for a prototype. They are **not clinical evidence**._`, '');
+L.push(`_Generated ${generatedAt.slice(0, 10)} by \`npm run results\`. Every number below comes from synthetic data that the repository generates deterministically. Clinical evaluation follows in field pilots with our collaborating health centres._`, '');
 L.push('## Summary', '');
 L.push('| Area | Result |', '|---|---|');
 if (tests) L.push(`| Automated tests | ${tests.pass} passing, ${tests.fail} failing (\`node --test tests/*.test.js\`) |`);

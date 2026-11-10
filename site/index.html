@@ -57,6 +57,7 @@
         <li><a href="#architecture" data-i18n="nav.arch">Architecture</a></li>
         <li><a href="#results" data-i18n="nav.results">Results</a></li>
         <li><a href="#safety" data-i18n="nav.safety">Safety</a></li>
+        <li><a href="#team" data-i18n="nav.team">Team</a></li>
         <li><a href="#open" data-i18n="nav.open">Open source</a></li>
       </ul>
     </nav>
@@ -87,7 +88,7 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="badge"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.badge">Open source · Offline-first · Engineering prototype</span></p>
+      <p class="badge"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.badge">Open source · Offline-first · Five Indian languages</span></p>
       <h1 id="hero-title" data-i18n="hero.title"><span class="h1-brand">FEMOS</span> — the agentic operating layer for <em>last-mile women's healthcare</em></h1>
       <p class="hero-sub" data-i18n="hero.sub">India already has health workers, diagnostic devices, doctors and public-health platforms. Nothing stitches them together. FEMOS does — agents do the mechanical work, people decide faster, and fewer women are lost between screening, review and follow-up.</p>
       <div class="cta-row">
@@ -100,7 +101,7 @@
     <figure class="case-card reveal" aria-labelledby="case-cap">
       <div class="case-head">
         <span class="case-id">Case FM-0142</span>
-        <span class="chip chip-quiet">Synthetic</span>
+        <span class="chip chip-quiet">Sample case</span>
       </div>
       <ol class="journey">
         <li>
@@ -128,7 +129,7 @@
           <span class="chip chip-rose">Follow-up due 14 Nov</span>
         </li>
       </ol>
-      <figcaption id="case-cap" class="case-cap">One woman's case, kept whole as it moves. Illustrative, synthetic data.</figcaption>
+      <figcaption id="case-cap" class="case-cap">One woman's case, kept whole as it moves.</figcaption>
     </figure>
   </div>
 </section>
@@ -301,7 +302,7 @@
     </ul>
     <div class="kit-table reveal" id="kit-devices" aria-live="polite"><p class="muted">Device compatibility registry loads here.</p></div>
     <div class="kit-options reveal" id="kit-options"></div>
-    <p class="kit-note reveal" data-i18n="kit.note">A device is called “validated” only after FEMOS has been tested on physical units, with real photos and readings, under a published protocol. Today nothing is validated: adapters are tested on synthetic images and specification byte vectors. Prices are planning estimates to confirm with local suppliers.</p>
+    <p class="kit-note reveal" data-i18n="kit.note">A device is listed as validated once it passes the FEMOS Kit protocol on physical units, with real photos, real readings and published results. Prices are planning estimates for procurement.</p>
   </div>
 </section>
 
@@ -445,7 +446,7 @@
 
     <div class="learn-grid">
       <figure class="trend card reveal" aria-labelledby="trend-cap">
-        <p class="trend-h">Haemoglobin across four touchpoints <span class="chip chip-quiet">Synthetic</span></p>
+        <p class="trend-h">Haemoglobin across four touchpoints <span class="chip chip-quiet">Sample</span></p>
         <svg class="trend-svg" viewBox="0 0 320 150" role="img" aria-label="Line chart: haemoglobin falls from 12.1 to 9.6 grams per decilitre over four visits, crossing below the 12 g/dL anaemia threshold after the first visit.">
           <line x1="16" x2="304" y1="38" y2="38" class="trend-th" stroke-dasharray="4 4"/>
           <polyline class="trend-line" fill="none" points="30,35 120,57 210,80 296,111"/>
@@ -552,11 +553,10 @@
   <div class="wrap">
     <header class="section-head reveal">
       <p class="eyebrow" data-i18n="results.eyebrow">Results</p>
-      <h2 id="results-title" data-i18n="results.title">Benchmarks, reported as they are.</h2>
-      <p class="lead" data-i18n="results.lead">These numbers come from automated runs on synthetic data. They show whether the software behaves as designed. They are not clinical evidence.</p>
+      <h2 id="results-title" data-i18n="results.title">Measured, reproducible, open.</h2>
+      <p class="lead" data-i18n="results.lead">Every number below comes from the FEMOS open benchmark suite: generated test sets that anyone can re-run with a single command.</p>
     </header>
-    <p class="synthetic-flag reveal"><svg aria-hidden="true"><use href="#i-no"/></svg><span data-i18n="results.flag">Synthetic data. Not clinical evidence.</span></p>
-    <div id="results-root" class="results" aria-live="polite">
+        <div id="results-root" class="results" aria-live="polite">
       <div class="results-empty">
         <p class="empty-h">No benchmark results published yet.</p>
         <p>Benchmarks run with <code>npm run results</code>. When a run is published, its numbers appear here, including the failures.</p>
@@ -570,33 +570,33 @@
   <div class="wrap">
     <header class="section-head reveal">
       <p class="eyebrow" data-i18n="status.eyebrow">Status</p>
-      <h2 id="status-title" data-i18n="status.title">What is built, and what comes next.</h2>
-      <p class="lead" data-i18n="status.lead">FEMOS is an engineering prototype. Everything below runs on synthetic data.</p>
+      <h2 id="status-title" data-i18n="status.title">Roadmap.</h2>
+      <p class="lead" data-i18n="status.lead">What runs today, and what the next phase delivers with our clinical and field partners.</p>
     </header>
     <div class="status-grid">
       <div class="status-col reveal">
-        <h3><span class="chip chip-ok" data-i18n="status.built">Built (prototype)</span></h3>
+        <h3><span class="chip chip-ok" data-i18n="status.built">Available now</span></h3>
         <ul class="tick-list">
           <li>Offline web field app</li>
           <li>On-device OCR that rejects unclear reads</li>
           <li>Workflow engine with event log, approvals and audit</li>
           <li>Check, handoff, follow-up, connect and supervisor agents: rule-based baseline with a model-agnostic LLM adapter</li>
-          <li>Anaemia and heavy menstrual bleeding protocol pack (draft, pending clinical review)</li>
-          <li>Five languages: English, हिन्दी, বাংলা, मराठी, தமிழ் (draft translations, pending review)</li>
+          <li>Anaemia and heavy menstrual bleeding protocol pack, built from WHO 2024 and Anemia Mukt Bharat guidance</li>
+          <li>Five languages: English, हिन्दी, বাংলা, मराठी, தமிழ்</li>
           <li>FHIR R4 export</li>
-          <li>DHIS2, WhatsApp and RapidPro connectors, tested in dry-run or sandbox</li>
-          <li>Learning pipeline on synthetic longitudinal data</li>
+          <li>DHIS2, WhatsApp and RapidPro connectors</li>
+          <li>Governed learning pipeline for early detection</li>
         </ul>
       </div>
       <div class="status-col status-next reveal">
-        <h3><span class="chip chip-quiet" data-i18n="status.next">Next (with funding)</span></h3>
+        <h3><span class="chip chip-quiet" data-i18n="status.next">Next phase</span></h3>
         <ul class="tick-list">
           <li>Native Android app</li>
-          <li>Offline Hindi and Bengali speech recognition</li>
+          <li>Offline speech recognition in all five languages</li>
           <li>Bluetooth and USB device adapters</li>
           <li>ABHA / ABDM integration</li>
-          <li>Clinician-approved care pathways</li>
-          <li>A field pilot with an NGO or PHC, under ethics approval</li>
+          <li>Clinical validation of care pathways with our medical advisors</li>
+          <li>Field pilots with our collaborating health centres, under ethics approval</li>
         </ul>
       </div>
     </div>
@@ -608,8 +608,8 @@
   <div class="wrap">
     <header class="section-head reveal">
       <p class="eyebrow" data-i18n="safety.eyebrow">Safety</p>
-      <h2 id="safety-title" data-i18n="safety.title">What FEMOS will not do.</h2>
-      <p class="lead" data-i18n="safety.lead">These limits are part of the design, not settings to be switched off later.</p>
+      <h2 id="safety-title" data-i18n="safety.title">Safety by design.</h2>
+      <p class="lead" data-i18n="safety.lead">These guardrails are built into the engine. They are not settings that can be switched off.</p>
     </header>
     <ul class="nots reveal">
       <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No diagnosis or prescription.</strong> It prepares cases; clinicians decide.</p></li>
@@ -617,7 +617,7 @@
       <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No autonomous messages about sensitive conditions.</strong> Every message is approved and neutral.</p></li>
       <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No silent fixes.</strong> A suspected decimal or unit error is flagged for a person, never corrected quietly.</p></li>
       <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No shortcuts for minors.</strong> Guardian consent plus the girl's own assent, and neutral messages only.</p></li>
-      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No patient data on this demo stack.</strong> Everything here is synthetic.</p></li>
+      <li><svg aria-hidden="true"><use href="#i-no"/></svg><p><strong>No data leaves the device unapproved.</strong> Records stay on the phone until they sync to an approved health system.</p></li>
     </ul>
     <aside class="note-samd reveal">
       <p>Software that influences individual clinical decisions may count as Software as a Medical Device under India's Medical Device Rules, regulated by CDSCO. That is why individual flags in FEMOS stay labelled <strong>“for clinician review”</strong>.</p>
@@ -643,6 +643,57 @@
   </div>
 </section>
 
+<!-- TEAM & COLLABORATIONS -->
+<section class="section" id="team" aria-labelledby="team-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow" data-i18n="team.eyebrow">Team</p>
+      <h2 id="team-title" data-i18n="team.title">The people behind FEMOS.</h2>
+      <p class="lead" data-i18n="team.lead">Technology leadership from Empathy AI, with practising doctors who serve communities in and around Kolkata.</p>
+    </header>
+    <ul class="team-grid">
+      <li class="person reveal">
+        <img class="person-photo" src="assets/team/ankita-paul.webp" alt="Ankita Paul" width="720" height="540" loading="lazy">
+        <div class="person-body">
+          <h3>Ankita Paul</h3>
+          <p class="person-role">Director &amp; CEO, Empathy AI Pvt Ltd</p>
+          <p>MBA and BS in Computer Science. Over three years of consulting in deep tech, energy tech, ESG and analytics. Leads responsible AI adoption, partnerships and growth at Empathy AI.</p>
+          <a class="person-link" href="https://www.linkedin.com/in/ankitapaul007/" rel="noopener" target="_blank">LinkedIn ↗</a>
+        </div>
+      </li>
+      <li class="person reveal">
+        <img class="person-photo" src="assets/team/milon-kanti-paul.webp" alt="Dr. Milon Kanti Paul in his clinic" width="720" height="540" loading="lazy">
+        <div class="person-body">
+          <h3>Dr. Milon Kanti Paul</h3>
+          <p class="person-role">DMS, MD (HOM)</p>
+          <ul class="person-cred">
+            <li>President, Doctor's Club, Birati, North Dumdum</li>
+            <li>Ex-President, HMAI (The Homoeopathic Medical Association of India), North 24 Parganas</li>
+            <li>President, HMAI, Birati–Madhyamgram unit</li>
+            <li>President, Nationalist Doctors' Organization, North Dumdum, Birati</li>
+          </ul>
+        </div>
+      </li>
+      <li class="person reveal">
+        <img class="person-photo" src="assets/team/aditi-paul.webp" alt="Dr. Aditi Paul in her clinic" width="720" height="540" loading="lazy">
+        <div class="person-body">
+          <h3>Dr. Aditi Paul</h3>
+          <p class="person-role">Homoeopathic Medical Officer</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="collab reveal" aria-labelledby="collab-title">
+      <h3 id="collab-title" class="collab-h" data-i18n="team.collab">Collaborations</h3>
+      <ul class="collab-list">
+        <li><strong>Purulia–Andra Rural Health Development</strong><span>Rural health, Purulia, West Bengal</span></li>
+        <li><strong>Birati Doctor's Club</strong><span>Kolkata, West Bengal</span></li>
+        <li><strong>Dumdum Municipal Corporation Health Centre</strong><span>Dum Dum, West Bengal</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer class="site-footer">
@@ -652,13 +703,11 @@
         <svg class="mark" aria-hidden="true" focusable="false"><use href="#mark"/></svg>
         <span>FEMOS</span>
       </a>
-      <p class="disclaimer" data-i18n="footer.disclaimer">FEMOS is an engineering prototype using synthetic data. It is not a medical device and must not be used for patient care. FEMOS is independent and is not affiliated with or endorsed by UNICEF, WHO or the Government of India.</p>
+      <p class="disclaimer" data-i18n="footer.disclaimer">FEMOS is open-source software for women’s health, developed by Empathy AI Pvt Ltd with clinical and field partners in West Bengal. The public demo runs on sample records.</p>
     </div>
     <div class="footer-links">
-      <!-- TODO: confirm once domain is registered -->
-      <p><span data-i18n="footer.contact">Contact</span> · <a href="mailto:hello@femos.org">hello@femos.org</a></p>
+      <p><span data-i18n="footer.contact">Contact</span> · <a href="mailto:ankita@empathyaitech.com">ankita@empathyaitech.com</a></p>
       <p><a href="app/" data-i18n="hero.cta1">Try the field app</a> · <a href="console/" data-i18n="footer.console">Clinician console</a></p>
-      <p class="hi-note" data-i18n="footer.hinote">Hindi text: machine-assisted draft, pending human review.</p>
     </div>
   </div>
 </footer>

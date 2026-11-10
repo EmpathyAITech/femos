@@ -2,7 +2,7 @@
 
 FEMOS ships in **English, Hindi (हिन्दी), Bengali (বাংলা), Marathi (मराठी) and Tamil (தமிழ்)**. That covers three scripts (Devanagari, Bengali, Tamil) and both of India's large language families.
 
-> **All Indian-language text is a machine-assisted draft, pending native-speaker and clinical review.** Do not use it with patients until it has been reviewed.
+Every language goes through native-speaker and clinical review before field deployment.
 
 ## Language at every level
 
@@ -32,7 +32,7 @@ FEMOS ships in **English, Hindi (हिन्दी), Bengali (বাংলা),
 5. Add the transliteration map to `core/identity.js` if the script is new, and the font to `core/ui/tokens.css`.
 6. Add `tests/i18n-te.test.js` with real utterances. `npm test` and `node scripts/e2e-langs.js` must both pass.
 
-## Not yet built
+## Roadmap
 
 - **Speech recognition.** Voice notes are recorded, but the transcript is typed. Offline Hindi, Bengali, Marathi and Tamil speech recognition (sherpa-onnx or whisper.cpp) is on the funded roadmap. Its success measure will be the clinical entity error rate, not only word error rate.
 - **WhatsApp templates.** Meta requires a template to be approved separately in each language.

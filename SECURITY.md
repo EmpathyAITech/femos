@@ -8,11 +8,11 @@ This repository, its issue tracker, the demo server and the public website are f
 
 ## Reporting a vulnerability
 
-Email security@femos.org (placeholder until the domain is registered) with the steps to reproduce. Do not open a public issue. We aim to acknowledge reports within 3 working days.
+Email ankita@empathyaitech.com with the steps to reproduce. Do not open a public issue. We aim to acknowledge reports within 3 working days.
 
-## Known prototype limitations, and what must change before any real deployment
+## Production hardening checklist
 
-| Area | Prototype | Required before any real use |
+| Area | Public demo | Production deployment |
 |---|---|---|
 | Authentication | Demo role picker, no login | Real identity, role-based access, device enrolment |
 | Event authenticity | The server accepts events from any client | Signed events and per-user keys, with the server checking the actor against the session |

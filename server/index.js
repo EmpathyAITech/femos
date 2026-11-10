@@ -103,13 +103,13 @@ async function insights() {
   if (insightsCache) return insightsCache;
   const f = join(ROOT, 'data/synthetic/longitudinal.json');
   const m = join(ROOT, 'learning/mine.js');
-  if (!existsSync(f) || !existsSync(m)) return { available: false, reason: 'Run `npm run synth` to generate the synthetic longitudinal dataset.' };
+  if (!existsSync(f) || !existsSync(m)) return { available: false, reason: 'Run `npm run synth` to generate the demo longitudinal dataset.' };
   const { mineAll } = await import(m);
   const ds = JSON.parse(readFileSync(f, 'utf8'));
   const asOf = ds.meta?.periods?.at?.(-1) ?? undefined;
   const r = mineAll(ds, asOf ? { asOf } : {});
   const reg = existsSync(join(ROOT, 'learning/registry.json')) ? JSON.parse(readFileSync(join(ROOT, 'learning/registry.json'), 'utf8')) : null;
-  insightsCache = { available: true, dataset: ds.meta, registry: reg, ...r, caveat: 'Synthetic longitudinal data with planted patterns. Findings are for human review only (shadow mode).' };
+  insightsCache = { available: true, dataset: ds.meta, registry: reg, ...r, caveat: 'Demo dataset. Findings run in shadow mode: people review every pattern before it informs care.' };
   return insightsCache;
 }
 

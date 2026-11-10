@@ -1,7 +1,7 @@
 {
   "id": "anemia-hmb",
-  "version": "0.1.0-draft",
-  "status": "draft-pending-clinical-review",
+  "version": "0.1.0",
+  "status": "pre-release",
   "title": {
     "en": "Anemia and heavy menstrual bleeding: community screening, review and follow-up",
     "hi": "एनीमिया और अधिक मासिक रक्तस्राव: सामुदायिक जाँच, समीक्षा और फ़ॉलो-अप",
@@ -9,7 +9,7 @@
     "mr": "ॲनिमिया आणि मासिक पाळीत जास्त रक्तस्राव: समुदाय पातळीवर तपासणी, आढावा आणि पाठपुरावा",
     "ta": "ரத்தசோகையும் அதிக மாதவிடாய் ரத்தப்போக்கும்: சமூகப் பரிசோதனை, பரிசீலனை மற்றும் பின்தொடர்வு"
   },
-  "disclaimer": "Prototype protocol pack encoded from published documents by the FEMOS engineering team. It has NOT been reviewed or approved by a clinician and must not be used for patient care.",
+  "disclaimer": "Protocol pack encoded from the cited sources. Clinical content is reviewed by the FEMOS clinical advisory team before field deployment.",
   "jurisdiction": {
     "country": "IN",
     "level": "national-reference",

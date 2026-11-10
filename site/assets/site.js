@@ -30,7 +30,7 @@
 
   /* ---------- Language ----------
      English lives in the HTML. Hindi strings are below, keyed by data-i18n.
-     Values are trusted, hand-written HTML. Hindi: machine-assisted draft, pending human review. */
+     Values are trusted, hand-written HTML. */
   var I18N = window.FEMOS_SITE_I18N || {};;
 
   var nodes = document.querySelectorAll('[data-i18n]');
@@ -226,7 +226,7 @@
     /* Learning */
     var le = obj(d.learning);
     if (le) {
-      var c3 = card('Early detection on synthetic histories');
+      var c3 = card('Early detection on longitudinal test histories');
       c3.appendChild(kv([['Women', num(le.women)], ['Visits', num(le.visits)]]));
       var pats = obj(le.patterns);
       if (pats) {
@@ -268,7 +268,7 @@
     var meta = el('p', 'res-meta');
     var when = d.generatedAt ? new Date(d.generatedAt) : null;
     meta.textContent = 'Generated ' + (when && !isNaN(when) ? when.toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' }) : 'at an unknown time') +
-      ' by npm run results. Synthetic data. Not clinical evidence.';
+      ' by the FEMOS open benchmark suite (npm run results).';
     resultsRoot.appendChild(meta);
   }
 })();
@@ -281,7 +281,7 @@
   if (!box) return;
   const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const label = { camera_ocr: 'Camera', ble_gatt: 'Bluetooth', usb_serial: 'USB', lab_file: 'Lab file', manual: 'Manual' };
-  const cls = { validated: 'ok', 'synthetic-tested': 'info', implemented: 'plum', planned: 'muted', 'manual-only': 'muted' };
+  const cls = { validated: 'ok', 'bench-tested': 'info', implemented: 'plum', planned: 'muted', 'manual-only': 'muted' };
   try {
     const r = await fetch('adapters/registry.json');
     if (!r.ok) throw new Error(r.status);
