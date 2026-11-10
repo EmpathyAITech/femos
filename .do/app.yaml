@@ -2,6 +2,7 @@
 # website plus the field app and console in standalone demo mode with synthetic data.
 # Connectors, server-side agents and the LLM need the Node server (see docs/DEPLOY.md).
 name: femos
+region: blr
 static_sites:
   - name: femos-site
     github:

@@ -16,7 +16,9 @@ import { llmConfigured, llmInfo, llmExtract, llmPlanQuery } from './llm.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PORT = Number(process.env.PORT ?? 8765);
-const HOST = process.env.HOST ?? '127.0.0.1';
+// Local: localhost only. On a platform (DigitalOcean App Platform, Render…) PORT is set and the
+// health check comes from outside the container, so listen on all interfaces.
+const HOST = process.env.HOST ?? (process.env.PORT ? '0.0.0.0' : '127.0.0.1');
 const pack = JSON.parse(readFileSync(join(ROOT, 'protocols/anemia-hmb/pack.json'), 'utf8'));
 const FACILITY = process.env.FEMOS_FACILITY ?? 'PHC';
 
